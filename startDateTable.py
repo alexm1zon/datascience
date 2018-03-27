@@ -1,52 +1,70 @@
 # importing libraries
-import pandas as pd
-import numpy as np
 from datetime import date
+import csv
 
 # csv file name
-filenameFrom = "CanadianDisasterDatabase.csv"
-filenameTo = "startDateTable.csv"
+filename = "startDateTable.csv"
 
-df = pd.read_csv(filenameFrom)
-df1 = pd.DataFrame()
+surrogateKeyID = 1
 
-df1['data_key'] = df['ID']
-df1[['month','day','year']] = df['EVENT START DATE'].str.split('/',expand=True)
-df1['year'] = df1['year'].map(lambda x: str(x)[:-5])  # remove time left corresponding to last 5 characters
 
-weekend = []
+def get_key_id(day, month, year, weekend, season_canada, season_international):
+    f = open(filename)
+    reader = csv.DictReader(f)
+    global surrogateKeyID
 
-for row in df['EVENT START DATE']:
-        if (not row == '') & isinstance(row, basestring) & (not row == '0'):
-            month, day, year = row[:-5].split("/")
-            if 59 <= year <= 99:
-                newYear = '19' + year
-            else:
-                newYear = '20' + year
+    for row in reader:
+        if (row["day"] == day) & (row["month"] == month) & (row["year"] == year) & \
+                (row["weekend"] == weekend) & (row["season_canada"] == season_canada):
+                # (row["season_international"] == season_international)
+            return row["date_key"]
 
-            mydate = date(int(newYear), int(month), int(day))
+    f.close()
 
-            if (mydate.weekday() == 5) | (mydate.weekday() == 6):
-                weekend.append('yes')
-            else:
-                weekend.append('no')
+    with open(filename, 'ab') as ff:
+        writer = csv.writer(ff)
+        writer.writerow([])
+        writer.writerow([surrogateKeyID, day, month, year, weekend, season_canada, season_international])
+    key = surrogateKeyID
+    surrogateKeyID = surrogateKeyID + 1
+
+    return key
+
+
+def get_start_date_key(start_date):
+    if (not start_date == '') & isinstance(start_date, basestring) & (not start_date == '0'):
+        month, day, year = start_date[:-5].split("/")
+
+        if 59 <= int(year) <= 99:
+            new_year = '19' + year
         else:
-            weekend.append('no')
+            new_year = '20' + year
 
-df1.insert(loc=4, column='weekend', value=pd.Series(weekend))
+        my_date = date(int(new_year), int(month), int(day))
 
-conditions = [
-    ((df1['month'] == '3') & (df1['day'] >= '20')) | (df1['month'] == '4') | (df1['month'] == '5') |
-    ((df1['month'] == '6') & (df1['day'] < '21')),
-    ((df1['month'] == '6') & (df1['day'] >= '21')) | (df1['month'] == '7') | (df1['month'] == '8') |
-    ((df1['month'] == '9') & (df1['day'] < '22')),
-    ((df1['month'] == '9') & (df1['day'] >= '22')) | (df1['month'] == '10') | (df1['month'] == '11') |
-    ((df1['month'] == '12') & (df1['day'] < '21')),
-    ((df1['month'] == '12') & (df1['day'] >= '21')) | (df1['month'] == '1') | (df1['month'] == '2') |
-    ((df1['month'] == '3') & (df1['day'] < '20'))]
+        if (my_date.weekday() == 5) | (my_date.weekday() == 6):
+            weekend = 'yes'
+        else:
+            weekend = 'no'
 
-choices = ['spring', 'summer', 'fall', 'winter']
+        if ((month == '3') & (day >= '20')) | (month == '4') |\
+            (month == '5') | ((month == '6') & (day < '21')):
+            season_canada = 'spring'
+        elif ((month == '6') & (day >= '21')) | (month == '7') | (month == '8') | ((month == '9') & (day < '22')):
+            season_canada = 'summer'
+        elif ((month == '9') & (day >= '22')) | (month == '10') | (month == '11') | ((month == '12') & (day < '21')):
+            season_canada = 'fall'
+        else:
+            season_canada = 'winter'
 
-df1['season_canada'] = np.select(conditions, choices)
+        season_international = season_canada
+       
+        return get_key_id(day, month, year, weekend, season_canada, season_international)
 
-df1.to_csv(filenameTo, encoding='utf-8', index=False)
+    else:
+        print("problem! ")
+        print(start_date)
+
+    return -1
+
+

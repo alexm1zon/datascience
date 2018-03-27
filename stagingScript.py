@@ -1,7 +1,7 @@
 # importing libraries
 import pandas as pd
 import csv
-from startDateTable import getstartdatekey
+from startDateTable import get_start_date_key
 
 filenameSource = "CanadianDisasterDatabase.csv"
 filenameFACT = "FACTtable.csv"
@@ -22,18 +22,18 @@ f = open(filenameSource)
 reader = csv.DictReader(f)
 
 for row in reader:
-        startDateKey.append(getstartdatekey(row["EVENT START DATE"]))
-        endDateKey.append(getenddatekey(row["EVENT END DATE"]))
-        locationKey.append(getlocationkey(row["PLACE"]))
-        disasterKey.append(getdisasterKey(row["EVENT TYPE"], row["EVENT SUBGROUP"],
-                                          row["EVENT GROUP"], row["EVENT CATEGORY"],
-                                          row["MAGNITUDE"], row["UTILITY - PEOPLE AFFECTED"]))
-        descriptionKey.append(getdescriptionkey(row["COMMENTS"]))
-        costKey.append(getstartdatekey(row["ESTIMATED TOTAL COST"], row["NORMALIZED TOTAL COST"],
-                                       row["FEDERAL DFAA PAYMENTS"], row["PROVINCIAL DFAA PAYMENTS"],
-                                       row["PROVINCIAL DEPARTMENT PAYMENTS"], row["INSURANCE PAYMENTS"],
-                                       row["MUNICIPAL COSTS"], row["INSURANCE PAYMENTS"],
-                                       row["OGC COSTS"], row["INSURANCE PAYMENTS"]))
+        startDateKey.append(get_start_date_key(row["EVENT START DATE"]))
+        # endDateKey.append(getenddatekey(row["EVENT END DATE"]))
+        # locationKey.append(getlocationkey(row["PLACE"]))
+        # disasterKey.append(getdisasterKey(row["EVENT TYPE"], row["EVENT SUBGROUP"],
+        #                                   row["EVENT GROUP"], row["EVENT CATEGORY"],
+        #                                   row["MAGNITUDE"], row["UTILITY - PEOPLE AFFECTED"]))
+        # descriptionKey.append(getdescriptionkey(row["COMMENTS"]))
+        # costKey.append(getstartdatekey(row["ESTIMATED TOTAL COST"], row["NORMALIZED TOTAL COST"],
+        #                                row["FEDERAL DFAA PAYMENTS"], row["PROVINCIAL DFAA PAYMENTS"],
+        #                                row["PROVINCIAL DEPARTMENT PAYMENTS"], row["INSURANCE PAYMENTS"],
+        #                                row["MUNICIPAL COSTS"], row["INSURANCE PAYMENTS"],
+        #                                row["OGC COSTS"], row["INSURANCE PAYMENTS"]))
         fatalities.append(row["FATALITIES"])
         injured.append(row["INJURED / INFECTED"])
         evacuated.append(row["EVACUATED"])
