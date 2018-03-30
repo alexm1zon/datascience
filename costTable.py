@@ -1,24 +1,45 @@
 # importing libraries
-import pandas as pd
-import numpy as np
+import csv
 
 # csv file name
-filenameFrom = "CanadianDisasterDatabase.csv"
-filenameTo = "costTable.csv"
+filename = "csv/costTable.csv"
 
-df = pd.read_csv(filenameFrom)
-df1 = pd.DataFrame()
+surrogateKeyID = 1
 
-df1['costs_key'] = df['ID']
-df1['estimated_total_cost'] = np.where(df['ESTIMATED TOTAL COST'].isnull(), '0', df['ESTIMATED TOTAL COST'])
-df1['normalized_total_cost'] = np.where(df['NORMALIZED TOTAL COST'].isnull(), '0', df['NORMALIZED TOTAL COST'])
-df1['federal_payments'] = np.where(df['FEDERAL DFAA PAYMENTS'].isnull(), '0', df['FEDERAL DFAA PAYMENTS'])
-df1['provincial_DFAA_payments'] = np.where(df['PROVINCIAL DFAA PAYMENTS'].isnull(), '0', df['PROVINCIAL DFAA PAYMENTS'])
-df1['provincial_department_payments'] = np.where(df['PROVINCIAL DEPARTMENT PAYMENTS'].isnull(), '0', df['PROVINCIAL DEPARTMENT PAYMENTS'])
-df1['insurance_payments'] = np.where(df['INSURANCE PAYMENTS'].isnull(), '0', df['INSURANCE PAYMENTS'])
-df1['municipal_cost'] = np.where(df['MUNICIPAL COSTS'].isnull(), '0', df['MUNICIPAL COSTS'])
-df1['insurance_payments'] = np.where(df['INSURANCE PAYMENTS'].isnull(), '0', df['INSURANCE PAYMENTS'])
-df1['ogd_cost'] = np.where(df['OGD COSTS'].isnull(), '0', df['OGD COSTS'])
-df1['ngo_payments'] = np.where(df['INSURANCE PAYMENTS'].isnull(), '0', df['INSURANCE PAYMENTS'])
 
-df1.to_csv(filenameTo, encoding='utf-8', index=False)
+def get_cost_key(estimated_total_cost, normalized_total_cost, federal_dfaa_payments,
+                 provincial_dfaa_payments, provincial_payments, municipal_cost,  insurance_payments,
+                 ogd_costs, ngo_payments):
+    f = open(filename)
+    reader = csv.DictReader(f)
+    key = -1
+    found = False
+    global surrogateKeyID
+
+    for row in reader:
+        if (row["estimated_total_cost"] == estimated_total_cost) & \
+                (row["normalized_total_cost"] == normalized_total_cost) & \
+                (row["federal_dfaa_payments"] == federal_dfaa_payments) & \
+                (row["provincial_dfaa_payments"] == provincial_dfaa_payments) & \
+                (row["provincial_payments"] == provincial_payments) & \
+                (row["municipal_cost"] == municipal_cost) & \
+                (row["insurance_payments"] == insurance_payments) & \
+                (row["ogd_costs"] == ogd_costs) &\
+                (row["ngo_payments"] == ngo_payments):
+
+            key = row["cost_key"]
+            found = True
+    f.close()
+
+    if not found:
+        with open(filename, 'ab') as ff:
+            writer = csv.writer(ff)
+            writer.writerow([surrogateKeyID, estimated_total_cost, normalized_total_cost, federal_dfaa_payments,
+                             provincial_dfaa_payments, provincial_payments, municipal_cost,  insurance_payments,
+                             ogd_costs, ngo_payments])
+        key = surrogateKeyID
+        surrogateKeyID = surrogateKeyID + 1
+
+    return key
+
+

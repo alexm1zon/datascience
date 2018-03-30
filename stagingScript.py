@@ -3,6 +3,8 @@ import pandas as pd
 import csv
 from dateTable import get_date_key
 from disasterTable import get_disaster_key
+from summaryTable import get_description_key
+from costTable import get_cost_key
 
 filenameSource = "csv/CanadianDisasterDatabase.csv"
 filenameFACT = "csv/FACTtable.csv"
@@ -28,12 +30,12 @@ for row in reader:
         disasterKey.append(get_disaster_key(row["EVENT TYPE"], row["EVENT SUBGROUP"],
                                             row["EVENT GROUP"], row["EVENT CATEGORY"],
                                             row["MAGNITUDE"], row["UTILITY - PEOPLE AFFECTED"]))
-        # # descriptionKey.append(getdescriptionkey(row["COMMENTS"]))
-        # costKey.append(getstartdatekey(row["ESTIMATED TOTAL COST"], row["NORMALIZED TOTAL COST"],
-        #                                row["FEDERAL DFAA PAYMENTS"], row["PROVINCIAL DFAA PAYMENTS"],
-        #                                row["PROVINCIAL DEPARTMENT PAYMENTS"], row["INSURANCE PAYMENTS"],
-        #                                row["MUNICIPAL COSTS"], row["INSURANCE PAYMENTS"],
-        #                                row["OGC COSTS"], row["INSURANCE PAYMENTS"]))
+        descriptionKey.append(get_description_key(row["COMMENTS"]))
+        costKey.append(get_cost_key(row["ESTIMATED TOTAL COST"], row["NORMALIZED TOTAL COST"],
+                                    row["FEDERAL DFAA PAYMENTS"], row["PROVINCIAL DFAA PAYMENTS"],
+                                    row["PROVINCIAL DEPARTMENT PAYMENTS"],
+                                    row["MUNICIPAL COSTS"], row["INSURANCE PAYMENTS"],
+                                    row["OGD COSTS"], row["NGO PAYMENTS"]))
         fatalities.append(row["FATALITIES"])
         injured.append(row["INJURED / INFECTED"])
         evacuated.append(row["EVACUATED"])

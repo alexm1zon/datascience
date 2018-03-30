@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57986d5b-4e8d-4103-b589-1511b3822ebf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/csv/dateTable.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/datascience.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/datascience.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/summaryTable.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CanadianDisasterDatabase.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/CanadianDisasterDatabase.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disasterTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/disasterTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/endDateTable.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/endDateTable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/costTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/costTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/FACTtable.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/FACTtable.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/dateTable.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/dateTable.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/disasterTable.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/disasterTable.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stagingScript.py" beforeDir="false" afterPath="$PROJECT_DIR$/stagingScript.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startDateTable.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/startDateTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateTable.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="stagingScript.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stagingScript.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stagingScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+            <state relative-caret-position="203">
+              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
                 <element signature="e#22#41#0" expanded="true" />
               </folding>
@@ -35,38 +31,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="disasterTable.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/disasterTable.py">
+      <file leaf-file-name="costTable.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/costTable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="282">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dateTable.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/csv/dateTable.csv">
+      <file leaf-file-name="summaryTable.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csv/summaryTable.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" lean-forward="true" selection-end-line="1" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dateTable.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dateTable.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-              <folding>
-                <element signature="e#22#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="disasterTable.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/csv/disasterTable.csv">
+      <file leaf-file-name="FACTtable.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/csv/FACTtable.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
@@ -81,11 +65,13 @@
       <find>get_end_date_key</find>
       <find>start_date</find>
       <find>type</find>
+      <find>-</find>
     </findStrings>
     <replaceStrings>
       <replace>end_date</replace>
       <replace>get_date_key</replace>
       <replace>date</replace>
+      <replace>_</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -105,9 +91,15 @@
         <option value="$PROJECT_DIR$/dateTable.py" />
         <option value="$PROJECT_DIR$/tablesGenerated/dateTable.csv" />
         <option value="$PROJECT_DIR$/tablesGenerated/disasterTable.csv" />
+        <option value="$PROJECT_DIR$/summaryTable.py" />
         <option value="$PROJECT_DIR$/disasterTable.py" />
-        <option value="$PROJECT_DIR$/csv/disasterTable.csv" />
         <option value="$PROJECT_DIR$/stagingScript.py" />
+        <option value="$PROJECT_DIR$/csv/disasterTable.csv" />
+        <option value="$PROJECT_DIR$/csv/dateTable.csv" />
+        <option value="$PROJECT_DIR$/csv/costTable.csv" />
+        <option value="$PROJECT_DIR$/costTable.py" />
+        <option value="$PROJECT_DIR$/csv/summaryTable.csv" />
+        <option value="$PROJECT_DIR$/csv/FACTtable.csv" />
       </list>
     </option>
   </component>
@@ -254,11 +246,11 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24305555" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24305555" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900944" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32900944" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32900944" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -306,23 +298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csv/FACTtable.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csv/CanadianDisasterDatabase.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csv/dateTable.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" lean-forward="true" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dateTable.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -333,27 +308,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/summaryTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#22#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/disasterTable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="165">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/CanadianDisasterDatabase.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stagingScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="e#22#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/dateTable.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csv/disasterTable.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stagingScript.py">
+    <entry file="file://$PROJECT_DIR$/csv/costTable.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-          <folding>
-            <element signature="e#22#41#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/costTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/summaryTable.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/FACTtable.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
