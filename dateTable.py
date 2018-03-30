@@ -3,7 +3,7 @@ from datetime import date
 import csv
 
 # csv file name
-filename = "startDateTable.csv"
+filename = "csv/dateTable.csv"
 
 surrogateKeyID = 1
 
@@ -23,7 +23,6 @@ def get_key_id(day, month, year, weekend, season_canada, season_international):
 
     with open(filename, 'ab') as ff:
         writer = csv.writer(ff)
-        writer.writerow([])
         writer.writerow([surrogateKeyID, day, month, year, weekend, season_canada, season_international])
     key = surrogateKeyID
     surrogateKeyID = surrogateKeyID + 1
@@ -31,7 +30,7 @@ def get_key_id(day, month, year, weekend, season_canada, season_international):
     return key
 
 
-def get_start_date_key(start_date):
+def get_date_key(start_date):
     if (not start_date == '') & isinstance(start_date, basestring) & (not start_date == '0'):
         month, day, year = start_date[:-5].split("/")
 
@@ -58,7 +57,7 @@ def get_start_date_key(start_date):
             season_canada = 'winter'
 
         season_international = season_canada
-       
+
         return get_key_id(day, month, year, weekend, season_canada, season_international)
 
     else:

@@ -1,15 +1,15 @@
 # importing libraries
 import pandas as pd
 import csv
-from startDateTable import get_start_date_key
+from dateTable import get_date_key
+from disasterTable import get_disaster_key
 
-filenameSource = "CanadianDisasterDatabase.csv"
-filenameFACT = "FACTtable.csv"
+filenameSource = "csv/CanadianDisasterDatabase.csv"
+filenameFACT = "csv/FACTtable.csv"
 
 df = pd.DataFrame()
 
-startDateKey = []
-endDateKey = []
+dateKey = []
 locationKey = []
 disasterKey = []
 descriptionKey = []
@@ -22,13 +22,13 @@ f = open(filenameSource)
 reader = csv.DictReader(f)
 
 for row in reader:
-        startDateKey.append(get_start_date_key(row["EVENT START DATE"]))
-        # endDateKey.append(getenddatekey(row["EVENT END DATE"]))
+        dateKey.append(get_date_key(row["EVENT START DATE"]))
+        dateKey.append(get_date_key(row["EVENT END DATE"]))
         # locationKey.append(getlocationkey(row["PLACE"]))
-        # disasterKey.append(getdisasterKey(row["EVENT TYPE"], row["EVENT SUBGROUP"],
-        #                                   row["EVENT GROUP"], row["EVENT CATEGORY"],
-        #                                   row["MAGNITUDE"], row["UTILITY - PEOPLE AFFECTED"]))
-        # descriptionKey.append(getdescriptionkey(row["COMMENTS"]))
+        disasterKey.append(get_disaster_key(row["EVENT TYPE"], row["EVENT SUBGROUP"],
+                                            row["EVENT GROUP"], row["EVENT CATEGORY"],
+                                            row["MAGNITUDE"], row["UTILITY - PEOPLE AFFECTED"]))
+        # # descriptionKey.append(getdescriptionkey(row["COMMENTS"]))
         # costKey.append(getstartdatekey(row["ESTIMATED TOTAL COST"], row["NORMALIZED TOTAL COST"],
         #                                row["FEDERAL DFAA PAYMENTS"], row["PROVINCIAL DFAA PAYMENTS"],
         #                                row["PROVINCIAL DEPARTMENT PAYMENTS"], row["INSURANCE PAYMENTS"],
@@ -38,14 +38,13 @@ for row in reader:
         injured.append(row["INJURED / INFECTED"])
         evacuated.append(row["EVACUATED"])
 
-df.insert(loc=0, column='startDateKey', value=pd.Series(startDateKey))
-df.insert(loc=1, column='endDateKey', value=pd.Series(endDateKey))
-df.insert(loc=2, column='locationKey', value=pd.Series(locationKey))
-df.insert(loc=3, column='disasterKey', value=pd.Series(disasterKey))
-df.insert(loc=4, column='descriptionKey', value=pd.Series(descriptionKey))
-df.insert(loc=5, column='costKey', value=pd.Series(costKey))
-df.insert(loc=6, column='fatalities', value=pd.Series(fatalities))
-df.insert(loc=7, column='injured', value=pd.Series(injured))
-df.insert(loc=8, column='evacuated', value=pd.Series(evacuated))
+df.insert(loc=0, column='dateKey', value=pd.Series(dateKey))
+df.insert(loc=1, column='locationKey', value=pd.Series(locationKey))
+df.insert(loc=2, column='disasterKey', value=pd.Series(disasterKey))
+df.insert(loc=3, column='descriptionKey', value=pd.Series(descriptionKey))
+df.insert(loc=4, column='costKey', value=pd.Series(costKey))
+df.insert(loc=5, column='fatalities', value=pd.Series(fatalities))
+df.insert(loc=6, column='injured', value=pd.Series(injured))
+df.insert(loc=7, column='evacuated', value=pd.Series(evacuated))
 
 df.to_csv(filenameFACT, encoding='utf-8', index=False)
