@@ -3,7 +3,7 @@ from collections import Counter
 import csv
 
 # csv file name
-filename = "csv/summaryTable.csv"
+filename = "Data Staging/csv/summaryTable.csv"
 
 surrogateKeyID = 1
 

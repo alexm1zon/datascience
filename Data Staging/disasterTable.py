@@ -2,7 +2,7 @@
 import csv
 
 # csv file name
-filename = "csv/disasterTable.csv"
+filename = "Data Staging/csv/disasterTable.csv"
 
 surrogateKeyID = 1
 
@@ -15,7 +15,7 @@ def get_disaster_key(event_type, subgroup, group, category, magnitude, people_af
     global surrogateKeyID
 
     for row in reader:
-        if (row["type"] == event_type) & (row["subgroup"] == subgroup) & (row["group"] == group) & \
+        if (row["event_type"] == event_type) & (row["subgroup"] == subgroup) & (row["group"] == group) & \
                 (row["category"] == category) & (row["magnitude"] == magnitude) & \
                 (row["people_affected"] == people_affected):
 

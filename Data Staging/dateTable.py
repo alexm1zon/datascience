@@ -3,7 +3,7 @@ from datetime import date
 import csv
 
 # csv file name
-filename = "csv/dateTable.csv"
+filename = "Data Staging/csv/dateTable.csv"
 
 surrogateKeyID = 1
 

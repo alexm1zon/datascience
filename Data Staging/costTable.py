@@ -2,7 +2,7 @@
 import csv
 
 # csv file name
-filename = "csv/costTable.csv"
+filename = "Data Staging/csv/costTable.csv"
 
 surrogateKeyID = 1
 
@@ -10,6 +10,7 @@ surrogateKeyID = 1
 def get_cost_key(estimated_total_cost, normalized_total_cost, federal_dfaa_payments,
                  provincial_dfaa_payments, provincial_payments, municipal_cost,  insurance_payments,
                  ogd_costs, ngo_payments):
+
     f = open(filename)
     reader = csv.DictReader(f)
     key = -1
@@ -27,7 +28,7 @@ def get_cost_key(estimated_total_cost, normalized_total_cost, federal_dfaa_payme
                 (row["ogd_costs"] == ogd_costs) &\
                 (row["ngo_payments"] == ngo_payments):
 
-            key = row["cost_key"]
+            key = row["costs_key"]
             found = True
     f.close()
 
