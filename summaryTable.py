@@ -1,38 +1,52 @@
 # importing libraries
-import pandas as pd
 from collections import Counter
+import csv
 
 # csv file name
-filenameFrom = "CanadianDisasterDatabase.csv"
-filenameTo = "summaryTable.csv"
+filename = "csv/summaryTable.csv"
 
-df = pd.read_csv(filenameFrom)
-df1 = pd.DataFrame()
+surrogateKeyID = 1
 
-df1['summary_key'] = df['ID']
-df1['summary'] = df['COMMENTS']
+# array of words to omit
+stopwords = ['and', 'in', 'than', 'by', 'at', 'is', 'the', 'of', 'a', 'as', 'were', 'with', 'or', 'to', 'was', 'into',
+             'for', 'from', 'an', 'due']
 
-#array of words to omit
-stopwords = ['and', 'in', 'than', 'by', 'at', 'is', 'the', 'of', 'a', 'as', 'were', 'with', 'or', 'to', 'was']
-keyword1 = []
-keyword2 = []
-keyword3 = []
 
-for row in df['COMMENTS']:
-    if (not row == '') & isinstance(row, basestring):
-        querywords = row.split()
+def get_description_key(summary):
+    key = -1
+    global surrogateKeyID
+
+    if (not summary == '') & isinstance(summary, basestring):
+        querywords = summary.split()
         resultwords = [word for word in querywords if word.lower() not in stopwords]
         result = ' '.join(resultwords)
-        print(Counter(result.split()).most_common(3))
-        keyword1.append(Counter(result.split()).most_common(3)[0][0])
-        keyword2.append(Counter(result.split()).most_common(3)[1][0])
+        keyword1 = Counter(result.split()).most_common(3)[0][0]
+        keyword2 = Counter(result.split()).most_common(3)[1][0]
+
         if len(Counter(result.split()).most_common(3)) < 3:
-            keyword3.append('unknown')
-        else :
-            keyword3.append(Counter(result.split()).most_common(3)[2][0])
+            keyword3 = 'unknown'
+        else:
+            keyword3 = Counter(result.split()).most_common(3)[2][0]
 
-df1.insert(loc=2, column='keyword1', value=pd.Series(keyword1))
-df1.insert(loc=3, column='keyword2', value=pd.Series(keyword2))
-df1.insert(loc=4, column='keyword3', value=pd.Series(keyword3))
+        f = open(filename)
+        reader = csv.DictReader(f)
+        found = False
 
-df1.to_csv(filenameTo, encoding='utf-8', index=False)
+        for row in reader:
+            if (row["summary"] == summary) & (row["keyword1"] == keyword1) & (row["keyword2"] == keyword2) & \
+                    (row["keyword3"] == keyword3):
+
+                key = row["description_key"]
+                found = True
+        f.close()
+
+        if not found:
+            with open(filename, 'ab') as ff:
+                writer = csv.writer(ff)
+                writer.writerow([surrogateKeyID, summary, keyword1, keyword2, keyword3])
+            key = surrogateKeyID
+            surrogateKeyID = surrogateKeyID + 1
+
+    return key
+
+
