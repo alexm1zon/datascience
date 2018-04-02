@@ -3,7 +3,7 @@ from datetime import date
 import csv
 
 # csv file name
-filename = "Data Staging/csv/dateTable.csv"
+filename = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/dateTable.csv"
 
 surrogateKeyID = 1
 
@@ -31,7 +31,15 @@ def get_key_id(day, month, year, weekend, season_canada, season_international):
 
 
 def get_date_key(start_date):
-    if (not start_date == '') & isinstance(start_date, basestring) & (not start_date == '0'):
+    if (start_date == '') | isinstance(start_date, basestring) | (start_date == '0'):
+        day = -1
+        month = -1
+        year = -1
+        weekend = 'unknown'
+        season_canada = 'unknown'
+        season_international = 'unknown'
+
+    else:
         month, day, year = start_date[:-5].split("/")
 
         if 59 <= int(year) <= 99:
@@ -60,10 +68,6 @@ def get_date_key(start_date):
 
         return get_key_id(day, month, year, weekend, season_canada, season_international)
 
-    else:
-        print("problem! ")
-        print(start_date)
 
-    return -1
 
 

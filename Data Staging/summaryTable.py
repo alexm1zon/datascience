@@ -3,7 +3,7 @@ from collections import Counter
 import csv
 
 # csv file name
-filename = "Data Staging/csv/summaryTable.csv"
+filename = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/summaryTable.csv"
 
 surrogateKeyID = 1
 
@@ -13,10 +13,15 @@ stopwords = ['and', 'in', 'than', 'by', 'at', 'is', 'the', 'of', 'a', 'as', 'wer
 
 
 def get_description_key(summary):
-    key = -1
     global surrogateKeyID
 
-    if (not summary == '') & isinstance(summary, basestring):
+    if (summary == '') | (not isinstance(summary, basestring)):
+        summary = 'unknown'
+        keyword1 = 'unknown'
+        keyword2 = 'unknown'
+        keyword3 = 'unknown'
+
+    else:
         querywords = summary.split()
         resultwords = [word for word in querywords if word.lower() not in stopwords]
         result = ' '.join(resultwords)
@@ -28,24 +33,24 @@ def get_description_key(summary):
         else:
             keyword3 = Counter(result.split()).most_common(3)[2][0]
 
-        f = open(filename)
-        reader = csv.DictReader(f)
-        found = False
+    f = open(filename)
+    reader = csv.DictReader(f)
+    found = False
 
-        for row in reader:
-            if (row["summary"] == summary) & (row["keyword1"] == keyword1) & (row["keyword2"] == keyword2) & \
-                    (row["keyword3"] == keyword3):
+    for row in reader:
+        if (row["summary"] == summary) & (row["keyword1"] == keyword1) & (row["keyword2"] == keyword2) & \
+                (row["keyword3"] == keyword3):
 
-                key = row["description_key"]
-                found = True
-        f.close()
+            key = row["description_key"]
+            found = True
+    f.close()
 
-        if not found:
-            with open(filename, 'ab') as ff:
-                writer = csv.writer(ff)
-                writer.writerow([surrogateKeyID, summary, keyword1, keyword2, keyword3])
-            key = surrogateKeyID
-            surrogateKeyID = surrogateKeyID + 1
+    if not found:
+        with open(filename, 'ab') as ff:
+            writer = csv.writer(ff)
+            writer.writerow([surrogateKeyID, summary, keyword1, keyword2, keyword3])
+        key = surrogateKeyID
+        surrogateKeyID = surrogateKeyID + 1
 
     return key
 

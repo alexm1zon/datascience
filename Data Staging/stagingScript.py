@@ -6,13 +6,13 @@ from disasterTable import get_disaster_key
 from summaryTable import get_description_key
 from costTable import get_cost_key
 from clearTables import clear_tables
-
+from locationMethod import Location
 
 # clear data
 clear_tables()
 
-filenameSource = "Data Staging/csv/CanadianDisasterDatabase.csv"
-filenameFACT = "Data Staging/csv/FACTtable.csv"
+filenameSource = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/CanadianDisasterDatabase.csv"
+filenameFACT = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/FACTtable.csv"
 
 df = pd.DataFrame()
 
@@ -31,7 +31,7 @@ reader = csv.DictReader(f)
 for row in reader:
         dateKey.append(get_date_key(row["EVENT START DATE"]))
         dateKey.append(get_date_key(row["EVENT END DATE"]))
-        # locationKey.append(get_location_key(row["PLACE"]))
+        locationKey.append(Location.getLocationKey(row["PLACE"]))
         disasterKey.append(get_disaster_key(row["EVENT TYPE"], row["EVENT SUBGROUP"],
                                             row["EVENT GROUP"], row["EVENT CATEGORY"],
                                             row["MAGNITUDE"], row["UTILITY - PEOPLE AFFECTED"]))

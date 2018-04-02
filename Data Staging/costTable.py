@@ -2,7 +2,7 @@
 import csv
 
 # csv file name
-filename = "Data Staging/csv/costTable.csv"
+filename = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/costTable.csv"
 
 surrogateKeyID = 1
 
@@ -10,6 +10,21 @@ surrogateKeyID = 1
 def get_cost_key(estimated_total_cost, normalized_total_cost, federal_dfaa_payments,
                  provincial_dfaa_payments, provincial_payments, municipal_cost,  insurance_payments,
                  ogd_costs, ngo_payments):
+
+    if not estimated_total_cost:
+        estimated_total_cost = -1
+    if not normalized_total_cost:
+        normalized_total_cost = -1
+    if not federal_dfaa_payments:
+        federal_dfaa_payments = -1
+    if not provincial_dfaa_payments:
+        provincial_dfaa_payments = -1
+    if not provincial_payments:
+        provincial_payments = -1
+    if not municipal_cost:
+        municipal_cost = -1
+    if not insurance_payments:
+        insurance_payments = -1
 
     f = open(filename)
     reader = csv.DictReader(f)
