@@ -5,9 +5,9 @@ filenameDisaster = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/cs
 filenameDate = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/dateTable.csv"
 filenameSummary = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/summaryTable.csv"
 filenameCost = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/costTable.csv"
-# filenameLocation = "Data Staging/csv/locationTable.csv"
+filenameLocation = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/locationTable.csv"
 
-file_names = [filenameFACT, filenameDisaster, filenameDate, filenameSummary, filenameCost]
+file_names = [filenameFACT, filenameDisaster, filenameDate, filenameSummary, filenameCost, filenameLocation]
 
 
 def clear_tables():
@@ -44,10 +44,9 @@ def clear_tables():
     with open(filenameDate, 'wb') as outcsv:
         writer = csv.writer(outcsv)
         writer.writerow(
-            ['date_key','day', 'month', 'year', 'weekend', 'season_canada', 'season_international'])
+            ['date_key', 'day', 'month', 'year', 'weekend', 'season_canada', 'season_international'])
 
-    ## create location header
-    # with open(filenameLocation, 'wb') as outcsv:
-    #     writer = csv.writer(outcsv)
-    #     writer.writerow(
-    #         [])
+    # create location header
+    with open(filenameLocation, 'wb') as outcsv:
+        writer = csv.writer(outcsv)
+        writer.writerow(['location_key','city','province','country','inCanada','longitude','latitude'])

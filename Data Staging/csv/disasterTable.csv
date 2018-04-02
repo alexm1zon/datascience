@@ -1,2 +1,7 @@
 disaster_key,event_type,subgroup,group,category,magnitude,people_affected
 1,Non-Residential,Fire,Technology,Incident,0,0
+2,Non-Residential,Explosion,Technology,Incident,0,0
+3,Manufacturing / Industry,Infrastructure failure,Technology,Incident,0,0
+4,Flood,Meteorological - Hydrological,Natural,Disaster,0,0
+5,Landslide,Geological,Natural,Disaster,0,0
+6,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,0,0

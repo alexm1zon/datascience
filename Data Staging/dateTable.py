@@ -31,10 +31,10 @@ def get_key_id(day, month, year, weekend, season_canada, season_international):
 
 
 def get_date_key(start_date):
-    if (start_date == '') | isinstance(start_date, basestring) | (start_date == '0'):
-        day = -1
-        month = -1
-        year = -1
+    if (start_date == '') | (not isinstance(start_date, basestring)) | (start_date == '0'):
+        day = '-1'
+        month = '-1'
+        year = '-1'
         weekend = 'unknown'
         season_canada = 'unknown'
         season_international = 'unknown'
@@ -66,7 +66,8 @@ def get_date_key(start_date):
 
         season_international = season_canada
 
-        return get_key_id(day, month, year, weekend, season_canada, season_international)
+
+    return get_key_id(day, month, year, weekend, season_canada, season_international)
 
 
 

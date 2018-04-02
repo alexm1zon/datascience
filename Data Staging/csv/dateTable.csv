@@ -1,1 +1,14 @@
 date_key,day,month,year,weekend,season_canada,season_international
+1,26,4,00,no,spring,spring
+2,1,1,01,no,winter,winter
+3,1,1,02,no,winter,winter
+4,1,3,02,no,winter,winter
+5,22,5,02,no,spring,spring
+6,1,1,03,no,winter,winter
+7,29,4,03,no,spring,spring
+8,1,1,04,no,winter,winter
+9,1,9,92,no,summer,summer
+10,17,7,95,no,summer,summer
+11,28,2,03,no,winter,winter
+12,19,4,04,no,spring,spring
+13,24,4,04,yes,spring,spring

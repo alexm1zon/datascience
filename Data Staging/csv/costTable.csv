@@ -1,2 +1,4 @@
 costs_key,estimated_total_cost,normalized_total_cost,federal_dfaa_payments,provincial_dfaa_payments,provincial_payments,municipal_cost,insurance_payments,ogd_costs,ngo_payments
-1,-1,-1,-1,-1,-1,-1,-1,,
+1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+2,22522000,1608714.3,-1,-1,14434443,-1,8087557,-1,-1
+3,74559612,5106822.7,-1,-1,18858612,-1,55701000,-1,-1
