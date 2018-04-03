@@ -1,11 +1,11 @@
 import csv
 
-filenameFACT = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/FACTtable.csv"
-filenameDisaster = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/disasterTable.csv"
-filenameDate = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/dateTable.csv"
-filenameSummary = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/summaryTable.csv"
-filenameCost = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/costTable.csv"
-filenameLocation = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/locationTable.csv"
+filenameFACT = "csv/FACTtable.csv"
+filenameDisaster = "csv/disasterTable.csv"
+filenameDate = "csv/dateTable.csv"
+filenameSummary = "csv/summaryTable.csv"
+filenameCost = "csv/costTable.csv"
+filenameLocation = "csv/locationTable.csv"
 
 file_names = [filenameFACT, filenameDisaster, filenameDate, filenameSummary, filenameCost, filenameLocation]
 

@@ -1,34 +1,33 @@
 from geopy.geocoders import Nominatim
 from geopy.geocoders import GoogleV3
-import geocoder
+from timeit import default_timer
 import time
+import geocoder
 import csv
-filename = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/locationTable.csv"
-
-problems_count = 0
-success_count = 0
-total_count = 0
-surrogateKeyID = 1
+filename = "csv/locationTable.csv"
 
 
 class Location:
     # variables
+    PROVINCE_CODES = ['NL', 'PE', 'NS', 'NB', 'QC', 'ON', 'MB', 'SK', 'AB', 'BC', 'YT', 'NT', 'NU']
     problems_count = 0
     success_count = 0
     total_count = 0
     surrogateKeyID = 1
+    firstRun = False;
+    start_time = time.time()
 
     @staticmethod
     def get_success_count():
-        return success_count;
+        return Location.success_count;
 
     @staticmethod
     def get_problems_count():
-        return problems_count;
+        return Location.problems_count;
 
     @staticmethod
     def get_total_count():
-        return total_count;
+        return Location.total_count;
 
     @staticmethod
     def success():
@@ -46,8 +45,11 @@ class Location:
         reader = csv.DictReader(f)
         Location.surrogateKeyID
         for row in reader:
-            if (row["city"] == city) & (row["province"] == province) & (row["country"] == country) & \
-                    (row["inCanada"] == inCanada):
+            #print(type(city).__name__ + ' ' + city + ' ' + type(province).__name__ + ' ' + province + ' ' + type(country).__name__ + ' ' + country)
+            if (((row["city"] == city) or (row["city"]=="" and (city is None))) & \
+                    ((row["province"] == province) or (row["province"]=="" and (province is None))) & \
+                    (row["country"] == country) & \
+                    (row["inCanada"] == inCanada)):
                 return row["location_key"]
         f.close()
 
@@ -59,13 +61,50 @@ class Location:
         return (Location.surrogateKeyID-1)
 
     @staticmethod
+    def getLocationKeys(location_string):
+        # locate the areas in the string that need to be split
+        location_string = location_string.replace(", and ", "_ss_")
+        location_string = location_string.replace(" and ", "_ss_")
+        location_string = location_string.replace(",", "_ss_")
+
+        # separate into different string
+        areas = location_string.split("_ss_")
+        words_in_last = areas[-1].split()
+        last_word = words_in_last[-1]
+
+        # check for provinces in common between areas
+        if last_word in Location.PROVINCE_CODES:
+            province_code = last_word;
+            areas.reverse();
+            index = 0
+            while index < len(areas):
+                areas[index] = areas[index].strip();
+                if (index == 0):
+                    index = index + 1;
+                    continue;
+                word = (areas[index].split())[-1];
+                if word not in Location.PROVINCE_CODES:
+                    areas[index] = areas[index] + ' ' + province_code;
+                index = index + 1;
+            areas.reverse()
+        keys = [None] * len(areas)
+        index = 0 ;
+        while index < len(areas):
+            keys[index] = Location.getLocationKey(areas[index])
+            index = index + 1
+        return keys
+
+    @staticmethod
     def getLocationKey(location):
 
         if not location == '':
-            time.sleep(0.9)
+            if(time.time() - Location.start_time) < 1:
+                time.sleep(1.5 - (time.time() - Location.start_time))
+                Location.start_time=time.time();
+
             geolocator = Nominatim(country_bias='CA')
             location = geolocator.geocode(location, addressdetails=True, exactly_one=True, timeout=10)
-            if (not location is None):
+            if not location is None:
                 city = location.raw.get('address').get('city');
                 if (city is not None):
                     city= city.encode('utf-8').strip();
@@ -92,17 +131,17 @@ class Location:
             Location.problem()
             return -1
 
-            for x in range(len(places.cities)):
-                print[places.cities[x]]
-                print(places.cities.getitem(0))
-        print('Hello World!');
-        return 1;
+        #     for x in range(len(places.cities)):
+        #         print[places.cities[x]]
+        #         print(places.cities.getitem(0))
+        # print('Hello World!');
+        # return 1;
 
 #def getLocationKey1(location):
 
 # geolocator = Nominatim(country_bias='CA')
 # #location = geolocator.geocode("Balmoral and Val d'Amour areas in Restigouche County NB", addressdetails=True)
-# listLoc = geolocator.geocode("", addressdetails=True, exactly_one=False,timeout=100)
+# listLoc = geolocator.geocode("Ontario", addressdetails=True, exactly_one=False,timeout=100)
 # if not(listLoc is None):
 #     print(type(listLoc))
 #     print(len(listLoc))
@@ -115,6 +154,8 @@ class Location:
 #             latitude=location.raw.get('lat')
 #             print(location.raw.get('lat'))
 #             city=location.raw.get('address').get('city');
+#             print(type(city))
+#             print(city is None)
 #             print(city)
 #             country=location.raw.get('address').get('country');
 #             print(country)

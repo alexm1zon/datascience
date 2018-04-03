@@ -2,7 +2,7 @@
 import csv
 
 # csv file name
-filename = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/costTable.csv"
+filename = "csv/costTable.csv"
 
 surrogateKeyID = 1
 
@@ -11,24 +11,34 @@ def get_cost_key(estimated_total_cost, normalized_total_cost, federal_dfaa_payme
                  provincial_dfaa_payments, provincial_payments, municipal_cost,  insurance_payments,
                  ogd_costs, ngo_payments):
 
-    if not estimated_total_cost:
-        estimated_total_cost = '-1'
-    if not normalized_total_cost:
-        normalized_total_cost = '-1'
-    if not federal_dfaa_payments:
-        federal_dfaa_payments = '-1'
-    if not provincial_dfaa_payments:
-        provincial_dfaa_payments = '-1'
-    if not provincial_payments:
-        provincial_payments = '-1'
-    if not municipal_cost:
-        municipal_cost = '-1'
-    if not insurance_payments:
-        insurance_payments = '-1'
-    if not ogd_costs:
-        ogd_costs = '-1'
-    if not ngo_payments:
-        ngo_payments = '-1'
+    if estimated_total_cost == '0' and normalized_total_cost == '0':
+        federal_dfaa_payments = '0'
+        provincial_dfaa_payments = '0'
+        provincial_payments = '0'
+        municipal_cost = '0'
+        insurance_payments = '0'
+        ogd_costs = '0'
+        ngo_payments = '0'
+
+    else:
+        if not estimated_total_cost:
+            estimated_total_cost = 'unknown'
+        if not normalized_total_cost:
+            normalized_total_cost = 'unknown'
+        if not federal_dfaa_payments:
+            federal_dfaa_payments = 'unknown'
+        if not provincial_dfaa_payments:
+            provincial_dfaa_payments = 'unknown'
+        if not provincial_payments:
+            provincial_payments = 'unknown'
+        if not municipal_cost:
+            municipal_cost = 'unknown'
+        if not insurance_payments:
+            insurance_payments = 'unknown'
+        if not ogd_costs:
+            ogd_costs = 'unknown'
+        if not ngo_payments:
+            ngo_payments = 'unknown'
 
     f = open(filename)
     reader = csv.DictReader(f)

@@ -11,12 +11,15 @@ from locationMethod import Location
 # clear data
 clear_tables()
 
-filenameSource = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/CanadianDisasterDatabase.csv"
-filenameFACT = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/FACTtable.csv"
+testMode = False; #will limit read to 50 rows
+
+filenameSource = "csv/CanadianDisasterDatabase.csv"
+filenameFACT = "csv/FACTtable.csv"
 
 df = pd.DataFrame()
 
-dateKey = []
+startDateKey = []
+endDateKey = []
 locationKey = []
 disasterKey = []
 descriptionKey = []
@@ -27,31 +30,51 @@ evacuated = []
 
 f = open(filenameSource)
 reader = csv.DictReader(f)
-
+testModeCount = 0 ;
 for row in reader:
-        dateKey.append(get_date_key(row["EVENT START DATE"]))
-        dateKey.append(get_date_key(row["EVENT END DATE"]))
-        locationKey.append(Location.getLocationKey(row["PLACE"]))
-        disasterKey.append(get_disaster_key(row["EVENT TYPE"], row["EVENT SUBGROUP"],
+        startDateKey_value = get_date_key(row["EVENT START DATE"])
+        endDateKey_value = get_date_key(row["EVENT END DATE"])
+        disasterKey_value = get_disaster_key(row["EVENT TYPE"], row["EVENT SUBGROUP"],
                                             row["EVENT GROUP"], row["EVENT CATEGORY"],
-                                            row["MAGNITUDE"], row["UTILITY - PEOPLE AFFECTED"]))
-        descriptionKey.append(get_description_key(row["COMMENTS"]))
-        costKey.append(get_cost_key(row["ESTIMATED TOTAL COST"], row["NORMALIZED TOTAL COST"],
+                                            row["MAGNITUDE"], row["UTILITY - PEOPLE AFFECTED"])
+        descriptionKey_value = get_description_key(row["COMMENTS"])
+        costKey_value = get_cost_key(row["ESTIMATED TOTAL COST"], row["NORMALIZED TOTAL COST"],
                                     row["FEDERAL DFAA PAYMENTS"], row["PROVINCIAL DFAA PAYMENTS"],
                                     row["PROVINCIAL DEPARTMENT PAYMENTS"],
                                     row["MUNICIPAL COSTS"], row["INSURANCE PAYMENTS"],
-                                    row["OGD COSTS"], row["NGO PAYMENTS"]))
-        fatalities.append(row["FATALITIES"])
-        injured.append(row["INJURED / INFECTED"])
-        evacuated.append(row["EVACUATED"])
+                                    row["OGD COSTS"], row["NGO PAYMENTS"])
+        fatalities_value = row["FATALITIES"]
+        injured_value = row["INJURED / INFECTED"]
+        evacuated_value = row["EVACUATED"]
+        locationKeys = Location.getLocationKeys(row["PLACE"])
+        index = 0
+        while index < len(locationKeys):
+            startDateKey.append(startDateKey_value)
+            endDateKey.append(endDateKey_value)
+            locationKey.append(locationKeys[index])
+            disasterKey.append(disasterKey_value)
+            descriptionKey.append(descriptionKey_value)
+            costKey.append(costKey_value)
+            fatalities.append(fatalities_value)
+            injured.append(injured_value)
+            evacuated.append(evacuated_value)
+            index = index + 1
 
-df.insert(loc=0, column='dateKey', value=pd.Series(dateKey))
-df.insert(loc=1, column='locationKey', value=pd.Series(locationKey))
-df.insert(loc=2, column='disasterKey', value=pd.Series(disasterKey))
-df.insert(loc=3, column='descriptionKey', value=pd.Series(descriptionKey))
-df.insert(loc=4, column='costKey', value=pd.Series(costKey))
-df.insert(loc=5, column='fatalities', value=pd.Series(fatalities))
-df.insert(loc=6, column='injured', value=pd.Series(injured))
-df.insert(loc=7, column='evacuated', value=pd.Series(evacuated))
+        testModeCount = testModeCount+1
+        if (testMode==True and testModeCount==50):
+            break;
+df.insert(loc=0, column='startDateKey', value=pd.Series(startDateKey))
+df.insert(loc=1, column='endDateKey', value=pd.Series(startDateKey))
+df.insert(loc=2, column='locationKey', value=pd.Series(locationKey))
+df.insert(loc=3, column='disasterKey', value=pd.Series(disasterKey))
+df.insert(loc=4, column='descriptionKey', value=pd.Series(descriptionKey))
+df.insert(loc=5, column='costKey', value=pd.Series(costKey))
+df.insert(loc=6, column='fatalities', value=pd.Series(fatalities))
+df.insert(loc=7, column='injured', value=pd.Series(injured))
+df.insert(loc=8, column='evacuated', value=pd.Series(evacuated))
 
 df.to_csv(filenameFACT, encoding='utf-8', index=False)
+print(Location.get_success_count() + '=success')
+print(Location.get_problems_count() + '=problems')
+print(Location.get_total_count() + '=total')
+

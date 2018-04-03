@@ -2,7 +2,7 @@
 import csv
 
 # csv file name
-filename = "/Users/alexmizon/PycharmProjects/datascience/Data Staging/csv/disasterTable.csv"
+filename = "csv/disasterTable.csv"
 
 surrogateKeyID = 1
 
@@ -17,9 +17,9 @@ def get_disaster_key(event_type, subgroup, group, category, magnitude, people_af
     if not category:
         category = 'unknown'
     if not magnitude:
-        magnitude = '-1'
+        magnitude = 'unknown'
     if not people_affected:
-        people_affected = '-1'
+        people_affected = 'unknown'
 
     f = open(filename)
     reader = csv.DictReader(f)
