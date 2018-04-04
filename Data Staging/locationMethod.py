@@ -5,6 +5,10 @@ import time
 import geocoder
 import csv
 filename = "csv/locationTable.csv"
+unsuccessful_queries_csv = "csv/location_queries_none_return.csv"
+previous_results = "csv/locationQueries.csv"
+prairie_provinces  = ['Alberta', 'Saskatchewan', 'Manitoba']
+PROVINCE_CODES = ['NL', 'PE', 'NS', 'NB', 'QC', 'ON', 'MB', 'SK', 'AB', 'BC', 'YT', 'NT', 'NU']
 
 
 class Location:
@@ -13,7 +17,7 @@ class Location:
     problems_count = 0
     success_count = 0
     total_count = 0
-    surrogateKeyID = 1
+    surrogateKeyID = sum(1 for line in open(filename))
     firstRun = False;
     start_time = time.time()
 
@@ -45,7 +49,6 @@ class Location:
         reader = csv.DictReader(f)
         Location.surrogateKeyID
         for row in reader:
-            #print(type(city).__name__ + ' ' + city + ' ' + type(province).__name__ + ' ' + province + ' ' + type(country).__name__ + ' ' + country)
             if (((row["city"] == city) or (row["city"]=="" and (city is None))) & \
                     ((row["province"] == province) or (row["province"]=="" and (province is None))) & \
                     (row["country"] == country) & \
@@ -55,13 +58,18 @@ class Location:
 
         with open(filename, 'ab') as ff:
             writer = csv.writer(ff)
-            # writer.writerow([])
             writer.writerow([Location.surrogateKeyID, city, province, country, inCanada, longitude, latitude])
         Location.surrogateKeyID = Location.surrogateKeyID + 1
         return (Location.surrogateKeyID-1)
 
     @staticmethod
     def getLocationKeys(location_string):
+        if (location_string == 'Prairie Provinces'):
+            keys = [None]*len(prairie_provinces)
+            index=0
+            while index<len(prairie_provinces):
+                keys[index]=Location.getLocationKey(prairie_provinces[index])
+                index+=1
         # locate the areas in the string that need to be split
         location_string = location_string.replace(", and ", "_ss_")
         location_string = location_string.replace(" and ", "_ss_")
@@ -95,47 +103,77 @@ class Location:
         return keys
 
     @staticmethod
-    def getLocationKey(location):
+    def getLocationKey(location_string):
 
-        if not location == '':
-            if(time.time() - Location.start_time) < 1:
-                time.sleep(1.5 - (time.time() - Location.start_time))
-                Location.start_time=time.time();
-
-            geolocator = Nominatim(country_bias='CA')
-            location = geolocator.geocode(location, addressdetails=True, exactly_one=True, timeout=10)
-            if not location is None:
-                city = location.raw.get('address').get('city');
-                if (city is not None):
-                    city= city.encode('utf-8').strip();
-                province = location.raw.get('address').get('state');
-                if (province is not None):
-                    province = province.encode('utf-8').strip();
-                country = location.raw.get('address').get('country');
-                if(country is not None):
-                    country = country.encode('utf-8').strip();
-                if country=='Canada':
-                    inCanada='Yes'
-                elif country is not None:
-                    inCanada='No'
-                else:
-                    inCanada='Unknown'
-                longitude = location.raw.get('lon')
-                latitude = location.raw.get('lat')
-                Location.success()
-                return Location.get_key_id(city, province, country, inCanada, longitude, latitude)
-            else:
-                Location.problem()
-                return -1
-        else:
-            Location.problem()
+        if location_string == '':
             return -1
 
-        #     for x in range(len(places.cities)):
-        #         print[places.cities[x]]
-        #         print(places.cities.getitem(0))
-        # print('Hello World!');
-        # return 1;
+        #check if query has already been sent
+        f = open(filename)
+        reader = csv.DictReader(f)
+        for row in reader:
+            if (row["queryString"]==location_string):
+                result_key = row["location_key"]
+                f.close()
+                return result_key;
+        f.close()
+
+        #check if this api call had been already made with an empty return
+        if Location.check_if_unsuccessful_query(location_string):
+            return -1
+
+        #wait at least 1 second between consecutive api calls to Nominatim
+        if(time.time() - Location.start_time) < 1:
+            time.sleep(1.5 - (time.time() - Location.start_time))
+            Location.start_time=time.time();
+
+        #use geolocator to analyse the place string
+        geolocator = Nominatim(country_bias='CA')
+        location = geolocator.geocode(location_string, addressdetails=True, exactly_one=True, timeout=10)
+        if not location is None:
+            city = location.raw.get('address').get('city');
+            if (city is not None):
+                city= city.encode('utf-8').strip();
+            province = location.raw.get('address').get('state');
+            if (province is not None):
+                province = province.encode('utf-8').strip();
+            country = location.raw.get('address').get('country');
+            if(country is not None):
+                country = country.encode('utf-8').strip();
+            if country=='Canada':
+                inCanada='Yes'
+            elif country is not None:
+                inCanada='No'
+            else:
+                inCanada='Unknown'
+            longitude = location.raw.get('lon')
+            latitude = location.raw.get('lat')
+            Location.success()
+            return Location.get_key_id(city, province, country, inCanada, longitude, latitude)
+        else:
+            Location.add_unsuccessful_query(location_string)
+            Location.problem()
+            return -1;
+
+
+    @staticmethod
+    def check_if_unsuccessful_query(location_string):
+        f = open(unsuccessful_queries_csv)
+        reader = csv.DictReader(f)
+        Location.surrogateKeyID
+        for row in reader:
+            if(row["queryString"]==location_string):
+                f.close()
+                return True
+        f.close()
+        return False
+
+    @staticmethod
+    def add_unsuccessful_query(location_string):
+        with open(unsuccessful_queries_csv, 'ab') as ff:
+            writer = csv.writer(ff)
+            writer.writerow([location_string])
+
 
 #def getLocationKey1(location):
 

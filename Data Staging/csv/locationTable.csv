@@ -1,35 +1,35 @@
-location_key,city,province,country,inCanada,longitude,latitude
-1,Ottawa,Ontario,Canada,Yes,-75.690308,45.421106
-2,Gatineau,Québec,Canada,Yes,-75.7241942,45.4371637
-3,Grand Forks,British Columbia,Canada,Yes,-118.4568507,49.0271754
-4,Nanaimo,British Columbia,Canada,Yes,-124.0166645,49.2000009
-5,,British Columbia,Canada,Yes,-127.1683465,59.6805864
-6,Fernie,British Columbia,Canada,Yes,-115.062867,49.5041747
-7,,Alberta,Canada,Yes,-114.406023,49.6016471
-8,Edmonton,Alberta,Canada,Yes,-113.507996,53.535411
-9,Calgary,Alberta,Canada,Yes,-114.0241702,51.1310821
-10,Toronto,Ontario,Canada,Yes,-79.387207,43.653963
-11,,Nova Scotia,Canada,Yes,-63.1658939,45.1955867
-12,Area D (Oyster Bay/Buttle Lake),British Columbia,Canada,Yes,-125.702556961241,49.59294945
-13,Québec,Québec,Canada,Yes,-71.2352226,46.8259601
-14,Notre-Dame-de-la-Salette,Québec,Canada,Yes,-75.584564,45.768002
-15,,New Brunswick,Canada,Yes,-64.7311497,45.7791128
-16,Burnaby,British Columbia,Canada,Yes,-122.9725459,49.2433804
-17,New Westminster,British Columbia,Canada,Yes,-122.9108651,49.205728
-18,Nairn and Hyman,Ontario,Canada,Yes,-81.6850027,46.2838223
-19,,Québec,Canada,Yes,-73.2307351,47.7514058
-20,Cochrane,Ontario,Canada,Yes,-81.017303,49.066668
-21,Regina,Saskatchewan,Canada,Yes,-104.61731,50.44876
-22,,Ontario,Canada,Yes,-79.6512236,43.4896258
-23,Fort Erie,Ontario,Canada,Yes,-78.918611,42.91308
-24,,Newfoundland and Labrador,Canada,Yes,-53.3820849,46.7244605
-25,Montréal,Québec,Canada,Yes,-73.5389620430084,45.44194345
-26,Airdrie,Alberta,Canada,Yes,-114.023064,51.2532012
-27,,Saskatchewan,Canada,Yes,-106.1412243,55.5321257
-28,Winnipeg,Manitoba,Canada,Yes,-97.168579,49.884017
-29,Dartmouth,Nova Scotia,Canada,Yes,-63.572388,44.6803682
-30,,,Canada,Yes,-107.9917071,61.0666922
-31,,Manitoba,Canada,Yes,-97.454127,50.9792435
+location_key,city,province,country,inCanada,longitude,latitude,queryString
+0,Ottawa,Ontario,Canada,Yes,-75.690308,45.421106
+1,Gatineau,Québec,Canada,Yes,-75.7241942,45.4371637
+2,Grand Forks,British Columbia,Canada,Yes,-118.4568507,49.0271754
+3,Nanaimo,British Columbia,Canada,Yes,-124.0166645,49.2000009
+4,,British Columbia,Canada,Yes,-127.1683465,59.6805864
+5,Fernie,British Columbia,Canada,Yes,-115.062867,49.5041747
+6,,Alberta,Canada,Yes,-114.406023,49.6016471
+7,Edmonton,Alberta,Canada,Yes,-113.507996,53.535411
+8,Calgary,Alberta,Canada,Yes,-114.0241702,51.1310821
+9,Toronto,Ontario,Canada,Yes,-79.387207,43.653963
+10,,Nova Scotia,Canada,Yes,-63.1658939,45.1955867
+11,Area D (Oyster Bay/Buttle Lake),British Columbia,Canada,Yes,-125.702556961241,49.59294945
+12,Québec,Québec,Canada,Yes,-71.2352226,46.8259601
+13,Notre-Dame-de-la-Salette,Québec,Canada,Yes,-75.584564,45.768002
+14,,New Brunswick,Canada,Yes,-64.7311497,45.7791128
+15,Burnaby,British Columbia,Canada,Yes,-122.9725459,49.2433804
+16,New Westminster,British Columbia,Canada,Yes,-122.9108651,49.205728
+18,,Saskatchewan,Canada,Yes,-106.1412243,55.5321257
+19,,Manitoba,Canada,Yes,-97.001038,55.001251
+20,Nairn and Hyman,Ontario,Canada,Yes,-81.6850027,46.2838223
+21,,Québec,Canada,Yes,-73.2307351,47.7514058
+22,Cochrane,Ontario,Canada,Yes,-81.017303,49.066668
+23,Regina,Saskatchewan,Canada,Yes,-104.61731,50.44876
+24,,Ontario,Canada,Yes,-79.6512236,43.4896258
+25,Fort Erie,Ontario,Canada,Yes,-78.918611,42.91308
+26,,Newfoundland and Labrador,Canada,Yes,-53.3820849,46.7244605
+27,Montréal,Québec,Canada,Yes,-73.5389620430084,45.44194345
+28,Airdrie,Alberta,Canada,Yes,-114.023064,51.2532012
+29,Winnipeg,Manitoba,Canada,Yes,-97.168579,49.884017
+30,Dartmouth,Nova Scotia,Canada,Yes,-63.572388,44.6803682
+31,,,Canada,Yes,-107.9917071,61.0666922
 32,Woodstock,New Brunswick,Canada,Yes,-67.573471,46.150346
 33,Westmount,Québec,Canada,Yes,-73.5963951,45.4857329
 34,Emerson,Manitoba,Canada,Yes,-97.208882,49.0060537
@@ -228,20 +228,3 @@ location_key,city,province,country,inCanada,longitude,latitude
 227,Saint-Eustache,Québec,Canada,Yes,-73.8929714,45.5646052
 228,Eastman,Québec,Canada,Yes,-72.315102,45.300973
 229,Golden,British Columbia,Canada,Yes,-116.9646541,51.2975903
-230,Woodstock,Ontario,Canada,Yes,-80.749855,43.133061
-231,Val-d'Or,Québec,Canada,Yes,-77.7981773,48.0978269
-232,Webb,Saskatchewan,Canada,Yes,-108.2,50.183333
-233,Red Lake,Ontario,Canada,Yes,-93.827362,51.018938
-234,Sussex,New Brunswick,Canada,Yes,-65.5104294,45.723511
-235,Squamish,British Columbia,Canada,Yes,-123.151245,49.701391
-236,Oro-Medonte,Ontario,Canada,Yes,-79.5628295462922,44.5445701
-237,Labrador City,Newfoundland and Labrador,Canada,Yes,-66.9177291,52.9422944
-238,Orillia,Ontario,Canada,Yes,-79.425659,44.604157
-239,Sherbrooke,Québec,Canada,Yes,-71.889038,45.403271
-240,Plympton-Wyoming,Ontario,Canada,Yes,-82.1179413,42.9797225
-241,Smiths Falls,Ontario,Canada,Yes,-76.019554,44.901362
-242,Area A (Mill Bay / Malahat),British Columbia,Canada,Yes,-123.5437925,48.6742373
-243,Hinton,Alberta,Canada,Yes,-117.570219,53.4046768
-244,Brandon,Manitoba,Canada,Yes,-99.959106,49.850381
-245,Yarmouth,Nova Scotia,Canada,Yes,-66.1156037,43.8372828
-246,Lacombe,Alberta,Canada,Yes,-113.733215,52.472743

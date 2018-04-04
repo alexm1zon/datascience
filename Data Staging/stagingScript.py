@@ -31,7 +31,9 @@ evacuated = []
 f = open(filenameSource)
 reader = csv.DictReader(f)
 testModeCount = 0 ;
+row_count=1;
 for row in reader:
+        print('On row#:'+ str(row_count))
         startDateKey_value = get_date_key(row["EVENT START DATE"])
         endDateKey_value = get_date_key(row["EVENT END DATE"])
         disasterKey_value = get_disaster_key(row["EVENT TYPE"], row["EVENT SUBGROUP"],
@@ -64,11 +66,11 @@ for row in reader:
         # if (testMode==True and testModeCount==50):
         #     break;
             
-        with open(filenameFACT, 'ab') as ff:
-            writer = csv.writer(ff)
-            writer.writerow([startDateKey,endDateKey,locationKey,disasterKey,descriptionKey,
-                             costKey,fatalities,injured,evacuated])
-            
+            with open(filenameFACT, 'ab') as ff:
+                writer = csv.writer(ff)
+                writer.writerow([startDateKey,endDateKey,locationKey,disasterKey,descriptionKey,
+                                 costKey,fatalities,injured,evacuated])
+        row_count+=1
 # df.insert(loc=0, column='startDateKey', value=pd.Series(startDateKey))
 # df.insert(loc=1, column='endDateKey', value=pd.Series(startDateKey))
 # df.insert(loc=2, column='locationKey', value=pd.Series(locationKey))

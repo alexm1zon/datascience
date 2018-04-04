@@ -40,7 +40,7 @@ def get_date_key(start_date):
         season_international = 'unknown'
 
     else:
-        month, day, year = start_date[:-5].split("/")
+        month, day, year = start_date[:-4].split("/")
 
         if 59 <= int(year) <= 99:
             new_year = '19' + year

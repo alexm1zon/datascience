@@ -1,4 +1,5 @@
 import csv
+from locationMethod import Location
 
 filenameFACT = "csv/FACTtable.csv"
 filenameDisaster = "csv/disasterTable.csv"
@@ -7,7 +8,14 @@ filenameSummary = "csv/summaryTable.csv"
 filenameCost = "csv/costTable.csv"
 filenameLocation = "csv/locationTable.csv"
 
-file_names = [filenameFACT, filenameDisaster, filenameDate, filenameSummary, filenameCost, filenameLocation]
+
+clear_location_table = False;
+
+
+if(clear_location_table):
+    file_names = [filenameFACT, filenameDisaster, filenameDate, filenameSummary, filenameCost, filenameLocation]
+else:
+    file_names = [filenameFACT, filenameDisaster, filenameDate, filenameSummary, filenameCost]
 
 
 def clear_tables():
@@ -47,6 +55,8 @@ def clear_tables():
             ['date_key', 'day', 'month', 'year', 'weekend', 'season_canada', 'season_international'])
 
     # create location header
-    with open(filenameLocation, 'wb') as outcsv:
-        writer = csv.writer(outcsv)
-        writer.writerow(['location_key','city','province','country','inCanada','longitude','latitude'])
+    if clear_location_table:
+        with open(filenameLocation, 'wb') as outcsv:
+            writer = csv.writer(outcsv)
+            writer.writerow(['location_key','city','province','country','inCanada','longitude','latitude', 'queryString'])
+            Location.surrogateKeyID = sum(1 for line in open(filenameLocation))
