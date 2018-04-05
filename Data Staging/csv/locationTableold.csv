@@ -1,0 +1,266 @@
+location_key,city,province,country,inCanada,longitude,latitude
+0,Ottawa,Ontario,Canada,Yes,-75.690308,45.421106
+1,Gatineau,Québec,Canada,Yes,-75.7241942,45.4371637
+2,Grand Forks,British Columbia,Canada,Yes,-118.4568507,49.0271754
+3,Nanaimo,British Columbia,Canada,Yes,-124.0166645,49.2000009
+4,,British Columbia,Canada,Yes,-127.1683465,59.6805864
+5,Fernie,British Columbia,Canada,Yes,-115.062867,49.5041747
+6,,Alberta,Canada,Yes,-114.406023,49.6016471
+7,Edmonton,Alberta,Canada,Yes,-113.507996,53.535411
+8,Calgary,Alberta,Canada,Yes,-114.0241702,51.1310821
+9,Toronto,Ontario,Canada,Yes,-79.387207,43.653963
+10,,Nova Scotia,Canada,Yes,-63.1658939,45.1955867
+11,Area D (Oyster Bay/Buttle Lake),British Columbia,Canada,Yes,-125.702556961241,49.59294945
+12,Québec,Québec,Canada,Yes,-71.2352226,46.8259601
+13,Notre-Dame-de-la-Salette,Québec,Canada,Yes,-75.584564,45.768002
+14,,New Brunswick,Canada,Yes,-64.7311497,45.7791128
+15,Burnaby,British Columbia,Canada,Yes,-122.9725459,49.2433804
+16,New Westminster,British Columbia,Canada,Yes,-122.9108651,49.205728
+18,,Saskatchewan,Canada,Yes,-106.1412243,55.5321257
+19,,Manitoba,Canada,Yes,-97.001038,55.001251
+20,Nairn and Hyman,Ontario,Canada,Yes,-81.6850027,46.2838223
+21,,Québec,Canada,Yes,-73.2307351,47.7514058
+22,Cochrane,Ontario,Canada,Yes,-81.017303,49.066668
+23,Regina,Saskatchewan,Canada,Yes,-104.61731,50.44876
+24,,Ontario,Canada,Yes,-79.6512236,43.4896258
+25,Fort Erie,Ontario,Canada,Yes,-78.918611,42.91308
+26,,Newfoundland and Labrador,Canada,Yes,-53.3820849,46.7244605
+27,Montréal,Québec,Canada,Yes,-73.5389620430084,45.44194345
+28,Airdrie,Alberta,Canada,Yes,-114.023064,51.2532012
+29,Winnipeg,Manitoba,Canada,Yes,-97.168579,49.884017
+30,Dartmouth,Nova Scotia,Canada,Yes,-63.572388,44.6803682
+31,,,Canada,Yes,-107.9917071,61.0666922
+32,Woodstock,New Brunswick,Canada,Yes,-67.573471,46.150346
+33,Westmount,Québec,Canada,Yes,-73.5963951,45.4857329
+34,Emerson,Manitoba,Canada,Yes,-97.208882,49.0060537
+35,Unorganized North Sudbury,Ontario,Canada,Yes,-83.5818709,47.3078508
+36,Fort St. James,British Columbia,Canada,Yes,-124.255958524947,54.4422735
+37,Come By Chance,Newfoundland and Labrador,Canada,Yes,-53.9844362,47.8459634
+38,Linton,Québec,Canada,Yes,-72.1058297671957,47.2054199
+39,Sarnia,Ontario,Canada,Yes,-82.380981,42.992595
+40,Lethbridge,Alberta,Canada,Yes,-112.851562,49.694285
+41,Taber,Alberta,Canada,Yes,-112.137180440615,49.78178085
+42,Wainwright,Alberta,Canada,Yes,-110.8612063,52.8374281
+43,Louiseville,Québec,Canada,Yes,-72.947502,46.255609
+44,Yamachiche,Québec,Canada,Yes,-72.830772,46.282428
+45,,Northwest Territories,Canada,Yes,-126.8327253,65.282401
+46,Saint-Basile-le-Grand,Québec,Canada,Yes,-73.2876515,45.526246
+47,Unorganized North Cochrane,Ontario,Canada,Yes,-81.6122949,52.2509262
+48,Niagara Falls,Ontario,Canada,Yes,-79.0636193,43.1089442
+49,Dryden,Ontario,Canada,Yes,-92.835846,49.785698
+50,Saint-Jacques,Québec,Canada,Yes,-73.5696171,45.9478798
+51,Sudbury,Ontario,Canada,Yes,-80.991211,46.49272
+52,Havre-Aubert,Québec,Canada,Yes,-62,47
+53,Saint-Léonard-d'Aston,Québec,Canada,Yes,-72.37484,46.107041
+54,,Yukon,Canada,Yes,-139.825745,67.571002
+55,North Vancouver City,British Columbia,Canada,Yes,-123.0859957,49.2999038
+56,Ville de Saguenay,Québec,Canada,Yes,-70.8812866,48.3320193
+57,Sainte-Anne-des-Plaines,Québec,Canada,Yes,-73.818855,45.76417
+58,,Prince Edward Island,Canada,Yes,-63.1466676,46.3355508
+59,Unorganized Thunder Bay District,Ontario,Canada,Yes,-87.3231592,49.3153326
+60,Southern Gulf Islands Electoral Area,British Columbia,Canada,Yes,-123.187495263554,48.76266855
+61,Oka,Québec,Canada,Yes,-74.0901085,45.4606283
+62,Niverville,Manitoba,Canada,Yes,-97.0385481,49.605638
+63,Pessamit,Québec,Canada,Yes,-68.6424466,48.9385613
+64,Red Deer,Alberta,Canada,Yes,-113.818359,52.269838
+65,St-Lazare,Manitoba,Canada,Yes,-101.3,50.45
+66,Canso,Nova Scotia,Canada,Yes,-60.9965748,45.3367646
+67,Vernon,British Columbia,Canada,Yes,-119.267578,50.268277
+68,Port au Choix,Newfoundland and Labrador,Canada,Yes,-57.3672274,50.7158982
+69,Peace River,Alberta,Canada,Yes,-117.2910839,56.2337111
+70,Sainte-Brigitte-de-Laval,Québec,Canada,Yes,-71.194496,47.0025
+71,Whitehorse,Yukon,Canada,Yes,-134.6865636,60.579285
+72,Yellowknife,Northwest Territories,Canada,Yes,-114.4384901,62.4709394
+73,Bonavista,Newfoundland and Labrador,Canada,Yes,-53.110338,48.6541763
+74,Trinity,Newfoundland and Labrador,Canada,Yes,-53.3576171,48.3688329
+75,St. John's,Newfoundland and Labrador,Canada,Yes,-52.715149,47.561701
+76,Truro,Nova Scotia,Canada,Yes,-63.300006,45.366668
+77,Windsor,Ontario,Canada,Yes,-83.029861,42.30423
+78,Kirkland Lake,Ontario,Canada,Yes,-80.031281,48.154177
+79,Plaster Rock,New Brunswick,Canada,Yes,-67.3952726,46.9088235
+80,Salmon Arm,British Columbia,Canada,Yes,-119.286804,50.701677
+81,Blanc-Sablon,Québec,Canada,Yes,-57.2018045,51.4133875
+82,Grande Prairie,Alberta,Canada,Yes,-118.7948882,55.1709919
+83,City of Cambridge,Ontario,Canada,Yes,-80.3283225,43.3865619
+84,Timmins,Ontario,Canada,Yes,-81.330414,48.477473
+85,Atikokan,Ontario,Canada,Yes,-91.624603,48.762526
+86,Iroquois Falls,Ontario,Canada,Yes,-80.459061825,48.77383745
+87,Les Éboulements,Québec,Canada,Yes,-70.32074,47.478696
+88,ᑲᖏᖅᓱᐊᓗᔾᔪᐊᖅ Kangiqsualujjuaq,Québec,Canada,Yes,-65.9478808,58.6957627
+89,Greenstone,Ontario,Canada,Yes,-86.7133311,50.1785158
+90,Portage La Prairie,Manitoba,Canada,Yes,-98.289185,49.972422
+91,Barrie,Ontario,Canada,Yes,-79.6901711,44.3893429
+92,Taylor,British Columbia,Canada,Yes,-120.6867691,56.159227
+93,Terrace,British Columbia,Canada,Yes,-128.610077,54.521081
+94,Melita,Manitoba,Canada,Yes,-100.983333,49.266667
+95,Chatham-Kent,Ontario,Canada,Yes,-81.9771193,42.5518069
+96,Kenora,Ontario,Canada,Yes,-94.482422,49.761752
+97,Badger,Newfoundland and Labrador,Canada,Yes,-56.044006,48.978414
+98,Drummondville,Québec,Canada,Yes,-72.5018764,45.8864303
+99,Balmoral,New Brunswick,Canada,Yes,-66.4453964,47.9726771
+100,Vancouver,British Columbia,Canada,Yes,-123.1139529,49.2608724
+101,Chetwynd,British Columbia,Canada,Yes,-121.6381789,55.6958928
+102,Vanguard,Saskatchewan,Canada,Yes,-107.2996456,49.9081257
+103,Chapple,Ontario,Canada,Yes,-93.9848322937175,48.77050895
+104,Dawson,Ontario,Canada,Yes,-94.5387420005119,48.7837222
+105,Emo,Ontario,Canada,Yes,-93.8356983,48.6322916
+106,Lake of the Woods,Ontario,Canada,Yes,-94.6696130207671,49.30159865
+107,La Vallee,Ontario,Canada,Yes,-93.6281925,48.615559
+108,Rainy River,Ontario,Canada,Yes,-94.564819,48.722679
+109,Fort Frances,Ontario,Canada,Yes,-93.3967615,48.6114425
+110,Lévis,Québec,Canada,Yes,-71.2852062,46.7214683
+111,Steinbach,Manitoba,Canada,Yes,-96.677893,49.524704
+112,Kingsville,Ontario,Canada,Yes,-82.738724,42.039094
+113,Brantford,Ontario,Canada,Yes,-80.266113,43.141078
+114,Oxford,Nova Scotia,Canada,Yes,-63.8593419,45.7328222
+115,Eastern Passage,Nova Scotia,Canada,Yes,-63.4902832,44.6114002
+116,Cole Harbour,Nova Scotia,Canada,Yes,-63.4877299,44.6736008
+117,Longueuil,Québec,Canada,Yes,-73.4754304,45.5783776
+118,Charlottetown,Prince Edward Island,Canada,Yes,-63.132935,46.234953
+119,The Pas,Manitoba,Canada,Yes,-101.197135684882,53.86152295
+120,Estevan,Saskatchewan,Canada,Yes,-103.002319,49.151173
+121,Edmundston,New Brunswick,Canada,Yes,-68.328094,47.364409
+122,North Vancouver,British Columbia,Canada,Yes,-123.074341,49.321542
+123,Bridgewater,Nova Scotia,Canada,Yes,-64.5193946,44.3774134
+124,Chibougamau,Québec,Canada,Yes,-74.3713954,49.9137407
+125,Kelowna,British Columbia,Canada,Yes,-119.498291,49.889326
+126,Stephenville,Newfoundland and Labrador,Canada,Yes,-58.5871146,48.5452022
+127,Abbotsford,British Columbia,Canada,Yes,-122.330017,49.05227
+128,Glovertown,Newfoundland and Labrador,Canada,Yes,-54.0341421,48.6740048
+129,Delta,British Columbia,Canada,Yes,-123.0579384,49.0846258
+130,Tumbler Ridge,British Columbia,Canada,Yes,-120.998067,55.1262007
+131,Boisbriand,Québec,Canada,Yes,-73.8386827,45.6130352
+132,Amherstburg,Ontario,Canada,Yes,-83.1086355,42.1013379
+133,Russell,Ontario,Canada,Yes,-75.357971,45.257489
+134,Area B (Discovery Islands/Mainland Inlets),British Columbia,Canada,Yes,-125.278019,50.131448
+135,Maple Ridge,British Columbia,Canada,Yes,-122.5998426,49.2197385
+136,Selkirk,Manitoba,Canada,Yes,-96.880188,50.146986
+137,Sept-Îles,Québec,Canada,Yes,-66.379395,50.212064
+138,Happy Valley-Goose Bay,Newfoundland and Labrador,Canada,Yes,-60.3111895,53.2964352
+139,Matane,Québec,Canada,Yes,-67.5295977,48.8468633
+140,Prince George,British Columbia,Canada,Yes,-122.7442327,53.919214
+141,Saint John,New Brunswick,Canada,Yes,-66.058044,45.278752
+142,Belleville,Ontario,Canada,Yes,-77.387695,44.162504
+143,Trent Hills,Ontario,Canada,Yes,-77.8221814863655,44.2921994
+144,Huntingdon,Québec,Canada,Yes,-74.173851,45.087339
+145,Daniel's Harbour,Newfoundland and Labrador,Canada,Yes,-57.5784522419944,50.235483
+146,La Tuque,Québec,Canada,Yes,-72.78511,47.441092
+147,Kingston,Ontario,Canada,Yes,-76.481323,44.230687
+148,White Rock,British Columbia,Canada,Yes,-122.7978606,49.0236965
+149,Lunenburg,Nova Scotia,Canada,Yes,-64.3154816,44.3774954
+150,Burin,Newfoundland and Labrador,Canada,Yes,-55.1666274,47.0367243
+151,,ᓄᓇᕗᑦ Nunavut,Canada,Yes,-65.7183192791855,66.14651685
+152,Pictou,Nova Scotia,Canada,Yes,-62.7106123,45.6776403
+153,Antigonish,Nova Scotia,Canada,Yes,-61.9904928,45.6213607
+154,Gander,Newfoundland and Labrador,Canada,Yes,-54.611664,48.954974
+155,Hare Bay,Newfoundland and Labrador,Canada,Yes,-53.9931252,48.8649027
+156,Swift Current,Newfoundland and Labrador,Canada,Yes,-54.203796,47.881355
+157,Township of Langley,British Columbia,Canada,Yes,-122.487078538805,49.0935151
+158,Brampton,Ontario,Canada,Yes,-79.8290236345932,43.7244242
+159,St. Albert,Alberta,Canada,Yes,-113.628845,53.633239
+160,Two Hills,Alberta,Canada,Yes,-111.7451245,53.7113163
+161,Camrose,Alberta,Canada,Yes,-112.840576,53.013131
+162,Kamloops,British Columbia,Canada,Yes,-120.344238,50.677316
+163,Coquitlam,British Columbia,Canada,Yes,-122.8897737,49.2477785
+164,Vaughan,Ontario,Canada,Yes,-79.5084,43.820904
+165,Newmarket,Ontario,Canada,Yes,-79.461708,44.056258
+166,Notre-Dame-des-Prairies,Québec,Canada,Yes,-73.423347,46.051076
+167,Baie-Saint-Paul,Québec,Canada,Yes,-70.505447,47.444343
+168,Miramichi,New Brunswick,Canada,Yes,-65.494995,47.032695
+169,Campbellton,New Brunswick,Canada,Yes,-66.5080335,48.06512
+170,Val-des-Bois,Québec,Canada,Yes,-75.5954177,45.9148325
+171,Gracefield,Québec,Canada,Yes,-75.9595519259337,46.0977811
+172,Déléage,Québec,Canada,Yes,-75.9190778,46.3807098
+173,Mont-Laurier,Québec,Canada,Yes,-75.497393,46.5523631
+174,Port Elgin,New Brunswick,Canada,Yes,-64.0898064,46.0451741
+175,Midland,Ontario,Canada,Yes,-79.885712,44.750147
+176,Leamington,Ontario,Canada,Yes,-82.599335,42.051842
+177,North Battleford,Saskatchewan,Canada,Yes,-108.300476,52.776186
+178,Weyburn,Saskatchewan,Canada,Yes,-103.8991163,49.6671907
+179,Perth-Andover,New Brunswick,Canada,Yes,-67.7070682809016,46.7269836
+180,Comox,British Columbia,Canada,Yes,-124.9276177,49.6727748
+181,Victoria,British Columbia,Canada,Yes,-123.332562865799,48.41570085
+182,Chapleau,Ontario,Canada,Yes,-83.4018741,47.845632
+183,Laval,Québec,Canada,Yes,-73.683932626921,45.59561535
+184,Greater Sudbury,Ontario,Canada,Yes,-80.9208165,46.7065779
+185,Severn,Ontario,Canada,Yes,-79.3638568,44.7221629
+186,Burlington,Ontario,Canada,Yes,-79.8419378,43.3109443
+187,Unorganized North Algoma,Ontario,Canada,Yes,-82.6991093,46.5842537
+188,Kent,British Columbia,Canada,Yes,-121.711543321135,49.2446975
+189,Saint-Joachim,Québec,Canada,Yes,-70.84671,47.058896
+190,Rimouski,Québec,Canada,Yes,-68.529968,48.450155
+191,Chilliwack,British Columbia,Canada,Yes,-121.950989,49.167339
+192,Stephenville Crossing,Newfoundland and Labrador,Canada,Yes,-58.4351631,48.5047733
+193,Irishtown-Summerside,Newfoundland and Labrador,Canada,Yes,-57.9458582751866,48.9882049
+194,Eastend,Saskatchewan,Canada,Yes,-108.816667,49.516667
+195,Region of Queens Municipality,Nova Scotia,Canada,Yes,-64.7356759,43.9640652
+196,Moose Jaw,Saskatchewan,Canada,Yes,-105.542908,50.401515
+197,Nicolet,Québec,Canada,Yes,-72.6183473,46.2272376
+198,Springhill,Nova Scotia,Canada,Yes,-64.0573285,45.6420091
+199,St. Lawrence,Newfoundland and Labrador,Canada,Yes,-55.3942687,46.9154758
+200,Thetford Mines,Québec,Canada,Yes,-71.30127,46.091329
+201,Prince Rupert,British Columbia,Canada,Yes,-130.32549,54.3126572
+202,Revelstoke,British Columbia,Canada,Yes,-118.1918829,50.9934111
+203,McBride,British Columbia,Canada,Yes,-120.1640704,53.304196
+204,Port Moody,British Columbia,Canada,Yes,-122.863953541053,49.2846229
+205,Sainte-Thérèse,Québec,Canada,Yes,-73.8362379,45.6342923
+206,Port Alberni,British Columbia,Canada,Yes,-124.8056517,49.2343668
+207,Hope,British Columbia,Canada,Yes,-121.4413515,49.3799438
+208,Juan de Fuca Electoral Area,British Columbia,Canada,Yes,-123.580941932607,48.46377005
+209,Baie-Comeau,Québec,Canada,Yes,-68.152313,49.217597
+210,London,Ontario,Canada,Yes,-81.300141,42.9096416
+211,Tiny,Ontario,Canada,Yes,-79.9576982,44.8650436
+212,West Nipissing,Ontario,Canada,Yes,-80.0248828,46.5232688
+213,Maniwaki,Québec,Canada,Yes,-75.984192,46.381044
+214,Egan-Sud,Québec,Canada,Yes,-75.9861123,46.41809
+215,Victoriaville,Québec,Canada,Yes,-71.9536674,46.0573705
+216,Richelieu,Québec,Canada,Yes,-73.2215769311153,45.41034035
+217,Corner Brook,Newfoundland and Labrador,Canada,Yes,-57.947388,48.95317
+218,Harbour Breton,Newfoundland and Labrador,Canada,Yes,-55.8406725703812,47.47645485
+219,Cambridge,Ontario,Canada,Yes,-80.310402,43.385339
+220,Sussex Corner,New Brunswick,Canada,Yes,-65.475359,45.7092713
+221,Saint-Bonaventure,Québec,Canada,Yes,-72.68383,45.964754
+222,Trois-Rivières,Québec,Canada,Yes,-72.5571257,46.3507999
+223,Municipality of the District of Barrington,Nova Scotia,Canada,Yes,-65.7695413,43.5355169
+224,Cranbrook,British Columbia,Canada,Yes,-115.760193,49.50916
+225,Moncton,New Brunswick,Canada,Yes,-64.80011,46.097995
+226,Fort McMurray,Alberta,Canada,Yes,-111.3885221,56.7291997
+227,Saint-Eustache,Québec,Canada,Yes,-73.8929714,45.5646052
+228,Eastman,Québec,Canada,Yes,-72.315102,45.300973
+229,Golden,British Columbia,Canada,Yes,-116.9646541,51.2975903
+230,Woodstock,Ontario,Canada,Yes,-80.749855,43.133061
+231,Val-d'Or,Québec,Canada,Yes,-77.7981773,48.0978269
+232,Webb,Saskatchewan,Canada,Yes,-108.2,50.183333
+233,Red Lake,Ontario,Canada,Yes,-93.827362,51.018938
+234,Sussex,New Brunswick,Canada,Yes,-65.5104294,45.723511
+235,Squamish,British Columbia,Canada,Yes,-123.151245,49.701391
+236,Oro-Medonte,Ontario,Canada,Yes,-79.5628295462922,44.5445701
+237,Labrador City,Newfoundland and Labrador,Canada,Yes,-66.9177291,52.9422944
+238,Orillia,Ontario,Canada,Yes,-79.425659,44.604157
+239,Sherbrooke,Québec,Canada,Yes,-71.889038,45.403271
+240,Plympton-Wyoming,Ontario,Canada,Yes,-82.1179413,42.9797225
+241,Smiths Falls,Ontario,Canada,Yes,-76.019554,44.901362
+242,Area A (Mill Bay / Malahat),British Columbia,Canada,Yes,-123.5437925,48.6742373
+243,Hinton,Alberta,Canada,Yes,-117.570219,53.4046768
+244,Brandon,Manitoba,Canada,Yes,-99.959106,49.850381
+245,Yarmouth,Nova Scotia,Canada,Yes,-66.1156037,43.8372828
+246,Lacombe,Alberta,Canada,Yes,-113.733215,52.472743
+247,Resolute,ᓄᓇᕗᑦ Nunavut,Canada,Yes,-94.8604945,74.6856236
+248,Goderich,Ontario,Canada,Yes,-81.707726,43.740705
+249,Duncan,British Columbia,Canada,Yes,-123.708801,48.778818
+250,Municipalité de Ogden,Québec,Canada,Yes,-72.2328816537971,45.00852935
+251,Sicamous,British Columbia,Canada,Yes,-118.9826386,50.8367991
+252,Peachland,British Columbia,Canada,Yes,-119.75,49.766667
+253,Thunder Bay,Ontario,Canada,Yes,-89.259796,48.406414
+254,Lac-Mégantic,Québec,Canada,Yes,-70.882072,45.574879
+255,North River,Newfoundland and Labrador,Canada,Yes,-53.3122422,47.5438167
+256,Coalhurst,Alberta,Canada,Yes,-112.9275821,49.7468014
+257,St-Jean-s-Richelieu,Québec,Canada,Yes,-73.2533401,45.3056879
+258,West Vancouver,British Columbia,Canada,Yes,-123.1481659,49.3391886
+259,Fredericton,New Brunswick,Canada,Yes,-66.6333077,45.9499976
+260,Town of Athabasca,Alberta,Canada,Yes,-113.304013585605,54.6352249
+261,Tecumseh,Ontario,Canada,Yes,-82.886353,42.318955
+262,Sydney,Nova Scotia,Canada,Yes,-60.6093852021755,45.936995
+263,Horton,Ontario,Canada,Yes,-76.6323192339116,45.5070241
+264,West Kelowna,British Columbia,Canada,Yes,-119.580688,49.857464
+265,Halifax,Nova Scotia,Canada,Yes,-63.5870084,44.6525376
