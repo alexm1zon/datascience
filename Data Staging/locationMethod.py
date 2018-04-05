@@ -44,7 +44,7 @@ class Location:
         Location.total_count = Location.total_count + 1
 
     @staticmethod
-    def get_key_id(city, province, country, inCanada, longitude, latitude):
+    def get_key_id(city, province, country, inCanada, longitude, latitude,location_description, queryString, city_pop):
         f = open(filename)
         reader = csv.DictReader(f)
         Location.surrogateKeyID
@@ -58,12 +58,13 @@ class Location:
 
         with open(filename, 'ab') as ff:
             writer = csv.writer(ff)
-            writer.writerow([Location.surrogateKeyID, city, province, country, inCanada, longitude, latitude])
+            writer.writerow([Location.surrogateKeyID, city, province, country, inCanada, longitude, latitude, location_description, queryString, city_pop])
         Location.surrogateKeyID = Location.surrogateKeyID + 1
         return (Location.surrogateKeyID-1)
 
     @staticmethod
     def getLocationKeys(location_string):
+        population = 0
         if (location_string == 'Prairie Provinces'):
             keys = [None]*len(prairie_provinces)
             index=0
@@ -95,16 +96,21 @@ class Location:
                     areas[index] = areas[index] + ' ' + province_code;
                 index = index + 1;
             areas.reverse()
-        keys = [None] * len(areas)
+        keys = [None] #* len(areas)
         index = 0 ;
         while index < len(areas):
-            keys[index] = Location.getLocationKey(areas[index])
+            pop_loc = Location.getLocationKey(areas[index])
+            if(not (pop_loc == -1)):
+                population = population + int(pop_loc[0])
+                for location_key in pop_loc[1]:
+                    keys.append(location_key)
             index = index + 1
-        return keys
+        return [population,keys]
 
     @staticmethod
     def getLocationKey(location_string):
-
+        location_keys = [None]
+        population = 0 ;
         if location_string == '':
             return -1
 
@@ -114,8 +120,10 @@ class Location:
         for row in reader:
             if (row["queryString"]==location_string):
                 result_key = row["location_key"]
+                pop = int(row["city_pop"])
                 f.close()
-                return result_key;
+                location_keys.append(result_key)
+                return [pop, location_keys];
         f.close()
 
         #check if this api call had been already made with an empty return
@@ -123,37 +131,96 @@ class Location:
             return -1
 
         #wait at least 1 second between consecutive api calls to Nominatim
-        if(time.time() - Location.start_time) < 1:
-            time.sleep(1.5 - (time.time() - Location.start_time))
-            Location.start_time=time.time();
+        # if(time.time() - Location.start_time) < 1:
+        #     time.sleep(1.5 - (time.time() - Location.start_time))
+        #     Location.start_time=time.time();
 
         #use geolocator to analyse the place string
-        geolocator = Nominatim(country_bias='CA')
-        location = geolocator.geocode(location_string, addressdetails=True, exactly_one=True, timeout=10)
-        if not location is None:
-            city = location.raw.get('address').get('city');
-            if (city is not None):
-                city= city.encode('utf-8').strip();
-            province = location.raw.get('address').get('state');
-            if (province is not None):
-                province = province.encode('utf-8').strip();
-            country = location.raw.get('address').get('country');
-            if(country is not None):
-                country = country.encode('utf-8').strip();
-            if country=='Canada':
-                inCanada='Yes'
-            elif country is not None:
-                inCanada='No'
-            else:
-                inCanada='Unknown'
-            longitude = location.raw.get('lon')
-            latitude = location.raw.get('lat')
-            Location.success()
-            return Location.get_key_id(city, province, country, inCanada, longitude, latitude)
-        else:
+        #start
+        g = geocoder.geonames(location=location_string, username='danoaudi', key='danoaudi', maxRows=4, timeout=10,
+                              countryBias='CA')
+        if(len(g)==0):
             Location.add_unsuccessful_query(location_string)
-            Location.problem()
-            return -1;
+            return -1
+
+        g = sorted(g, key=lambda object1: object1.population, reverse=True)
+        higherlevel =False;
+        code = g[0].code
+        if(code=='PCLI' or code=='ADM1'):
+            population =int(g[0].population)
+            higherlevel=True;
+
+
+        if(higherlevel):
+            for result in g:
+                if (result.code == 'PCLI' or result.code == 'ADM1'):
+                    continue
+                city = result.address.encode('utf-8').strip();
+                province = result.province.encode('utf-8').strip();
+                country = result.country.encode('utf-8').strip();
+                latitude = result.latlng[0]
+                longitude = result.latlng[1]
+                inCanada= 'Yes'
+                if(not result.country=='Canada'):
+                    inCanada = 'No'
+                location_description = result.description.encode('utf-8').strip();
+                city_pop=result.population
+                location_keys.append(Location.get_key_id(city, province, country, inCanada, longitude, latitude, location_description,location_string, city_pop))
+        else:
+            result=g[0]
+            city = result.address
+            if(city is not None):
+                city = result.address.encode('utf-8').strip();
+            province = result.province
+            if(province is not None):
+                province = result.province.encode('utf-8').strip();
+            country = result.country
+            if(country is not None):
+                country = result.country.encode('utf-8').strip();
+            latitude = result.latlng[0]
+            longitude = result.latlng[1]
+            inCanada= 'Yes'
+            if(not result.country=='Canada'):
+                inCanada = 'No'
+            location_description = result.description
+            if(location_description is not None):
+                location_description = result.description.encode('utf-8').strip();
+            population = int(result.population)
+            city_pop = int(result.population)
+            location_keys.append(Location.get_key_id(city, province, country, inCanada, longitude, latitude, location_description,location_string,city_pop))
+
+        return [int(population), location_keys]
+
+        #
+        #
+        #
+        # #end
+        # geolocator = Nominatim(country_bias='CA')
+        # location = geolocator.geocode(location_string, addressdetails=True, exactly_one=True, timeout=10)
+        # if not location is None:
+        #     city = location.raw.get('address').get('city');
+        #     if (city is not None):
+        #         city= city.encode('utf-8').strip();
+        #     province = location.raw.get('address').get('state');
+        #     if (province is not None):
+        #         province = province.encode('utf-8').strip();
+        #     country = location.raw.get('address').get('country');
+        #     if(country is not None):
+        #         country = country.encode('utf-8').strip();
+        #     if country=='Canada':
+        #         inCanada='Yes'
+        #     elif country is not None:
+        #         inCanada='No'
+        #     else:
+        #         inCanada='Unknown'
+        #     longitude = location.raw.get('lon')
+        #     latitude = location.raw.get('lat')
+        #     Location.success()
+        #     return Location.get_key_id(city, province, country, inCanada, longitude, latitude, location_string)
+        # else:
+        #     Location.add_unsuccessful_query(location_string)
+        #     Location.problem()
+        #     return -1;
 
 
     @staticmethod
@@ -175,11 +242,14 @@ class Location:
             writer.writerow([location_string])
 
 
+
+#pop = geocoder.geonames().population('Springfield, Virginia')
+
 #def getLocationKey1(location):
 
 # geolocator = Nominatim(country_bias='CA')
-# #location = geolocator.geocode("Balmoral and Val d'Amour areas in Restigouche County NB", addressdetails=True)
-# listLoc = geolocator.geocode("Ontario", addressdetails=True, exactly_one=False,timeout=100)
+# location = geolocator.geocode("Balmoral and Val d'Amour areas in Restigouche County NB", addressdetails=True)
+# listLoc = geolocator.geocode("Northern Ontario", addressdetails=True, exactly_one=True,timeout=100)
 # if not(listLoc is None):
 #     print(type(listLoc))
 #     print(len(listLoc))
@@ -202,12 +272,14 @@ class Location:
 
 # g = GoogleV3(timeout=10, api_key='AIzaSyALLBrCS3OQtEBwM7XBaccpfCNco92nY4Q')
 # listGoogleLoc = g.geocode(query="balmoral", exactly_one=False)
-
-
-# g= geocoder.geonames(location='135 kenilworth', username='danoaudi', key='danoaudi', maxRows=1, timeout=100, countryBias='CA')
-
+#
+#
+# g= geocoder.geonames(location='Yukon', username='danoaudi', key='danoaudi', maxRows=10, timeout=100, countryBias='CA')
+#
 # print(len(g))
 # 5
+# g=sorted(g, key=lambda object1: object1.population, reverse=True)
 # for result in g:
-#     print(result.address, result.latlng, result.population, result.country, result.province)
+#     if(not result.code=='ADM154'):
+#         print(result.address, result.latlng, result.population, result.country, result.province, result.class_description, result.code, result.description)
 

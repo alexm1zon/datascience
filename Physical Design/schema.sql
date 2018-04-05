@@ -2,24 +2,19 @@
 
 CREATE TABLE project.Date (
   date_key int PRIMARY KEY,
-  day int CHECK (day >= 1 AND day <= 7),
-  week int CHECK (week >= 1 AND week <= 53),
-  month int CHECK (month >= 1 AND month <= 12),
+  day int ,
+  month int,
   year int,
   weekend boolean,
-  season_canada season,
-  season_international season
+  season_canada season
 );
-
-CREATE TYPE disaster_category AS ENUM ('incident','disaster');
-CREATE TYPE disaster_group AS ENUM ('conflict','natural','technology');
 
 CREATE TABLE project.Disaster (
   disaster_key int PRIMARY KEY,
   disaster_type text,
   disaster_subgroup text,
-  disaster_group disaster_group,
-  disaster_category disaster_category,
+  disaster_group text,
+  disaster_category text,
   magnitude numeric,
   utility_people_affected int
 );
@@ -39,7 +34,10 @@ CREATE TABLE project.Location (
   country text,
   canada boolean,
   longitude numeric,
-  latitude numeric
+  latitude numeric,
+  description text,
+  query text,
+  population int
 );
 
 CREATE TABLE project.Costs (
@@ -64,6 +62,6 @@ CREATE TABLE project.Fact (
   costs_key int,
   fatalities int,
   injured int,
-  evacuated int
+  evacuated int,
+  population int
 )
-

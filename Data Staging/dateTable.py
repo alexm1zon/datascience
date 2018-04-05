@@ -54,12 +54,12 @@ def get_date_key(start_date):
         else:
             weekend = 'no'
 
-        if ((month == '3') & (day >= '20')) | (month == '4') |\
-            (month == '5') | ((month == '6') & (day < '21')):
+        if ((month == 3) & (day >= 20)) | (month == 4) |\
+            (month == 5) | ((month == 6) & (day < 21)):
             season_canada = 'spring'
-        elif ((month == '6') & (day >= '21')) | (month == '7') | (month == '8') | ((month == '9') & (day < '22')):
+        elif ((month == 6) & (day >= 21)) | (month == 7) | (month == 8) | ((month == 9) & (day < 22)):
             season_canada = 'summer'
-        elif ((month == '9') & (day >= '22')) | (month == '10') | (month == '11') | ((month == '12') & (day < '21')):
+        elif ((month == 9) & (day >= 22)) | (month == 10) | (month == 11) | ((month == 12) & (day < 21)):
             season_canada = 'fall'
         else:
             season_canada = 'winter'

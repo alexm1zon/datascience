@@ -28,7 +28,7 @@ def clear_tables():
     with open(filenameFACT, 'wb') as outcsv:
         writer = csv.writer(outcsv)
         writer.writerow(['date_key','location_key', 'disaster_key', 'description_key', 'costs_key', 'fatalities', 'injured',
-                         'evacuated'])
+                         'evacuated','population'])
 
     # create cost header
     with open(filenameCost, 'wb') as outcsv:
@@ -52,11 +52,11 @@ def clear_tables():
     with open(filenameDate, 'wb') as outcsv:
         writer = csv.writer(outcsv)
         writer.writerow(
-            ['date_key', 'day', 'month', 'year', 'weekend', 'season_canada', 'season_international'])
+            ['date_key', 'day', 'month', 'year', 'weekend', 'season_canada'])
 
     # create location header
     if clear_location_table:
         with open(filenameLocation, 'wb') as outcsv:
             writer = csv.writer(outcsv)
-            writer.writerow(['location_key','city','province','country','inCanada','longitude','latitude', 'queryString'])
+            writer.writerow(['location_key','city','province','country','inCanada','longitude','latitude','location_description', 'queryString', 'city_pop'])
             Location.surrogateKeyID = sum(1 for line in open(filenameLocation))

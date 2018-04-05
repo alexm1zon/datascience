@@ -1,266 +1,549 @@
-location_key,city,province,country,inCanada,longitude,latitude,queryString
-0,Ottawa,Ontario,Canada,Yes,-75.690308,45.421106
-1,Gatineau,Québec,Canada,Yes,-75.7241942,45.4371637
-2,Grand Forks,British Columbia,Canada,Yes,-118.4568507,49.0271754
-3,Nanaimo,British Columbia,Canada,Yes,-124.0166645,49.2000009
-4,,British Columbia,Canada,Yes,-127.1683465,59.6805864
-5,Fernie,British Columbia,Canada,Yes,-115.062867,49.5041747
-6,,Alberta,Canada,Yes,-114.406023,49.6016471
-7,Edmonton,Alberta,Canada,Yes,-113.507996,53.535411
-8,Calgary,Alberta,Canada,Yes,-114.0241702,51.1310821
-9,Toronto,Ontario,Canada,Yes,-79.387207,43.653963
-10,,Nova Scotia,Canada,Yes,-63.1658939,45.1955867
-11,Area D (Oyster Bay/Buttle Lake),British Columbia,Canada,Yes,-125.702556961241,49.59294945
-12,Québec,Québec,Canada,Yes,-71.2352226,46.8259601
-13,Notre-Dame-de-la-Salette,Québec,Canada,Yes,-75.584564,45.768002
-14,,New Brunswick,Canada,Yes,-64.7311497,45.7791128
-15,Burnaby,British Columbia,Canada,Yes,-122.9725459,49.2433804
-16,New Westminster,British Columbia,Canada,Yes,-122.9108651,49.205728
-18,,Saskatchewan,Canada,Yes,-106.1412243,55.5321257
-19,,Manitoba,Canada,Yes,-97.001038,55.001251
-20,Nairn and Hyman,Ontario,Canada,Yes,-81.6850027,46.2838223
-21,,Québec,Canada,Yes,-73.2307351,47.7514058
-22,Cochrane,Ontario,Canada,Yes,-81.017303,49.066668
-23,Regina,Saskatchewan,Canada,Yes,-104.61731,50.44876
-24,,Ontario,Canada,Yes,-79.6512236,43.4896258
-25,Fort Erie,Ontario,Canada,Yes,-78.918611,42.91308
-26,,Newfoundland and Labrador,Canada,Yes,-53.3820849,46.7244605
-27,Montréal,Québec,Canada,Yes,-73.5389620430084,45.44194345
-28,Airdrie,Alberta,Canada,Yes,-114.023064,51.2532012
-29,Winnipeg,Manitoba,Canada,Yes,-97.168579,49.884017
-30,Dartmouth,Nova Scotia,Canada,Yes,-63.572388,44.6803682
-31,,,Canada,Yes,-107.9917071,61.0666922
-32,Woodstock,New Brunswick,Canada,Yes,-67.573471,46.150346
-33,Westmount,Québec,Canada,Yes,-73.5963951,45.4857329
-34,Emerson,Manitoba,Canada,Yes,-97.208882,49.0060537
-35,Unorganized North Sudbury,Ontario,Canada,Yes,-83.5818709,47.3078508
-36,Fort St. James,British Columbia,Canada,Yes,-124.255958524947,54.4422735
-37,Come By Chance,Newfoundland and Labrador,Canada,Yes,-53.9844362,47.8459634
-38,Linton,Québec,Canada,Yes,-72.1058297671957,47.2054199
-39,Sarnia,Ontario,Canada,Yes,-82.380981,42.992595
-40,Lethbridge,Alberta,Canada,Yes,-112.851562,49.694285
-41,Taber,Alberta,Canada,Yes,-112.137180440615,49.78178085
-42,Wainwright,Alberta,Canada,Yes,-110.8612063,52.8374281
-43,Louiseville,Québec,Canada,Yes,-72.947502,46.255609
-44,Yamachiche,Québec,Canada,Yes,-72.830772,46.282428
-45,,Northwest Territories,Canada,Yes,-126.8327253,65.282401
-46,Saint-Basile-le-Grand,Québec,Canada,Yes,-73.2876515,45.526246
-47,Unorganized North Cochrane,Ontario,Canada,Yes,-81.6122949,52.2509262
-48,Niagara Falls,Ontario,Canada,Yes,-79.0636193,43.1089442
-49,Dryden,Ontario,Canada,Yes,-92.835846,49.785698
-50,Saint-Jacques,Québec,Canada,Yes,-73.5696171,45.9478798
-51,Sudbury,Ontario,Canada,Yes,-80.991211,46.49272
-52,Havre-Aubert,Québec,Canada,Yes,-62,47
-53,Saint-Léonard-d'Aston,Québec,Canada,Yes,-72.37484,46.107041
-54,,Yukon,Canada,Yes,-139.825745,67.571002
-55,North Vancouver City,British Columbia,Canada,Yes,-123.0859957,49.2999038
-56,Ville de Saguenay,Québec,Canada,Yes,-70.8812866,48.3320193
-57,Sainte-Anne-des-Plaines,Québec,Canada,Yes,-73.818855,45.76417
-58,,Prince Edward Island,Canada,Yes,-63.1466676,46.3355508
-59,Unorganized Thunder Bay District,Ontario,Canada,Yes,-87.3231592,49.3153326
-60,Southern Gulf Islands Electoral Area,British Columbia,Canada,Yes,-123.187495263554,48.76266855
-61,Oka,Québec,Canada,Yes,-74.0901085,45.4606283
-62,Niverville,Manitoba,Canada,Yes,-97.0385481,49.605638
-63,Pessamit,Québec,Canada,Yes,-68.6424466,48.9385613
-64,Red Deer,Alberta,Canada,Yes,-113.818359,52.269838
-65,St-Lazare,Manitoba,Canada,Yes,-101.3,50.45
-66,Canso,Nova Scotia,Canada,Yes,-60.9965748,45.3367646
-67,Vernon,British Columbia,Canada,Yes,-119.267578,50.268277
-68,Port au Choix,Newfoundland and Labrador,Canada,Yes,-57.3672274,50.7158982
-69,Peace River,Alberta,Canada,Yes,-117.2910839,56.2337111
-70,Sainte-Brigitte-de-Laval,Québec,Canada,Yes,-71.194496,47.0025
-71,Whitehorse,Yukon,Canada,Yes,-134.6865636,60.579285
-72,Yellowknife,Northwest Territories,Canada,Yes,-114.4384901,62.4709394
-73,Bonavista,Newfoundland and Labrador,Canada,Yes,-53.110338,48.6541763
-74,Trinity,Newfoundland and Labrador,Canada,Yes,-53.3576171,48.3688329
-75,St. John's,Newfoundland and Labrador,Canada,Yes,-52.715149,47.561701
-76,Truro,Nova Scotia,Canada,Yes,-63.300006,45.366668
-77,Windsor,Ontario,Canada,Yes,-83.029861,42.30423
-78,Kirkland Lake,Ontario,Canada,Yes,-80.031281,48.154177
-79,Plaster Rock,New Brunswick,Canada,Yes,-67.3952726,46.9088235
-80,Salmon Arm,British Columbia,Canada,Yes,-119.286804,50.701677
-81,Blanc-Sablon,Québec,Canada,Yes,-57.2018045,51.4133875
-82,Grande Prairie,Alberta,Canada,Yes,-118.7948882,55.1709919
-83,City of Cambridge,Ontario,Canada,Yes,-80.3283225,43.3865619
-84,Timmins,Ontario,Canada,Yes,-81.330414,48.477473
-85,Atikokan,Ontario,Canada,Yes,-91.624603,48.762526
-86,Iroquois Falls,Ontario,Canada,Yes,-80.459061825,48.77383745
-87,Les Éboulements,Québec,Canada,Yes,-70.32074,47.478696
-88,ᑲᖏᖅᓱᐊᓗᔾᔪᐊᖅ Kangiqsualujjuaq,Québec,Canada,Yes,-65.9478808,58.6957627
-89,Greenstone,Ontario,Canada,Yes,-86.7133311,50.1785158
-90,Portage La Prairie,Manitoba,Canada,Yes,-98.289185,49.972422
-91,Barrie,Ontario,Canada,Yes,-79.6901711,44.3893429
-92,Taylor,British Columbia,Canada,Yes,-120.6867691,56.159227
-93,Terrace,British Columbia,Canada,Yes,-128.610077,54.521081
-94,Melita,Manitoba,Canada,Yes,-100.983333,49.266667
-95,Chatham-Kent,Ontario,Canada,Yes,-81.9771193,42.5518069
-96,Kenora,Ontario,Canada,Yes,-94.482422,49.761752
-97,Badger,Newfoundland and Labrador,Canada,Yes,-56.044006,48.978414
-98,Drummondville,Québec,Canada,Yes,-72.5018764,45.8864303
-99,Balmoral,New Brunswick,Canada,Yes,-66.4453964,47.9726771
-100,Vancouver,British Columbia,Canada,Yes,-123.1139529,49.2608724
-101,Chetwynd,British Columbia,Canada,Yes,-121.6381789,55.6958928
-102,Vanguard,Saskatchewan,Canada,Yes,-107.2996456,49.9081257
-103,Chapple,Ontario,Canada,Yes,-93.9848322937175,48.77050895
-104,Dawson,Ontario,Canada,Yes,-94.5387420005119,48.7837222
-105,Emo,Ontario,Canada,Yes,-93.8356983,48.6322916
-106,Lake of the Woods,Ontario,Canada,Yes,-94.6696130207671,49.30159865
-107,La Vallee,Ontario,Canada,Yes,-93.6281925,48.615559
-108,Rainy River,Ontario,Canada,Yes,-94.564819,48.722679
-109,Fort Frances,Ontario,Canada,Yes,-93.3967615,48.6114425
-110,Lévis,Québec,Canada,Yes,-71.2852062,46.7214683
-111,Steinbach,Manitoba,Canada,Yes,-96.677893,49.524704
-112,Kingsville,Ontario,Canada,Yes,-82.738724,42.039094
-113,Brantford,Ontario,Canada,Yes,-80.266113,43.141078
-114,Oxford,Nova Scotia,Canada,Yes,-63.8593419,45.7328222
-115,Eastern Passage,Nova Scotia,Canada,Yes,-63.4902832,44.6114002
-116,Cole Harbour,Nova Scotia,Canada,Yes,-63.4877299,44.6736008
-117,Longueuil,Québec,Canada,Yes,-73.4754304,45.5783776
-118,Charlottetown,Prince Edward Island,Canada,Yes,-63.132935,46.234953
-119,The Pas,Manitoba,Canada,Yes,-101.197135684882,53.86152295
-120,Estevan,Saskatchewan,Canada,Yes,-103.002319,49.151173
-121,Edmundston,New Brunswick,Canada,Yes,-68.328094,47.364409
-122,North Vancouver,British Columbia,Canada,Yes,-123.074341,49.321542
-123,Bridgewater,Nova Scotia,Canada,Yes,-64.5193946,44.3774134
-124,Chibougamau,Québec,Canada,Yes,-74.3713954,49.9137407
-125,Kelowna,British Columbia,Canada,Yes,-119.498291,49.889326
-126,Stephenville,Newfoundland and Labrador,Canada,Yes,-58.5871146,48.5452022
-127,Abbotsford,British Columbia,Canada,Yes,-122.330017,49.05227
-128,Glovertown,Newfoundland and Labrador,Canada,Yes,-54.0341421,48.6740048
-129,Delta,British Columbia,Canada,Yes,-123.0579384,49.0846258
-130,Tumbler Ridge,British Columbia,Canada,Yes,-120.998067,55.1262007
-131,Boisbriand,Québec,Canada,Yes,-73.8386827,45.6130352
-132,Amherstburg,Ontario,Canada,Yes,-83.1086355,42.1013379
-133,Russell,Ontario,Canada,Yes,-75.357971,45.257489
-134,Area B (Discovery Islands/Mainland Inlets),British Columbia,Canada,Yes,-125.278019,50.131448
-135,Maple Ridge,British Columbia,Canada,Yes,-122.5998426,49.2197385
-136,Selkirk,Manitoba,Canada,Yes,-96.880188,50.146986
-137,Sept-Îles,Québec,Canada,Yes,-66.379395,50.212064
-138,Happy Valley-Goose Bay,Newfoundland and Labrador,Canada,Yes,-60.3111895,53.2964352
-139,Matane,Québec,Canada,Yes,-67.5295977,48.8468633
-140,Prince George,British Columbia,Canada,Yes,-122.7442327,53.919214
-141,Saint John,New Brunswick,Canada,Yes,-66.058044,45.278752
-142,Belleville,Ontario,Canada,Yes,-77.387695,44.162504
-143,Trent Hills,Ontario,Canada,Yes,-77.8221814863655,44.2921994
-144,Huntingdon,Québec,Canada,Yes,-74.173851,45.087339
-145,Daniel's Harbour,Newfoundland and Labrador,Canada,Yes,-57.5784522419944,50.235483
-146,La Tuque,Québec,Canada,Yes,-72.78511,47.441092
-147,Kingston,Ontario,Canada,Yes,-76.481323,44.230687
-148,White Rock,British Columbia,Canada,Yes,-122.7978606,49.0236965
-149,Lunenburg,Nova Scotia,Canada,Yes,-64.3154816,44.3774954
-150,Burin,Newfoundland and Labrador,Canada,Yes,-55.1666274,47.0367243
-151,,ᓄᓇᕗᑦ Nunavut,Canada,Yes,-65.7183192791855,66.14651685
-152,Pictou,Nova Scotia,Canada,Yes,-62.7106123,45.6776403
-153,Antigonish,Nova Scotia,Canada,Yes,-61.9904928,45.6213607
-154,Gander,Newfoundland and Labrador,Canada,Yes,-54.611664,48.954974
-155,Hare Bay,Newfoundland and Labrador,Canada,Yes,-53.9931252,48.8649027
-156,Swift Current,Newfoundland and Labrador,Canada,Yes,-54.203796,47.881355
-157,Township of Langley,British Columbia,Canada,Yes,-122.487078538805,49.0935151
-158,Brampton,Ontario,Canada,Yes,-79.8290236345932,43.7244242
-159,St. Albert,Alberta,Canada,Yes,-113.628845,53.633239
-160,Two Hills,Alberta,Canada,Yes,-111.7451245,53.7113163
-161,Camrose,Alberta,Canada,Yes,-112.840576,53.013131
-162,Kamloops,British Columbia,Canada,Yes,-120.344238,50.677316
-163,Coquitlam,British Columbia,Canada,Yes,-122.8897737,49.2477785
-164,Vaughan,Ontario,Canada,Yes,-79.5084,43.820904
-165,Newmarket,Ontario,Canada,Yes,-79.461708,44.056258
-166,Notre-Dame-des-Prairies,Québec,Canada,Yes,-73.423347,46.051076
-167,Baie-Saint-Paul,Québec,Canada,Yes,-70.505447,47.444343
-168,Miramichi,New Brunswick,Canada,Yes,-65.494995,47.032695
-169,Campbellton,New Brunswick,Canada,Yes,-66.5080335,48.06512
-170,Val-des-Bois,Québec,Canada,Yes,-75.5954177,45.9148325
-171,Gracefield,Québec,Canada,Yes,-75.9595519259337,46.0977811
-172,Déléage,Québec,Canada,Yes,-75.9190778,46.3807098
-173,Mont-Laurier,Québec,Canada,Yes,-75.497393,46.5523631
-174,Port Elgin,New Brunswick,Canada,Yes,-64.0898064,46.0451741
-175,Midland,Ontario,Canada,Yes,-79.885712,44.750147
-176,Leamington,Ontario,Canada,Yes,-82.599335,42.051842
-177,North Battleford,Saskatchewan,Canada,Yes,-108.300476,52.776186
-178,Weyburn,Saskatchewan,Canada,Yes,-103.8991163,49.6671907
-179,Perth-Andover,New Brunswick,Canada,Yes,-67.7070682809016,46.7269836
-180,Comox,British Columbia,Canada,Yes,-124.9276177,49.6727748
-181,Victoria,British Columbia,Canada,Yes,-123.332562865799,48.41570085
-182,Chapleau,Ontario,Canada,Yes,-83.4018741,47.845632
-183,Laval,Québec,Canada,Yes,-73.683932626921,45.59561535
-184,Greater Sudbury,Ontario,Canada,Yes,-80.9208165,46.7065779
-185,Severn,Ontario,Canada,Yes,-79.3638568,44.7221629
-186,Burlington,Ontario,Canada,Yes,-79.8419378,43.3109443
-187,Unorganized North Algoma,Ontario,Canada,Yes,-82.6991093,46.5842537
-188,Kent,British Columbia,Canada,Yes,-121.711543321135,49.2446975
-189,Saint-Joachim,Québec,Canada,Yes,-70.84671,47.058896
-190,Rimouski,Québec,Canada,Yes,-68.529968,48.450155
-191,Chilliwack,British Columbia,Canada,Yes,-121.950989,49.167339
-192,Stephenville Crossing,Newfoundland and Labrador,Canada,Yes,-58.4351631,48.5047733
-193,Irishtown-Summerside,Newfoundland and Labrador,Canada,Yes,-57.9458582751866,48.9882049
-194,Eastend,Saskatchewan,Canada,Yes,-108.816667,49.516667
-195,Region of Queens Municipality,Nova Scotia,Canada,Yes,-64.7356759,43.9640652
-196,Moose Jaw,Saskatchewan,Canada,Yes,-105.542908,50.401515
-197,Nicolet,Québec,Canada,Yes,-72.6183473,46.2272376
-198,Springhill,Nova Scotia,Canada,Yes,-64.0573285,45.6420091
-199,St. Lawrence,Newfoundland and Labrador,Canada,Yes,-55.3942687,46.9154758
-200,Thetford Mines,Québec,Canada,Yes,-71.30127,46.091329
-201,Prince Rupert,British Columbia,Canada,Yes,-130.32549,54.3126572
-202,Revelstoke,British Columbia,Canada,Yes,-118.1918829,50.9934111
-203,McBride,British Columbia,Canada,Yes,-120.1640704,53.304196
-204,Port Moody,British Columbia,Canada,Yes,-122.863953541053,49.2846229
-205,Sainte-Thérèse,Québec,Canada,Yes,-73.8362379,45.6342923
-206,Port Alberni,British Columbia,Canada,Yes,-124.8056517,49.2343668
-207,Hope,British Columbia,Canada,Yes,-121.4413515,49.3799438
-208,Juan de Fuca Electoral Area,British Columbia,Canada,Yes,-123.580941932607,48.46377005
-209,Baie-Comeau,Québec,Canada,Yes,-68.152313,49.217597
-210,London,Ontario,Canada,Yes,-81.300141,42.9096416
-211,Tiny,Ontario,Canada,Yes,-79.9576982,44.8650436
-212,West Nipissing,Ontario,Canada,Yes,-80.0248828,46.5232688
-213,Maniwaki,Québec,Canada,Yes,-75.984192,46.381044
-214,Egan-Sud,Québec,Canada,Yes,-75.9861123,46.41809
-215,Victoriaville,Québec,Canada,Yes,-71.9536674,46.0573705
-216,Richelieu,Québec,Canada,Yes,-73.2215769311153,45.41034035
-217,Corner Brook,Newfoundland and Labrador,Canada,Yes,-57.947388,48.95317
-218,Harbour Breton,Newfoundland and Labrador,Canada,Yes,-55.8406725703812,47.47645485
-219,Cambridge,Ontario,Canada,Yes,-80.310402,43.385339
-220,Sussex Corner,New Brunswick,Canada,Yes,-65.475359,45.7092713
-221,Saint-Bonaventure,Québec,Canada,Yes,-72.68383,45.964754
-222,Trois-Rivières,Québec,Canada,Yes,-72.5571257,46.3507999
-223,Municipality of the District of Barrington,Nova Scotia,Canada,Yes,-65.7695413,43.5355169
-224,Cranbrook,British Columbia,Canada,Yes,-115.760193,49.50916
-225,Moncton,New Brunswick,Canada,Yes,-64.80011,46.097995
-226,Fort McMurray,Alberta,Canada,Yes,-111.3885221,56.7291997
-227,Saint-Eustache,Québec,Canada,Yes,-73.8929714,45.5646052
-228,Eastman,Québec,Canada,Yes,-72.315102,45.300973
-229,Golden,British Columbia,Canada,Yes,-116.9646541,51.2975903
-230,Woodstock,Ontario,Canada,Yes,-80.749855,43.133061
-231,Val-d'Or,Québec,Canada,Yes,-77.7981773,48.0978269
-232,Webb,Saskatchewan,Canada,Yes,-108.2,50.183333
-233,Red Lake,Ontario,Canada,Yes,-93.827362,51.018938
-234,Sussex,New Brunswick,Canada,Yes,-65.5104294,45.723511
-235,Squamish,British Columbia,Canada,Yes,-123.151245,49.701391
-236,Oro-Medonte,Ontario,Canada,Yes,-79.5628295462922,44.5445701
-237,Labrador City,Newfoundland and Labrador,Canada,Yes,-66.9177291,52.9422944
-238,Orillia,Ontario,Canada,Yes,-79.425659,44.604157
-239,Sherbrooke,Québec,Canada,Yes,-71.889038,45.403271
-240,Plympton-Wyoming,Ontario,Canada,Yes,-82.1179413,42.9797225
-241,Smiths Falls,Ontario,Canada,Yes,-76.019554,44.901362
-242,Area A (Mill Bay / Malahat),British Columbia,Canada,Yes,-123.5437925,48.6742373
-243,Hinton,Alberta,Canada,Yes,-117.570219,53.4046768
-244,Brandon,Manitoba,Canada,Yes,-99.959106,49.850381
-245,Yarmouth,Nova Scotia,Canada,Yes,-66.1156037,43.8372828
-246,Lacombe,Alberta,Canada,Yes,-113.733215,52.472743
-247,Resolute,ᓄᓇᕗᑦ Nunavut,Canada,Yes,-94.8604945,74.6856236
-248,Goderich,Ontario,Canada,Yes,-81.707726,43.740705
-249,Duncan,British Columbia,Canada,Yes,-123.708801,48.778818
-250,Municipalité de Ogden,Québec,Canada,Yes,-72.2328816537971,45.00852935
-251,Sicamous,British Columbia,Canada,Yes,-118.9826386,50.8367991
-252,Peachland,British Columbia,Canada,Yes,-119.75,49.766667
-253,Thunder Bay,Ontario,Canada,Yes,-89.259796,48.406414
-254,Lac-Mégantic,Québec,Canada,Yes,-70.882072,45.574879
-255,North River,Newfoundland and Labrador,Canada,Yes,-53.3122422,47.5438167
-256,Coalhurst,Alberta,Canada,Yes,-112.9275821,49.7468014
-257,St-Jean-s-Richelieu,Québec,Canada,Yes,-73.2533401,45.3056879
-258,West Vancouver,British Columbia,Canada,Yes,-123.1481659,49.3391886
-259,Fredericton,New Brunswick,Canada,Yes,-66.6333077,45.9499976
-260,Town of Athabasca,Alberta,Canada,Yes,-113.304013585605,54.6352249
-261,Tecumseh,Ontario,Canada,Yes,-82.886353,42.318955
-262,Sydney,Nova Scotia,Canada,Yes,-60.6093852021755,45.936995
-263,Horton,Ontario,Canada,Yes,-76.6323192339116,45.5070241
-264,West Kelowna,British Columbia,Canada,Yes,-119.580688,49.857464
-265,Halifax,Nova Scotia,Canada,Yes,-63.5870084,44.6525376
+0,Ottawa,Ontario,Canada,Yes,-75.69812,45.41117,capital of a political entity,Ottawa ON,812129
+1,Hull,Quebec,Canada,Yes,-75.83265,45.5001,area,Hull QC,0
+2,Grand Forks,British Columbia,Canada,Yes,-118.4356,49.03309,populated place,Grand Forks BC,4208
+3,Wellington,British Columbia,Canada,Yes,-124.0299,49.21025,area,Wellington BC,0
+4,Cranberry,British Columbia,Canada,Yes,-124.52565,49.87522,populated place,Cranberry BC,0
+5,Fernie,British Columbia,Canada,Yes,-115.06871,49.49996,populated place,Fernie BC,5019
+6,Frank,Alberta,Canada,Yes,-114.402,49.60002,area,Frank AB,0
+7,Edmonton,Alberta,Canada,Yes,-113.46871,53.55014,seat of a first-order administrative division,Edmonton AB,712391
+8,Calgary,Alberta,Canada,Yes,-114.08529,51.05011,populated place,Calgary AB,1019942
+9,Upper Arrow Lake,British Columbia,Canada,Yes,-117.92917,50.50972,lake,Upper Arrow Lake BC,0
+10,Greater Toronto Area,Ontario,Canada,Yes,-79.26636,43.75919,area,Toronto ON,6000000
+11,Red Deer River Provincial Park,Manitoba,Canada,Yes,-101.02647,52.89116,park,Red River MB,0
+12,Halifax,Nova Scotia,Canada,Yes,-63.57239,44.64533,seat of a first-order administrative division,Nova Scotia,359111
+13,Sydney,Nova Scotia,Canada,Yes,-60.1831,46.1351,populated place,Nova Scotia,105968
+14,Halifax Stanfield International Airport,Nova Scotia,Canada,Yes,-63.51171,44.88392,airport,Nova Scotia,0
+15,Spences Bridge,British Columbia,Canada,Yes,-121.34296,50.4223,populated place,Spences Bridge BC,0
+16,Vancouver Island,British Columbia,Canada,Yes,-125.44939,49.65064,island,Vancouver Island (BC),740876
+17,Montreal,Quebec,Canada,Yes,-73.58781,45.50884,seat of a second-order administrative division,Quebec City QC,1600000
+18,Notre-Dame-de-la-Salette,Quebec,Canada,Yes,-75.58263,45.7668,populated place,Notre-Dame-de-la-Salette QC,0
+19,Chester,New Brunswick,Canada,Yes,-65.56006,45.35379,populated place,Chester NB,0
+20,Burnaby,British Columbia,Canada,Yes,-122.95263,49.26636,populated place,Burnaby BC,202799
+21,New Westminster,British Columbia,Canada,Yes,-122.91092,49.20678,populated place,New Westminster BC,58549
+22,Red Deer,Alberta,Canada,Yes,-113.802,52.26682,populated place,Alberta,73593
+23,Saskatoon,Saskatchewan,Canada,Yes,-106.66892,52.13238,populated place,Saskatchewan,198958
+24,Regina,Saskatchewan,Canada,Yes,-104.6178,50.45008,seat of a first-order administrative division,Saskatchewan,176183
+25,Prince Albert,Saskatchewan,Canada,Yes,-105.76772,53.20008,populated place,Saskatchewan,34609
+26,Winnipeg,Manitoba,Canada,Yes,-97.14704,49.8844,seat of a first-order administrative division,Manitoba,632063
+27,Lake Winnipeg,Manitoba,Canada,Yes,-97.26176,52.13191,lake,Manitoba,0
+28,Lake Manitoba,Manitoba,Canada,Yes,-98.80075,50.98332,lake,Manitoba,0
+29,Spanish River Provincial Park,Ontario,Canada,Yes,-81.8165,46.91678,park,Spanish River ON,0
+30,Rogers Pass,British Columbia,Canada,Yes,-117.51893,51.29991,pass,Rogers Pass BC,0
+31,Coucoucache,Quebec,Canada,Yes,-73.23241,47.75009,reservation,Coucoucache QC,0
+32,Cochrane District,Ontario,Canada,Yes,-82.99979,50.00022,second-order administrative division,Cochrane ON,0
+34,Roland-Désourdy Airport,Quebec,Canada,Yes,-72.7414,45.2908,airport,Eastern Canada,0
+35,Great Lakes,,United States,No,-84.43753,45.68751,lake,Lakes Huron,0
+36,Fort Erie,Ontario,Canada,Yes,-78.93286,42.90012,populated place, Erie,15953
+37,Toronto,Ontario,Canada,Yes,-79.4163,43.70011,seat of a first-order administrative division,Ontario,2600000
+38,Lower Coast,Newfoundland and Labrador,Canada,Yes,-53.38143,46.71659,populated locality,Newfoundland coast,0
+39,St. John's,Newfoundland and Labrador,Canada,Yes,-52.70931,47.56494,seat of a first-order administrative division,Labrador,99182
+40,Cartwright Airport,Newfoundland and Labrador,Canada,Yes,-57.03787,53.6844,airport,Labrador,0
+41,Nain Airport,Newfoundland and Labrador,Canada,Yes,-61.68308,56.54981,airport,Labrador,0
+42,St. Lawrence River,Quebec,Canada,Yes,-64.49869,49.66683,stream,St. Lawrence River QC,0
+43,Hillcrest,Alberta,Canada,Yes,-114.38529,49.58332,populated locality,Hillcrest AB,0
+44,Nanaimo,British Columbia,Canada,Yes,-123.94003,49.16638,populated place,Nanaimo BC,84905
+45,Duncan,British Columbia,Canada,Yes,-123.70266,48.78293,populated place,Duncan BC,22199
+46,HVDC Vancouver-Island - North Cowichan Static Inverter Plant,British Columbia,Canada,Yes,-123.71499,48.82743,power station,North Cowichan (Vancouver Island) BC,0
+47,Black River-Matheson,Ontario,Canada,Yes,-80.33303,48.45017,third-order administrative division,Matheson ON,0
+48,New Waterford,Nova Scotia,Canada,Yes,-60.08175,46.25014,populated place,New Waterford NS,0
+49,Saint John,New Brunswick,Canada,Yes,-66.06766,45.27271,populated place,New Brunswick,87857
+50,Moncton,New Brunswick,Canada,Yes,-64.7965,46.09454,populated place,New Brunswick,87467
+51,Fredericton,New Brunswick,Canada,Yes,-66.66558,45.94541,seat of a first-order administrative division,New Brunswick,52337
+52,Dartmouth,Nova Scotia,Canada,Yes,-63.57719,44.67134,populated place,Dartmouth NS,101343
+53,Pictou County,Nova Scotia,Canada,Yes,-62.58193,45.50015,second-order administrative division,Pictou County NS,0
+54,CFB Trenton,Ontario,Canada,Yes,-77.52806,44.11889,airport,Trenton ON,0
+55,Lower Mainland,British Columbia,Canada,Yes,-122.35,49.08333,area,British Columbia,2524113
+56,Vancouver,British Columbia,Canada,Yes,-123.11934,49.24966,populated place,British Columbia,600000
+57,Angel Peak,British Columbia,Canada,Yes,-124.85859,58.48553,peak,British Columbia,0
+58,Inner Seas off the West Coast of Scotland,,,No,-10.45898,56.71657,sea, off coast,0
+59,Icelandic River,Manitoba,Canada,Yes,-96.96066,51.02781,stream,Icelandic River MB,0
+60,Fisher River 44,Manitoba,Canada,Yes,-97.35488,51.43281,reservation,Fisher River MB,0
+61,Saint John River,New Brunswick,Canada,Yes,-66.06525,45.26664,stream,Saint John River NB,0
+62,Woodstock,New Brunswick,Canada,Yes,-67.58377,46.15796,populated place,Woodstock NB,0
+63,Canning,Nova Scotia,Canada,Yes,-64.4252,45.15792,populated place,Canning NS,0
+64,Réserve de Waswanipi,Quebec,Canada,Yes,-76.24935,50.25019,reserve,Waswanipi reserve QC,0
+65,Grand Falls-Windsor,Newfoundland and Labrador,Canada,Yes,-55.66492,48.93324,populated place,Grand Falls NL,12076
+66,Upper Gagetown,New Brunswick,Canada,Yes,-66.23216,45.85013,area,Upper Gagetown NB,0
+67,Burton,New Brunswick,Canada,Yes,-66.44855,45.86153,populated place,Burton NB,0
+68,St. Clair Lake,Ontario,Canada,Yes,-84.05096,47.23418,lake,Lake St. Clair ON,0
+69,Westmount,Quebec,Canada,Yes,-73.59918,45.48341,populated place,Westmount QC,20494
+70,Emerson,Manitoba,Canada,Yes,-97.21537,49.00688,populated place,Emerson MB,0
+71,Goulais River,Ontario,Canada,Yes,-84.44995,46.71677,stream,Goulais River ON,0
+72,Whitedog Lake,Ontario,Canada,Yes,-94.88977,50.15793,lake,Whitedog Lake ON,0
+73,Come By Chance,Newfoundland and Labrador,Canada,Yes,-53.98143,47.8499,populated place,Come by Chance NL,0
+74,Duck Mountain Provincial Park,Manitoba,Canada,Yes,-100.91528,51.6661,reserve,Duck Mountain MB,0
+75,Swan River,Manitoba,Canada,Yes,-101.26759,52.1058,populated place,Swan River MB,4198
+76,Saint Romuald,Quebec,Canada,Yes,-71.23921,46.75818,populated place,Saint-Romuald QC,0
+77,Linton,Quebec,Canada,Yes,-72.24908,47.25006,administrative division,Linton QC,0
+78,Sarnia,Ontario,Canada,Yes,-82.40407,42.97866,populated place,Sarnia ON,82998
+79,Lethbridge,Alberta,Canada,Yes,-112.81856,49.69999,populated place,Lethbridge AB,70617
+80,Taber,Alberta,Canada,Yes,-112.14603,49.78703,populated place,Taber AB,8163
+81,Irma,Alberta,Canada,Yes,-111.22942,52.91318,second-order administrative division,Irma AB,0
+82,Wainwright,Alberta,Canada,Yes,-110.85342,52.83482,populated place,Wainwright AB,5380
+83,Louiseville,Quebec,Canada,Yes,-72.94145,46.25594,populated place,Louiseville QC,5819
+84,Yamachiche,Quebec,Canada,Yes,-72.83243,46.26676,populated place,Yamachiche QC,1255
+85,Norman Wells,Northwest Territories,Canada,Yes,-126.8329,65.28201,populated place,Norman Wells NT,1027
+86,Courtland Park,Ontario,Canada,Yes,-75.71212,45.37125,populated place,Courtland ON,0
+87,Saint-Basile-le-Grand,Quebec,Canada,Yes,-73.28246,45.53338,populated place,Saint-Basile-le-Grand QC,15605
+88,"United Counties of Stormont, Dundas and Glengarry",Ontario,Canada,Yes,-74.66597,45.25009,second-order administrative division,Dundas ON,0
+89,Fort Albany Airport,Ontario,Canada,Yes,-81.6969,52.2014,airport,Albany ON,0
+90,Otoskwin-Attawapiskat River Provincial Park,Ontario,Canada,Yes,-87.2499,52.08342,park,Attawapiskat River ON,0
+91,Niagara Falls,Ontario,Canada,Yes,-79.06627,43.10012,populated place,Niagara Falls ON,82000
+92,Dryden,Ontario,Canada,Yes,-92.75032,49.78334,populated place,Dryden ON,8195
+93,Montmartre,Saskatchewan,Canada,Yes,-103.45105,50.23335,populated place,Montmartre SK,0
+94,Liard River,Northwest Territories,Canada,Yes,-121.31128,61.84879,stream,Liard River NT,0
+95,La Grande Rivière Airport,Quebec,Canada,Yes,-77.70417,53.62528,airport,Radisson QC,0
+96,Saint-Jacques,Quebec,Canada,Yes,-73.56586,45.95007,populated place,Saint-Jacques QC,2985
+97,Sudbury,Ontario,Canada,Yes,-80.99001,46.49,populated place,Sudbury ON,157857
+98,Gulf of St. Lawrence,Quebec,Canada,Yes,-61.99859,48.2501,bay,Gulf of St. Lawrence QC,0
+99,Ungava Peninsula,Quebec,Canada,Yes,-73.99897,60.00049,peninsula,Ungava Peninsula QC,0
+100,Old Crow Airport,Yukon,Canada,Yes,-139.83917,67.57056,airport,Old Crow YT,0
+101,Harrow,Ontario,Canada,Yes,-82.91654,42.03339,populated place,Harrow ON,0
+102,Banff,Alberta,Canada,Yes,-115.56982,51.17622,populated place,Banff AB,7502
+103,Hagersville,Ontario,Canada,Yes,-80.04965,42.96681,populated place,Hagersville ON,0
+104,Vancouver Harbour SPB,British Columbia,Canada,Yes,-123.11511,49.29034,seaplane landing area,Vancouver Harbour BC,0
+105,Refuge d'oiseaux de la baie Boatswain,Quebec,Canada,Yes,-78.8661,51.83349,reserve,La Baie QC,0
+106,Sainte-Anne-des-Plaines,Quebec,Canada,Yes,-73.81156,45.76468,populated place,Sainte-Anne des Plaines QC,10680
+107,Saint-Amable,Quebec,Canada,Yes,-73.29916,45.65008,populated place,St.-Amable QC,0
+108,Joe Rich Creek,British Columbia,Canada,Yes,-119.15235,49.86648,stream,Joe Rich,0
+109,Oka,Quebec,Canada,Yes,-74.08892,45.46489,populated place,Oka QC,1160
+110,Magdalen Islands,Quebec,Canada,Yes,-61.89629,47.39277,island,Madeleine Islands QC,12781
+111,Notre-Dame-de-Pierreville,Quebec,Canada,Yes,-72.88012,46.1042,populated place,Notre-Dame de Pierreville QC,0
+112,Niverville,Manitoba,Canada,Yes,-97.04234,49.60559,populated place,Niverville MB,2000
+113,Betsiamites,Quebec,Canada,Yes,-68.68287,48.95698,reservation,Betsiamites QC,0
+114,St-Lazare,Manitoba,Canada,Yes,-101.30511,50.4489,populated place,St. Lazare MB,0
+115,Jeddah,Makkah,Saudi Arabia,No,39.19797,21.54238,populated place,Saudi Arabia,2867446
+116,Mecca,Makkah,Saudi Arabia,No,39.82563,21.42664,seat of a first-order administrative division,Saudi Arabia,1323624
+117,Tabuk,Tabuk,Saudi Arabia,No,36.57151,28.3998,seat of a first-order administrative division,Saudi Arabia,455450
+118,Kinsella,Alberta,Canada,Yes,-111.52389,53.00028,populated place,Kinsella AB,0
+119,Jarvis,Ontario,Canada,Yes,-80.09965,42.88341,area,Jarvis ON,0
+120,North Battleford,Saskatchewan,Canada,Yes,-108.2967,52.77972,populated place,Battleford SK,19440
+121,Canso,Nova Scotia,Canada,Yes,-60.99851,45.33345,populated place,Canso NS,0
+122,Vernon,British Columbia,Canada,Yes,-119.27337,50.26729,populated place,Vernon BC,47274
+123,Grand Coulee,Saskatchewan,Canada,Yes,-104.81781,50.43338,populated place,Grand Coulee SK,0
+124,Corunna,Indiana,United States,No,-85.14719,41.43727,populated place,Corunna ON,255
+125,Elmira,Ontario,Canada,Yes,-80.5497,43.60009,populated place,Elmira ON,0
+126,Port au Choix,Newfoundland and Labrador,Canada,Yes,-57.36492,50.71677,populated place,Port au Choix NL,0
+127,Peace River,Alberta,Canada,Yes,-117.29176,56.23715,populated place,Peace River AB,5340
+128,Saskatchewan River Crossing,Alberta,Canada,Yes,-116.74662,51.97499,populated locality,Saskatchewan River AB,0
+129,Channel-Port aux Basques,Newfoundland and Labrador,Canada,Yes,-59.13808,47.57286,populated place,Port-aux-Basques NL,4220
+130,Hay River,Northwest Territories,Canada,Yes,-115.79993,60.81555,populated place,Hay River NT,3400
+131,Little Plymouth Lake,Nova Scotia,Canada,Yes,-66.02743,43.79979,lake,Plymouth NS,0
+132,Attawapiskat Airport,Ontario,Canada,Yes,-82.4319,52.9275,airport,Attawapiskat ON,0
+133,Longlac,Ontario,Canada,Yes,-86.51666,49.80014,area,Longlac ON,0
+134,Oakville,Manitoba,Canada,Yes,-98.00461,49.92941,populated place,Oakville MB,0
+135,Yellowknife,Northwest Territories,Canada,Yes,-114.37248,62.45411,seat of a first-order administrative division,Yellowknife NT,15865
+136,Avalon Wilderness Reserve,Newfoundland and Labrador,Canada,Yes,-53.25119,47.04799,reserve,Avalon NL,0
+137,Bonavista,Newfoundland and Labrador,Canada,Yes,-53.11474,48.64989,populated place,Bonavista NL,3658
+138,Trinity East,Newfoundland and Labrador,Canada,Yes,-53.33137,48.38319,area,Trinity NL,0
+139,Charlottetown,Prince Edward Island,Canada,Yes,-63.13414,46.23899,seat of a first-order administrative division,Prince Edward Island,42402
+140,Summerside Airport,Prince Edward Island,Canada,Yes,-63.83361,46.44056,airport,Prince Edward Island,0
+141,Charlottetown Airport,Prince Edward Island,Canada,Yes,-63.1265,46.2864,airport,Prince Edward Island,0
+142,Shubenacadie 13,Nova Scotia,Canada,Yes,-63.60509,44.93487,reservation,Shubenacadie NS,0
+143,Québec,Quebec,Canada,Yes,-71.21454,46.81228,seat of a first-order administrative division,Quebec,528595
+144,Nord-du-Québec,Quebec,Canada,Yes,-74.8961,51.962,second-order administrative division,Quebec,42000
+145,Truro,Nova Scotia,Canada,Yes,-63.26538,45.36685,populated place,Truro NS,20650
+146,Windsor,Ontario,Canada,Yes,-83.01654,42.30008,populated place,Windsor ON,278013
+147,Kirkland Lake,Ontario,Canada,Yes,-80.03767,48.14461,populated place,Kirkland Lake ON,7775
+148,Senneville,Quebec,Canada,Yes,-73.95476,45.41258,area,area QC,0
+149,Plaster Rock,New Brunswick,Canada,Yes,-67.38997,46.90654,populated place,Plaster Rock NB,0
+150,Lac Aylmer,Quebec,Canada,Yes,-71.34281,45.82234,lake,Aylmer QC,0
+151,Salmon Arm,British Columbia,Canada,Yes,-119.30237,50.6998,populated place,Salmon Arm BC,16205
+152,Poplar Bay,Alberta,Canada,Yes,-114.10385,53.00463,second-order administrative division,Poplar Bay AB,0
+153,Hervey-Junction Railway Station,Quebec,Canada,Yes,-72.4643,46.85444,railroad station,Hervey Junction QC,0
+154,Lourdes-de-Blanc-Sablon Airport,Quebec,Canada,Yes,-57.18528,51.44361,airport,Blanc Sablon QC,0
+155,Wood River,Saskatchewan,Canada,Yes,-106.65122,49.70006,area,Saskatchewan River SK,0
+156,Burin Peninsula,Newfoundland and Labrador,Canada,Yes,-55.66503,46.99994,peninsula,Burin Peninsula NL,0
+157,Hamilton,Ontario,Canada,Yes,-79.84963,43.25011,populated place,Hamilton ON,519949
+158,Grande Prairie,Alberta,Canada,Yes,-118.80271,55.16667,populated place,Grande Prairie AB,41462
+159,Flat Bay West,Newfoundland and Labrador,Canada,Yes,-58.59852,48.40002,area,Flat Bay NL,0
+160,Grey County,Ontario,Canada,Yes,-80.74972,44.33339,second-order administrative division,Grey County ON,0
+161,Guelph,Ontario,Canada,Yes,-80.25599,43.54594,populated place,Wellington ON,115760
+162,Dufferin County,Ontario,Canada,Yes,-80.24968,44.0834,second-order administrative division,Dufferin County ON,0
+163,Timmins,Ontario,Canada,Yes,-81.33312,48.46686,populated place,Timmins ON,42997
+164,Atikokan,Ontario,Canada,Yes,-91.62409,48.75667,populated place,Atikokan ON,3400
+165,Souris River,Manitoba,Canada,Yes,-99.56943,49.66502,stream,Souris River MB,0
+166,Assiniboine River,Manitoba,Canada,Yes,-97.12874,49.8858,stream,Assiniboine River MB,0
+167,Pembina River Diversion,Manitoba,Canada,Yes,-99.47273,49.27692,,Pembina River MB,0
+168,Lesser Slave Lake Settlement,Alberta,Canada,Yes,-116.11917,55.53341,area,Lesser Slave Lake area AB,0
+169,Nechako River Bird Sanctuary,British Columbia,Canada,Yes,-124.03645,54.01654,reserve,Nechako River BC,0
+170,Bay of Fundy,New Brunswick,Canada,Yes,-65.99886,45.00014,bay,Bay of Fundy NB,0
+171,Durham,Ontario,Canada,Yes,-78.99957,44.20012,second-order administrative division,Durham ON,608124
+172,Assiniboine Corridor Wildlife Management Area,Manitoba,Canada,Yes,-99.32081,49.61892,reserve,Assiniboine MB,0
+173,Red Sucker Lake Airport,Manitoba,Canada,Yes,-93.5572,54.1672,airport,Red MB,0
+174,York,Ontario,Canada,Yes,-79.46632,44.00011,second-order administrative division,North York ON,1032524
+175,Iroquois Falls,Ontario,Canada,Yes,-80.68307,48.76688,populated place,Iroquois Falls ON,4232
+176,Hummingbird Creek,British Columbia,Canada,Yes,-119.01904,50.76651,stream,Hummingbird Creek BC,0
+177,Wood Buffalo National Park of Canada,Alberta,Canada,Yes,-112.00693,57.66443,reserve,Wood Buffalo National Park AB,0
+178,Saint Pierre and Miquelon,,Saint Pierre and Miquelon,No,-56.33333,46.83333,dependent political entity,Saint-Pierre-et-Miquelon,7012
+179,Kangiqsualujjuaq Georges River Airport,Quebec,Canada,Yes,-65.99267,58.70973,airport,Kangiqsualujjuaq QC,0
+180,Swan Hills,Alberta,Canada,Yes,-115.40226,54.71681,populated place,Swan Hills AB,1900
+181,Portage la Prairie,Manitoba,Canada,Yes,-98.29263,49.97282,populated place,Portage la Prairie MB,12957
+182,Peggy Cove,Nova Scotia,Canada,Yes,-63.83202,44.80015,cove(s),Peggy's Cove NS,0
+183,Barrie,Ontario,Canada,Yes,-79.66634,44.40011,populated place,Barrie ON,182041
+184,Taylor,British Columbia,Canada,Yes,-120.68138,56.15282,populated place,Taylor BC,0
+185,Terrace,British Columbia,Canada,Yes,-128.60345,54.51634,populated place,Terrace BC,19443
+186,Melita,Manitoba,Canada,Yes,-100.99669,49.26811,populated place,Melita MB,1167
+187,Thamesville,Ontario,Canada,Yes,-81.98309,42.55008,populated place,Thamesville ON,0
+188,La Ronge,Saskatchewan,Canada,Yes,-105.28422,55.10013,populated place,La Ronge SK,3071
+189,Beardmore,Ontario,Canada,Yes,-81.96646,49.51693,area,Beardmore ON,0
+190,Burwash Landing,Yukon,Canada,Yes,-138.99602,61.35515,populated place,Burwash Landing YT,0
+191,Kenora,Ontario,Canada,Yes,-94.48985,49.76741,populated place,Kenora ON,15096
+192,Badger's Quay,Newfoundland and Labrador,Canada,Yes,-53.58136,49.11658,area,Badger NL,0
+193,Clearwater County,Alberta,Canada,Yes,-115.71607,52.27567,second-order administrative division,Clearwater AB,0
+194,Drummondville,Quebec,Canada,Yes,-72.48241,45.88336,populated place,Drummondville QC,59489
+195,Glacier National Park of Canada,British Columbia,Canada,Yes,-117.51893,51.26661,reserve,Glacier National Park BC,0
+196,Mont-Saint-Hilaire,Quebec,Canada,Yes,-73.1868,45.56515,populated place,St-Hilaire QC,15720
+197,Passmore,British Columbia,Canada,Yes,-117.64915,49.54175,populated place,Passmore BC,0
+198,Pine Lake,Alberta,Canada,Yes,-113.4425,52.08861,lake,Pine Lake AB,0
+199,Chetwynd,British Columbia,Canada,Yes,-121.63627,55.69988,populated place,Chetwynd BC,2587
+200,Walkerton,Indiana,United States,No,-86.48307,41.46671,populated place,Walkerton ON,2264
+201,Vanguard,Saskatchewan,Canada,Yes,-107.3013,49.91676,populated place,Vanguard SK,0
+202,Sturdee,British Columbia,Canada,Yes,-127.08547,57.20892,area,Peace River area BC,0
+203,Morley,Ontario,Canada,Yes,-94.19398,48.73524,third-order administrative division,Morley ON,0
+204,Chapple,Ontario,Canada,Yes,-94.00036,48.74994,third-order administrative division,Chapple ON,0
+205,Dawson,Ontario,Canada,Yes,-94.53931,48.78885,third-order administrative division,Dawson ON,0
+206,Emo,Ontario,Canada,Yes,-93.83363,48.63323,populated place,Emo ON,0
+207,Lake of the Woods,Ontario,Canada,Yes,-94.54903,49.06757,third-order administrative division,Lake of the Woods ON,0
+208,La Vallee,Ontario,Canada,Yes,-93.66702,48.68319,third-order administrative division,La Vallee ON,0
+209,Rainy River District,Ontario,Canada,Yes,-92.50031,48.49981,second-order administrative division,Rainy River ON,0
+210,Fort Frances,Ontario,Canada,Yes,-93.4003,48.61667,populated place,Fort Frances ON,7931
+211,New York,New York,United States,No,-74.00597,40.71427,populated place,New York City,8175133
+212,Mount Saint Elias,Alaska,United States,No,-140.92978,60.29321,mountain, U.S.A.,0
+213,Brookdale,Manitoba,Canada,Yes,-99.56443,50.04813,area,Brookdale MB,0
+214,Notre-Dame-du-Lac,Quebec,Canada,Yes,-79.04961,46.75012,area,Notre-Dame-du-Lac QC,0
+215,Montreal Lake,Saskatchewan,Canada,Yes,-105.66714,54.33338,lake,Montreal Lake SK,0
+216,Alberton,Ontario,Canada,Yes,-93.50031,48.58318,third-order administrative division,Alberton ON,0
+217,Cuzion,Centre-Val de Loire,France,No,1.60685,46.47924,populated place,La Valle ON,508
+218,Kingsville,Ontario,Canada,Yes,-82.73312,42.10009,populated place,Kingsville ON,0
+219,Peerless Lake,Alberta,Canada,Yes,-114.66667,56.61667,lake,Peerless Lake AB,0
+220,Trout Lake,Alberta,Canada,Yes,-114.53558,56.50019,area,Trout Lake AB,0
+221,Turnor Lake,Saskatchewan,Canada,Yes,-108.58406,56.58343,lake,Turnor Lake SK,0
+222,Crutwell,Saskatchewan,Canada,Yes,-106.06775,53.21679,populated locality,Crutwell SK,0
+223,Dillon,Saskatchewan,Canada,Yes,-108.93478,55.93348,populated place,Dillon SK,0
+224,Pelican Narrows,Saskatchewan,Canada,Yes,-102.9341,55.16685,populated place,Pelican Narrows SK,0
+225,Peter Pond Lake,Saskatchewan,Canada,Yes,-108.73406,55.91675,lake,Peter Pond SK,0
+226,Northeast Arm,Saskatchewan,Canada,Yes,-103.15081,54.96684,bay,Northeast Saskatchewan,0
+227,Brantford,Ontario,Canada,Yes,-80.26636,43.1334,populated place,Brantford ON,87759
+228,Western Hill,Ontario,Canada,Yes,-79.24958,43.15011,region,Western Canada,1700
+229,Oxford,Nova Scotia,Canada,Yes,-63.86542,45.73345,populated place,Oxford NS,1283
+230,Eastern Passage,Nova Scotia,Canada,Yes,-63.48199,44.61685,populated place,Eastern Passage NS,0
+231,Cole Harbour,Nova Scotia,Canada,Yes,-63.47506,44.67244,section of populated place,Cole Harbour NS,20000
+232,Saint-Joseph-de-Beauce,Quebec,Canada,Yes,-70.86667,46.3,populated place,Beauce QC,4454
+233,L'Ange-Gardien,Quebec,Canada,Yes,-75.44933,45.5834,populated place,l'Outaouais QC,0
+234,The Pas,Manitoba,Canada,Yes,-101.25413,53.82509,populated place,The Pas MB,6055
+235,Estevan,Saskatchewan,Canada,Yes,-102.98422,49.13337,populated place,Estevan SK,9904
+236,Edmundston,New Brunswick,Canada,Yes,-68.32512,47.3737,populated place,Edmundston NB,16643
+237,Kings County,Prince Edward Island,Canada,Yes,-62.49864,46.2501,second-order administrative division,Kings County PE,0
+238,Kashechewan Airport,Ontario,Canada,Yes,-81.6778,52.2825,airport,Kashechewan ON,0
+239,Fort Good Hope Airport,Northwest Territories,Canada,Yes,-128.6478,66.24066,airport,Fort Good Hope NT,0
+240,Bridgewater,Nova Scotia,Canada,Yes,-64.51882,44.37856,populated place,Bridgewater NS,8070
+241,Chisasibi Airport,Quebec,Canada,Yes,-78.9169,53.8056,airport,Chisasibi QC,0
+242,Chibougamau,Quebec,Canada,Yes,-74.36586,49.91684,populated place,Chibougamau QC,7563
+243,Baie James,Quebec,Canada,Yes,-79.08296,53.66695,bay,James Bay QC,0
+244,Kelowna,British Columbia,Canada,Yes,-119.48568,49.88307,populated place,Kelowna BC,125109
+245,Stephenville,Newfoundland and Labrador,Canada,Yes,-58.5818,48.55001,populated place,Stephenville NL,6278
+246,Abbotsford,British Columbia,Canada,Yes,-122.25257,49.05798,populated place,Abbotsford BC,151683
+247,Glovertown,Newfoundland and Labrador,Canada,Yes,-54.03141,48.68321,populated place,Glovertown NL,0
+248,Delta,British Columbia,Canada,Yes,-122.9068,49.14399,populated place,Delta BC,101668
+249,Red Earth 29,Saskatchewan,Canada,Yes,-102.87038,53.45286,reservation,Red Earth SK,0
+250,Slocan River,British Columbia,Canada,Yes,-117.51893,49.41654,stream,Slocan River BC,0
+251,Mistissini,Quebec,Canada,Yes,-73.88333,50.41667,populated place,Mistissini QC,0
+252,Aklavik,Northwest Territories,Canada,Yes,-135.01071,68.21913,populated locality,Aklavik NT,648
+253,Tumbler Ridge,British Columbia,Canada,Yes,-120.99415,55.13027,populated place,Tumbler Ridge BC,2454
+254,Nordegg,Alberta,Canada,Yes,-115.87967,52.49323,populated place,Nordegg AB,0
+255,Cariboo Chilcotin Coast,British Columbia,Canada,Yes,-125.288,54.4189,coast,Cariboo-Chilcotin BC,0
+256,Galiano Island,British Columbia,Canada,Yes,-123.45265,48.93294,island,Galiano Island BC,0
+257,Boisbriand,Quebec,Canada,Yes,-73.83249,45.61678,populated place,Boisbriand QC,26483
+258,Amherstburg,Ontario,Canada,Yes,-83.04985,42.11679,populated place,Amherstburg ON,11459
+259,United Counties of Prescott and Russell,Ontario,Canada,Yes,-75.24931,45.4168,second-order administrative division,Russell ON,0
+260,South Bentinck,British Columbia,Canada,Yes,-126.67069,52.04521,populated locality,South Coast BC,0
+261,Maple Ridge,British Columbia,Canada,Yes,-122.60193,49.21939,populated place,Maple Ridge BC,70000
+262,Selkirk,Manitoba,Canada,Yes,-96.88452,50.1436,populated place,Selkirk MB,9653
+263,Outaouais,Quebec,Canada,Yes,-76.31606,46.26681,second-order administrative division,Gatineau QC,370000
+264,Little Fishing Lake,Saskatchewan,Canada,Yes,-109.55076,53.86676,lake,Fishing Lake SK,0
+265,Happy Valley-Goose Bay,Newfoundland and Labrador,Canada,Yes,-60.32576,53.3038,populated place,Happy Valley - Goose Bay NL,7572
+266,Elie,Manitoba,Canada,Yes,-97.75901,49.90172,area,Elie MB,0
+267,South Indian Lake Airport,Manitoba,Canada,Yes,-98.9072,56.7928,airport,South Indian Lake MB,0
+268,Regional District of Central Kootenay,British Columbia,Canada,Yes,-117.50222,49.91655,second-order administrative division,Kootenay BC,0
+269,Natuashish Airport,Newfoundland and Labrador,Canada,Yes,-61.18552,55.91396,airport,Natuashish NL,0
+270,Matane,Quebec,Canada,Yes,-67.52197,48.82857,populated place,Matane QC,14812
+271,Prince George,British Columbia,Canada,Yes,-122.75301,53.9166,populated place,Prince George BC,65558
+272,Port Bruce,Ontario,Canada,Yes,-81.01642,42.65009,area,Port Bruce ON,0
+273,Belleville,Ontario,Canada,Yes,-77.38277,44.16682,populated place,Belleville ON,49454
+274,Paddockwood,Saskatchewan,Canada,Yes,-105.56768,53.51679,populated place,Paddockwood SK,0
+275,Trent Hills,Ontario,Canada,Yes,-77.8662,44.28342,populated place,Trent Hills ON,0
+276,Albany River Provincial Park,Ontario,Canada,Yes,-87.77496,51.36261,park,Albany River ON,0
+277,James Bay,Ontario,Canada,Yes,-79.0663,46.31681,bay,James Bay ON,0
+278,Newbrook,Alberta,Canada,Yes,-112.952,54.31687,populated place,Newbrook AB,0
+279,Pukatawagan Airport,Manitoba,Canada,Yes,-101.266,55.7492,airport,Pukatawagan MB,0
+280,Norway House Airport,Manitoba,Canada,Yes,-97.84359,53.95823,airport,Norway House MB,0
+281,Sherridon,Manitoba,Canada,Yes,-101.08745,55.12405,populated place,Sherridon MB,0
+282,High River,Alberta,Canada,Yes,-113.86867,50.58341,populated place,High River AB,9826
+283,Huntingdon,Quebec,Canada,Yes,-74.16593,45.08339,populated place,Huntingdon QC,2865
+284,Deschambault Lake,Saskatchewan,Canada,Yes,-103.36707,54.91674,populated place,Deschambault Lake SK,0
+285,Daniel's Harbour,Newfoundland and Labrador,Canada,Yes,-57.58156,50.23333,populated place,Daniels Harbour NL,0
+286,La Tuque,Quebec,Canada,Yes,-72.7824,47.43337,section of populated place,La Tuque QC,9503
+287,Kingston,Ontario,Canada,Yes,-76.48098,44.22976,populated place,Kingston ON,114195
+288,Conklin,Alberta,Canada,Yes,-111.08511,55.63351,populated place,Conklin,0
+289,White Rock,British Columbia,Canada,Yes,-122.8026,49.01636,populated place,White Rock BC,66450
+290,Baie Verte Peninsula,Newfoundland and Labrador,Canada,Yes,-56.49821,49.83328,peninsula,Baie Verte Peninsula NL,0
+291,Lunenburg,Nova Scotia,Canada,Yes,-64.31658,44.37847,populated place,Lunenburg NS,2473
+292,Burin,Newfoundland and Labrador,Canada,Yes,-55.165,47.03324,populated place,Burin NL,0
+293,Sifton,Manitoba,Canada,Yes,-100.6628,49.6656,second-order administrative division,Sifton MB,0
+294,Cameron,Manitoba,Canada,Yes,-100.58419,49.4167,administrative division,Cameron MB,0
+295,Morton,Manitoba,Canada,Yes,-100.09666,49.17812,administrative division,Morton MB,0
+296,Riverside,Manitoba,Canada,Yes,-97.41818,49.4092,area,Riverside MB,0
+297,Turtle Mountain Provincial Park,Manitoba,Canada,Yes,-100.25116,49.05003,reserve,Turtle Mountain MB,0
+298,Strathcona,Manitoba,Canada,Yes,-99.50053,49.33332,administrative division,Strathcona MB,0
+299,Argyle,Manitoba,Canada,Yes,-99.24752,49.34642,second-order administrative division,Argyle MB,0
+300,Pangnirtung,Nunavut,Canada,Yes,-65.69996,66.14642,populated locality,Pangnirtung NU,1320
+301,Colchester,Nova Scotia,Canada,Yes,-63.24868,45.33345,second-order administrative division,Colchester NS,50000
+302,Pictou,Nova Scotia,Canada,Yes,-62.70936,45.67875,populated place,Pictou NS,3732
+303,Antigonish,Nova Scotia,Canada,Yes,-61.99858,45.61685,populated place,Antigonish NS,5003
+304,Inverness County,Nova Scotia,Canada,Yes,-61.0818,46.33344,second-order administrative division,Inverness NS,0
+305,Victoria County,Nova Scotia,Canada,Yes,-60.58177,46.50014,second-order administrative division,Victoria NS,0
+306,Cumberland County,Nova Scotia,Canada,Yes,-64.16543,45.75015,second-order administrative division,Cumberland NS,0
+307,Gander International Airport,Newfoundland and Labrador,Canada,Yes,-54.56081,48.94483,airport,Gander NL,0
+308,Hare Bay,Newfoundland and Labrador,Canada,Yes,-54.01481,48.8499,populated place,Hare Bay NL,968
+309,Swift Current,Newfoundland and Labrador,Canada,Yes,-54.20929,47.88527,populated place,Swift Current NL,0
+310,Metro Vancouver Regional District,British Columbia,Canada,Yes,-123.00264,49.33296,second-order administrative division,Greater Vancouver BC,0
+311,Fraser Valley,British Columbia,Canada,Yes,-121.83587,49.58299,second-order administrative division,Fraser Valley BC,277000
+312,Khyex River,British Columbia,Canada,Yes,-129.79812,54.23599,stream,Khyex River BC,0
+313,St. Albert,Alberta,Canada,Yes,-113.63533,53.63344,populated place,St. Albert AB,57719
+314,Parkland County,Alberta,Canada,Yes,-114.37148,53.48293,second-order administrative division,Parkland County AB,0
+315,County of Two Hills No. 21,Alberta,Canada,Yes,-111.52708,53.71596,second-order administrative division,Two Hills County AB,0
+316,Kneehill County,Alberta,Canada,Yes,-113.26582,51.66342,second-order administrative division,Kneehill County AB,0
+317,Camrose,Alberta,Canada,Yes,-112.83525,53.01684,populated place,Camrose AB,15686
+318,Municipal District of Bighorn No. 8,Alberta,Canada,Yes,-115.08094,51.35819,second-order administrative division,Bighorn AB,0
+319,Rock Creek,Yukon,Canada,Yes,-139.08634,64.06197,populated locality,Rock Creek YT,0
+320,Communauté de Wemotaci Indian Reserve,Quebec,Canada,Yes,-73.78243,47.90011,reservation,Wemotaci reserve QC,0
+321,Kamloops,British Columbia,Canada,Yes,-120.3192,50.66648,populated place,Kamloops BC,68714
+322,Williams Lake,British Columbia,Canada,Yes,-122.14451,52.14153,populated place,Cariboo BC,14168
+323,Tuktoyaktuk,Northwest Territories,Canada,Yes,-133.03422,69.44472,populated locality,Tuktoyaktuk NT,978
+324,Mackenzie Delta,Northwest Territories,Canada,Yes,-136.42202,68.83301,cape,Mackenzie Delta NT,0
+325,Vaughan,Ontario,Canada,Yes,-79.49827,43.8361,populated place,Vaughan ON,238866
+326,Newmarket,Ontario,Canada,Yes,-79.46631,44.05011,populated place,Newmarket ON,74295
+327,Notre-Dame-des-Prairies,Quebec,Canada,Yes,-73.43245,46.05007,populated place,Notre-Dame-des-Prairies QC,8230
+328,Alma,Quebec,Canada,Yes,-71.6491,48.55009,populated place,Alma QC,29526
+329,Baie-Saint-Paul,Quebec,Canada,Yes,-70.49858,47.44109,populated place,Baie-Saint-Paul QC,7288
+330,Miramichi,New Brunswick,Canada,Yes,-65.50186,47.02895,populated place,Miramichi NB,18129
+331,Restigouche River,New Brunswick,Canada,Yes,-66.38283,48.08817,stream,Restigouche River NB,0
+332,Val-des-Bois,Quebec,Canada,Yes,-75.59933,45.9168,populated place,Val-des-Bois QC,0
+333,Gracefield,Quebec,Canada,Yes,-75.95693,46.09261,third-order administrative division,Gracefield QC,0
+334,Mont-Laurier,Quebec,Canada,Yes,-75.4993,46.55011,populated place,Mont-Laurier QC,13405
+335,Steinbach,Manitoba,Canada,Yes,-96.68451,49.52579,populated place,Steinbach MB,9607
+336,Cranberry Portage,Manitoba,Canada,Yes,-101.37797,54.58623,populated place,Cranberry Portage MB,0
+337,Meat Cove,Nova Scotia,Canada,Yes,-60.56017,47.02385,populated place,Meat Cove NS,0
+338,Yarmouth County,Nova Scotia,Canada,Yes,-66.03216,43.95015,second-order administrative division,Yarmouth County NS,0
+339,Baie Verte,New Brunswick,Canada,Yes,-64.10318,46.01483,populated place,Baie-Verte NB,0
+340,Port Elgin,New Brunswick,Canada,Yes,-64.08683,46.04874,populated place,Port Elgin NB,0
+341,Midland,Ontario,Canada,Yes,-79.88296,44.7501,populated place,Midland ON,31502
+342,Leamington,Ontario,Canada,Yes,-82.59981,42.05009,populated place,Leamington ON,0
+343,Port-au-Prince,Ouest,Haiti,No,-72.33881,18.54349,capital of a political entity,Port-au-Prince,1234742
+344,Cap-Haïtien,Nord,Haiti,No,-72.19815,19.75938,seat of a first-order administrative division, Haiti,134815
+345,Aiti,Corsica,France,No,9.24243,42.39798,populated place, Haiti,30
+346,Hispaniola,,Dominican Republic,No,-71,19,island, Haiti,0
+347,Mount Logan,Yukon,Canada,Yes,-140.40523,60.56707,mountain,YT,0
+348,King Peak,Yukon,Canada,Yes,-140.65388,60.58306,peak,YT,0
+349,Mount Lucania,Yukon,Canada,Yes,-140.46277,61.02194,mountain,YT,0
+350,Merville,British Columbia,Canada,Yes,-125.05286,49.78294,populated place,Merville BC,0
+351,Armstrong,British Columbia,Canada,Yes,-119.20235,50.44979,populated place,Lang BC,4275
+352,Kicking Horse Pass,British Columbia,Canada,Yes,-116.2869,51.45279,pass,Kicking Horse Pass,0
+353,Winisk Lake,Ontario,Canada,Yes,-87.39311,52.94125,lake,Winisk ON,0
+354,County of Thorhild No. 7,Alberta,Canada,Yes,-113.05201,54.22436,second-order administrative division,County of Thorhild AB,0
+355,Britannia Beach,British Columbia,Canada,Yes,-123.20476,49.62741,populated place,Britannia Beach BC,0
+356,Perth-Andover,New Brunswick,Canada,Yes,-67.70393,46.73551,populated place,Perth-Andover NB,0
+357,Chatham-Kent,Ontario,Canada,Yes,-82.1831,42.40009,second-order administrative division,Kent ON,108589
+358,Windsor Airport,Ontario,Canada,Yes,-82.96201,42.27032,airport,Essex ON,0
+359,Comox Valley Airport,British Columbia,Canada,Yes,-124.88667,49.71083,airport,Comox BC,0
+360,Victoria,British Columbia,Canada,Yes,-123.3693,48.43294,seat of a first-order administrative division,Victoria BC,289625
+361,Chapleau Airport,Ontario,Canada,Yes,-83.35276,47.82088,airport,Chapleau ON,0
+362,Bonaventure Airport,Quebec,Canada,Yes,-65.4603,48.0711,airport,Bonaventure QC,0
+363,Cross Lake (Charlie Sinclair Memorial) Airport,Manitoba,Canada,Yes,-97.7608,54.6106,airport,Cross Lake MB,0
+364,Seymourville,Manitoba,Canada,Yes,-96.3275,51.18642,area,Seymourville MB,0
+365,Haileybury,Ontario,Canada,Yes,-79.63732,47.44904,populated place,Haileybury ON,0
+366,Winnipeg/St. Andrews Airport,Manitoba,Canada,Yes,-97.0325,50.0564,airport,St. Andrews MB,0
+367,St. Clements,Manitoba,Canada,Yes,-96.75121,50.1642,second-order administrative division,St. Clements MB,0
+368,Echo Harbour,British Columbia,Canada,Yes,-131.76443,52.6941,harbor(s),Echo Harbour BC,0
+369,Dawson City,Yukon,Canada,Yes,-139.43328,64.06013,populated place,Dawson YT,1319
+370,Lac Rideau,Quebec,Canada,Yes,-73.33389,47.385,lake,Rideau QC,0
+371,Pike Lake Provincial Park,Saskatchewan,Canada,Yes,-106.81795,51.89449,park,Pike Lake SK,0
+372,Coalmont,British Columbia,Canada,Yes,-120.7,49.51667,populated place,Coalmont BC,0
+373,Liverpool/South Shore Regional Airport,Nova Scotia,Canada,Yes,-64.8561,44.2303,airport,Liverpool NS,0
+374,Capreol,Ontario,Canada,Yes,-80.92109,46.70626,area,Capreol ON,0
+375,Crerar,Ontario,Canada,Yes,-80.24968,46.58339,area,Crerar ON,0
+376,Baie de Baffin,Nunavut,Canada,Yes,-67.99642,74.00135,bay,Baffin Bay NU,0
+377,Moose River Gold Mines,Nova Scotia,Canada,Yes,-62.94207,44.98483,populated place,Moose River NS,0
+378,Jordan Academy of Dance,Indiana,United States,No,-86.165,39.84611,building(s),Dance Township ON,0
+379,Sydney Mines,Nova Scotia,Canada,Yes,-60.21767,46.23669,populated place,Sydney Mines NS,7312
+380,Cape Breton County,Nova Scotia,Canada,Yes,-60.31516,46.00014,second-order administrative division,Cape Breton NS,147000
+381,Gogama,Ontario,Canada,Yes,-81.72232,47.67521,populated place,Gogama ON,0
+382,Little St. Lawrence,Newfoundland and Labrador,Canada,Yes,-55.34832,46.93324,area,Little St. Lawrence NL,0
+383,Almonte,Ontario,Canada,Yes,-76.19585,45.22993,populated place,Almonte ON,0
+384,Aldershot,Ontario,Canada,Yes,-79.84098,43.3088,populated place,Aldershot ON,0
+385,Saint-Donat,Quebec,Canada,Yes,-74.21591,46.31678,populated place,Saint-Donat QC,0
+386,Okanagan,British Columbia,Canada,Yes,-119.34997,50.36386,abandoned populated place,Okanagan Valley BC,297601
+387,Florenceville-Bristol,New Brunswick,Canada,Yes,-67.61536,46.44353,populated place,Bristol NB,1639
+388,Dugald,Manitoba,Canada,Yes,-96.83872,49.8861,populated place,Dugald MB,0
+389,Red Deer River,Alberta,Canada,Yes,-110.00162,50.96683,stream,Red Deer River AB,0
+390,Mississagi Provincial Park,Ontario,Canada,Yes,-82.69985,46.58336,park,Mississagi ON,0
+391,Fraser River Junction,British Columbia,Canada,Yes,-122.88592,49.19966,area,Fraser River BC,0
+392,Saint-Joachim-de-Shefford,Quebec,Canada,Yes,-72.53242,45.45008,populated place,Saint-Joachim QC,0
+393,Rimouski,Quebec,Canada,Yes,-68.52396,48.44879,populated place,Rimouski QC,42240
+394,Cabano,Quebec,Canada,Yes,-68.8781,47.68065,populated place,Cabano QC,3199
+395,Saguenay,Quebec,Canada,Yes,-71.06573,48.41675,populated place,QC,143692
+396,Canoe River,British Columbia,Canada,Yes,-119.26921,52.73329,area,Canoe River BC,0
+397,Sumas Mountain,British Columbia,Canada,Yes,-122.18587,49.08298,mountain,Sumas BC,0
+398,Chilliwack,British Columbia,Canada,Yes,-121.95257,49.16638,seat of a second-order administrative division,Chilliwack BC,77000
+399,Coniston,Ontario,Canada,Yes,-80.84973,46.48338,populated place,Coniston ON,0
+400,Stephenville Crossing,Newfoundland and Labrador,Canada,Yes,-58.4318,48.50001,populated place,Stephenville Crossing NL,1183
+401,Irishtown-Summerside,Newfoundland and Labrador,Canada,Yes,-57.9817,48.98331,populated place,Summerside NL,0
+402,Eastend,Saskatchewan,Canada,Yes,-108.81813,49.51674,populated place,Eastend SK,0
+403,Lake Superior,Ontario,Canada,Yes,-87.09861,48.33222,lake,Lake Superior ON,0
+404,White Point Beach,Nova Scotia,Canada,Yes,-64.7362,43.96466,beach,White Point Beach NS,0
+405,Moose Jaw,Saskatchewan,Canada,Yes,-105.53445,50.40005,populated place,Moose Jaw SK,32166
+406,Lake Louise,Alberta,Canada,Yes,-116.22806,51.41167,lake,Lake Louise AB,0
+407,Nicolet,Quebec,Canada,Yes,-72.61582,46.21676,populated place,Nicolet QC,5257
+408,Springhill,Nova Scotia,Canada,Yes,-64.04873,45.65015,populated place,Springhill NS,3940
+409,Peace River Regional District,British Columbia,Canada,Yes,-122.75302,56.6665,second-order administrative division,Peace River BC,0
+410,Murdochville,Quebec,Canada,Yes,-65.5006,48.9583,populated place,Murdochville QC,764
+411,Thetford-Mines,Quebec,Canada,Yes,-71.30539,46.09371,populated place,Thetford Mines QC,25704
+412,Prince Rupert,British Columbia,Canada,Yes,-130.32098,54.31507,populated place,Prince Rupert BC,14708
+413,Amaranth,Manitoba,Canada,Yes,-98.73906,50.59562,populated place,Amaranth MB,0
+414,Lanark County,Ontario,Canada,Yes,-76.33269,45.08341,second-order administrative division,Lanark ON,0
+415,Revelstoke,British Columbia,Canada,Yes,-118.1953,50.99712,populated place,Revelstoke BC,7533
+416,The Battery,Newfoundland and Labrador,Canada,Yes,-52.68134,47.56659,area,The Battery NL,0
+417,St. John's Harbour,Newfoundland and Labrador,Canada,Yes,-55.59832,47.44995,harbor(s),St. John's Harbour NL,0
+418,Chedabucto Bay,Nova Scotia,Canada,Yes,-61.13182,45.40015,bay,Chedabucto Bay NS,0
+419,McBride,British Columbia,Canada,Yes,-120.16932,53.29995,populated place,McBride BC,0
+420,Central Coast Regional District,British Columbia,Canada,Yes,-127.00323,52.16638,second-order administrative division, Pacific coast,0
+421,West Beach,British Columbia,Canada,Yes,-128.142,51.65677,beach,West coast British Columbia,0
+422,Saint-Joachim-de-Tourelle,Quebec,Canada,Yes,-66.4155,49.15009,area,Saint-Joachim-de-Tourelle QC,0
+423,Port Alberni,British Columbia,Canada,Yes,-124.8028,49.24133,populated place,Port Alberni BC,21282
+424,Hope,British Columbia,Canada,Yes,-121.44144,49.38299,populated place,Hope BC,4598
+425,Ocean Falls,British Columbia,Canada,Yes,-127.69177,52.35258,populated place,Ocean Falls BC,0
+426,LaSalle,Quebec,Canada,Yes,-73.63518,45.43038,populated place,Lasalle QC,0
+427,Lake Huron,Ontario,Canada,Yes,-81.76806,44.64083,lake,Lake Huron ON,0
+428,Port-Menier Airport,Quebec,Canada,Yes,-64.28861,49.83639,airport, Japan,0
+429,Baie-Comeau,Quebec,Canada,Yes,-68.14894,49.21679,populated place,Baie-Comeau QC,29808
+430,Crowsnest Pass,British Columbia,Canada,Yes,-114.68532,49.63332,pass,Crowsnest Pass BC,0
+431,South Huron,Ontario,Canada,Yes,-81.51647,43.31679,populated place,Huron ON,9982
+432,Spruce Camp Creek,British Columbia,Canada,Yes,-127.37018,54.74975,stream,Camp Creek BC,0
+433,Lambeth,Ontario,Canada,Yes,-81.29975,42.90009,area,Lambeth ON,0
+434,Dunnville,Ontario,Canada,Yes,-79.61631,42.90011,populated place,Dunnville ON,0
+435,Porteau Cove Park,British Columbia,Canada,Yes,-123.23678,49.55726,reserve,Porteau BC,0
+436,Monroe City,Indiana,United States,No,-87.35446,38.61533,populated place,Lively ON,536
+437,Centralia/James T. Field Memorial Aerodrome,Ontario,Canada,Yes,-81.5083,43.2856,airport,Field ON,0
+438,Fraser Canyon,British Columbia,Canada,Yes,-121.41925,49.633,canyon,Fraser Canyon BC,0
+439,Saint-Jean-Marie-Vianney,Quebec,Canada,Yes,-75.91603,46.61681,area,Saint-Jean-Vianney QC,0
+440,Maniwaki,Quebec,Canada,Yes,-75.96605,46.38341,populated place,Maniwaki QC,4236
+441,Egan-Sud,Quebec,Canada,Yes,-75.99935,46.43341,populated place,Egan QC,0
+442,Prairies de Gimbes,Wallonia,Belgium,No,5.33333,50.08333,populated place,Western Prairies,0
+443,Victoriaville,Quebec,Canada,Yes,-71.96579,46.05007,populated place,Victoriaville QC,34426
+444,Corner Brook,Newfoundland and Labrador,Canada,Yes,-57.95202,48.95001,populated place,Corner Brook NL,18693
+445,Smoky Lake,Alberta,Canada,Yes,-112.46863,54.11687,populated place,Smoky AB,1063
+446,Harbour Breton,Newfoundland and Labrador,Canada,Yes,-55.79833,47.48325,populated place,Harbour Breton NL,1898
+447,Cedoux,Saskatchewan,Canada,Yes,-103.8678,49.88335,populated place,Cedoux SK,0
+448,Rae Point,Northwest Territories,Canada,Yes,-115.81938,62.656,point,Rae Point NT,0
+449,Devastation Glacier,British Columbia,Canada,Yes,-123.53612,50.60659,glacier(s),Devastation Glacier BC,0
+450,Saint-Bonaventure,Quebec,Canada,Yes,-72.68242,45.96676,populated place,Saint Bonaventure QC,0
+451,Pincher Creek,Alberta,Canada,Yes,-113.95195,49.48328,populated place,Pincher Creek AB,3855
+452,Northumberland Strait,Nova Scotia,Canada,Yes,-62.74865,45.86683,channel,Northumberland Strait (NS,0
+453,Niagara Peninsula,Ontario,Canada,Yes,-79.34379,43.02482,area,Niagara Peninsula ON,1000000
+454,Cranbrook,British Columbia,Canada,Yes,-115.76879,49.49991,populated place,Cranbrook BC,18610
+455,Petty Harbour-Maddox Cove,Newfoundland and Labrador,Canada,Yes,-52.71475,47.46659,populated place,Petty Harbour NL,0
+456,Fort McMurray,Alberta,Canada,Yes,-111.38103,56.72676,populated place,Fort McMurray AB,76000
+457,Rainbow Lake Airport,Alberta,Canada,Yes,-119.408,58.4914,airport,Rainbow Lake AB,0
+458,Saint-Eustache,Quebec,Canada,Yes,-73.90554,45.565,populated place,St-Eustache QC,42062
+459,Eastman,Quebec,Canada,Yes,-72.3158,45.30008,populated place,Eastman QC,0
+460,Milk River,Alberta,Canada,Yes,-112.08453,49.15416,second-order administrative division,Milk River AB,0
+461,Special Area No. 2,Alberta,Canada,Yes,-111.65708,51.0673,second-order administrative division,area AB,0
+462,Matagami,Quebec,Canada,Yes,-77.63277,49.75018,populated place,Matagami QC,1966
+463,Golden,British Columbia,Canada,Yes,-116.9689,51.29995,populated place,Golden BC,4038
+464,Glace Bay,Nova Scotia,Canada,Yes,-59.95698,46.19695,populated place,Glace Bay NS,19968
+465,Woodstock,Ontario,Canada,Yes,-80.7497,43.13339,seat of a second-order administrative division,Woodstock ON,33892
+466,Drumheller,Alberta,Canada,Yes,-112.63384,51.41472,second-order administrative division,Drumheller AB,0
+467,Mississauga,Ontario,Canada,Yes,-79.6583,43.5789,populated place,Mississauga ON,668549
+468,Val-d'Or,Quebec,Canada,Yes,-77.79737,48.0974,populated place,Val d'Or QC,31123
+469,Webb,Saskatchewan,Canada,Yes,-108.20138,50.18337,populated place,Webb SK,0
+470,Red Lake,Ontario,Canada,Yes,-93.82736,51.01678,populated place,Red Lake ON,4366
+471,Stawamus River,British Columbia,Canada,Yes,-123.15228,49.68755,stream,Squamish River BC,0
+472,Sussex,New Brunswick,Canada,Yes,-65.50663,45.72266,populated place,Sussex NB,4048
+473,Northwest Gander River,Newfoundland and Labrador,Canada,Yes,-55.00738,48.86432,stream,Northwest River NL,0
+474,Sheshatshiu,Newfoundland and Labrador,Canada,Yes,-60.14594,53.51868,populated place,Sheshatshiu NL,0
+475,Grand Bay–Westfield,New Brunswick,Canada,Yes,-66.25275,45.34075,populated place,Westfield NB,0
+476,Grand Bay,New Brunswick,Canada,Yes,-66.22325,45.30825,area,Grand Bay NB,1000
+477,Squamish Airport,British Columbia,Canada,Yes,-123.16185,49.78279,airport,Squamish BC,0
+478,Oro-Medonte,Ontario,Canada,Yes,-79.60404,44.57821,third-order administrative division,Medonte ON,0
+479,Labrador City,Newfoundland and Labrador,Canada,Yes,-66.91137,52.94626,populated place,Labrador City NL,10313
+480,Lodgepole,Alberta,Canada,Yes,-115.31885,53.10011,area,Lodgepole AB,0
+481,Orillia,Ontario,Canada,Yes,-79.42068,44.60868,populated place,Orillia ON,30178
+482,Sherbrooke,Quebec,Canada,Yes,-71.89908,45.40008,populated place,Sherbrooke QC,129447
+483,Dunsmuir Land District,British Columbia,Canada,Yes,-124.28602,49.09964,area,Dunsmuir BC,0
+484,Curling Cove,Newfoundland and Labrador,Canada,Yes,-57.9817,48.96671,cove(s),Curling NL,0
+485,Yellowknife Airport,Northwest Territories,Canada,Yes,-114.44028,62.46278,airport,Northwest Territories,0
+486,Déline Airport,Northwest Territories,Canada,Yes,-123.43569,65.21054,airport,Northwest Territories,0
+487,Reeces Corners,Ontario,Canada,Yes,-82.11765,42.97992,populated place,Reeces Corners ON,0
+488,Cincinnati,Ohio,United States,No,-84.51439,39.12711,seat of a second-order administrative division,Cincinnati. Ohio,296943
+489,Northern America,,,No,-105.64453,54.77535,region, USA,344000000
+490,Cape Breton Island,Nova Scotia,Canada,Yes,-60.80521,46.0332,island,Cape Breton Island NS,0
+491,Avalon Peninsula,Newfoundland and Labrador,Canada,Yes,-53.4981,47.49989,peninsula,Avalon Peninsula NL,0
+492,Drayton Valley,Alberta,Canada,Yes,-114.98544,53.21682,populated place,Drayton Valley AB,6099
+493,Chesley,Ontario,Canada,Yes,-81.09524,44.29658,populated place,Chesley ON,0
+494,London,Ontario,Canada,Yes,-81.23304,42.98339,populated place,London ON,346765
+495,Smiths Falls,Ontario,Canada,Yes,-76.02333,44.90452,populated place,Smiths Falls ON,10553
+496,Stoney Creek,Ontario,Canada,Yes,-79.76633,43.21681,populated place,Stoney Creek ON,0
+497,Hinton,Alberta,Canada,Yes,-117.58567,53.40009,populated place,Hinton AB,9889
+498,Angola on the Lake,New York,United States,No,-79.04893,42.65478,populated place,Lake Erie ON,1675
+499,Cape Race,Newfoundland and Labrador,Canada,Yes,-53.07299,46.65793,cape,Cape Race NL,0
+500,Blue River,British Columbia,Canada,Yes,-119.31049,52.11009,populated place,Blue River BC,0
+501,Roseau Rapids 2A,Manitoba,Canada,Yes,-96.94034,49.21078,reservation,Roseau MB,0
+502,Rivière-du-Loup,Quebec,Canada,Yes,-69.54243,47.82699,populated place,Libya,18586
+503,Lac Libye,Quebec,Canada,Yes,-75.43167,48.04111,lake,Libya,0
+504,Lowbanks,Ontario,Canada,Yes,-79.45333,42.87444,populated place,Libya,0
+505,Slave Lake Airport,Alberta,Canada,Yes,-114.77722,55.29306,airport,Slave Lake AB,0
+506,Hall Lake,Saskatchewan,Canada,Yes,-107.16724,54.06673,lake,Hall Lake SK,0
+507,Wollaston Lake Airport,Saskatchewan,Canada,Yes,-103.172,58.1069,airport,Wollaston Lake SK,0
+508,Brandon,Manitoba,Canada,Yes,-99.95306,49.84692,populated place,Brandon MB,26234
+509,Weyburn,Saskatchewan,Canada,Yes,-103.85109,49.66675,populated place,Weyburn SK,9362
+510,Yarmouth,Nova Scotia,Canada,Yes,-66.11557,43.83345,populated place,Yarmouth NS,7500
+511,Wolfe Lake,New Brunswick,Canada,Yes,-65.13984,45.65679,lake,Wolfe Lake NB,0
+512,Eckville,Alberta,Canada,Yes,-114.36996,52.36191,second-order administrative division,Eckville AB,0
+513,Lacombe,Alberta,Canada,Yes,-113.7353,52.46681,populated place,Lacombe AB,10059
+514,Paddle River,Alberta,Canada,Yes,-114.2521,54.08345,stream,Paddle River AB,0
+515,Fort Vermilion 173B,Alberta,Canada,Yes,-115.99428,58.38352,reservation,Fort Vermilion AB,0
+516,Resolute Bay Airport,Nunavut,Canada,Yes,-94.96944,74.71694,airport,Resolute Bay NU,0
+517,Goderich,Ontario,Canada,Yes,-81.71339,43.74171,populated place,Goderich ON,8032
+518,Kingcome Inlet,British Columbia,Canada,Yes,-126.20205,50.95328,populated locality,Kingcome Inlet BC,0
+519,Bella Coola Airport,British Columbia,Canada,Yes,-126.59583,52.3875,airport,Bella Coola BC,0
+520,Fort Albany,Ontario,Canada,Yes,-81.66664,52.19998,populated locality,Fort Albany ON,900
+521,Mackenzie County,Alberta,Canada,Yes,-117.04606,58.68989,second-order administrative division,Mackenzie County AB,0
+522,Lac de la Province,Quebec,Canada,Yes,-75.225,45.90444,lake,Province of Quebec,0
+523,Vita,Manitoba,Canada,Yes,-96.56201,49.13387,populated place,Vita MB,0
+524,Sicamous,British Columbia,Canada,Yes,-118.98565,50.83312,populated place,Sicamous BC,2732
+525,Peachland,British Columbia,Canada,Yes,-119.73568,49.76647,populated place,Peachland BC,1305
+526,Thunder Bay,Ontario,Canada,Yes,-89.25018,48.38202,populated place,Thunder Bay ON,99334
+527,Midwest City,Oklahoma,United States,No,-97.3967,35.44951,populated place, Midwest,57249
+528,Northeast Florida Regional Airport,Florida,United States,No,-81.34198,29.95782,airport,Northeast USA,0
+529,Island Lake Airport,Manitoba,Canada,Yes,-94.65383,53.85691,airport,Island Lake MB,0
+530,Garden Hill,Manitoba,Canada,Yes,-94.65185,53.87449,area,Garden Hill MB,0
+531,Coalhurst,Alberta,Canada,Yes,-112.93246,49.7464,populated place,Coalhurst AB,1552
+532,Burlington,Ontario,Canada,Yes,-79.83713,43.38621,populated place,Burlington ON,164415
+533,Quesnel Lake,British Columbia,Canada,Yes,-120.93889,52.50833,lake,Quesnel Lake BC,0
+534,Saint-Jean-sur-Richelieu,Quebec,Canada,Yes,-73.26259,45.30713,populated place,Saint-Jean-sur-Richelieu QC,71613
+535,Cumberland House Provincial Park,Saskatchewan,Canada,Yes,-102.26477,53.95429,park,Cumberland House SK,0
+536,Sainte-Brigitte-de-Laval,Quebec,Canada,Yes,-71.20789,47.00273,populated place,Sainte-Brigitte-de-Laval QC,0
+537,Birgunj,Central Region,Nepal,No,84.87735,27.01043,populated place,Nepal,133238
+538,Bharatpur,Central Region,Nepal,No,84.43589,27.6768,populated place,Nepal,107157
+539,Nepāl Peak,,Nepal,No,88.18301,27.77667,peak,Nepal,0
+540,Long Lake,Alberta,Canada,Yes,-113.65528,54.57889,lake,Long Lake AB,0
+541,Chestermere,Alberta,Canada,Yes,-113.81867,51.03341,populated place,Chestermere AB,3590
+542,Tecumseh,Ontario,Canada,Yes,-82.89983,42.31678,populated place,Tecumseh ON,0
+543,Christmas Island,Nova Scotia,Canada,Yes,-60.74479,45.97429,populated place,Christmas Island NS,0
+544,Horton,Ontario,Canada,Yes,-76.66612,45.50011,third-order administrative division,Horton ON,0
+545,Easterville,Manitoba,Canada,Yes,-99.81359,53.10753,area,Easterville MB,0
+546,Chemawawin 1,Manitoba,Canada,Yes,-100.38412,53.31425,reservation,Chemawawin MB,0
+547,West Kelowna,British Columbia,Canada,Yes,-119.58333,49.8625,populated place,West Kelowna BC,28793
+548,Burns Bog,British Columbia,Canada,Yes,-122.97762,49.12466,bog(s),Burns Bog BC,0
+549,Seaforth Channel,British Columbia,Canada,Yes,-128.29954,52.24672,channel,Seaforth Channel BC,0

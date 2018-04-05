@@ -48,7 +48,16 @@ for row in reader:
         fatalities_value = row["FATALITIES"]
         injured_value = row["INJURED / INFECTED"]
         evacuated_value = row["EVACUATED"]
-        locationKeys = Location.getLocationKeys(row["PLACE"])
+        pop_loc = Location.getLocationKeys(row["PLACE"])
+
+        if(pop_loc is None):
+            locationKeys = [-1]
+            population = None
+        else:
+            population = pop_loc[0]
+            locationKeys = pop_loc[1]
+            hasPop = True ;
+
         index = 0
         while index < len(locationKeys):
             startDateKey = startDateKey_value
@@ -61,15 +70,16 @@ for row in reader:
             injured = injured_value
             evacuated = evacuated_value
             index = index + 1
+            population = population
 
         # testModeCount = testModeCount+1
         # if (testMode==True and testModeCount==50):
         #     break;
-            
+
             with open(filenameFACT, 'ab') as ff:
                 writer = csv.writer(ff)
                 writer.writerow([startDateKey,endDateKey,locationKey,disasterKey,descriptionKey,
-                                 costKey,fatalities,injured,evacuated])
+                                 costKey,fatalities,injured,evacuated,population])
         row_count+=1
 # df.insert(loc=0, column='startDateKey', value=pd.Series(startDateKey))
 # df.insert(loc=1, column='endDateKey', value=pd.Series(startDateKey))
