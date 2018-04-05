@@ -12,33 +12,33 @@ def get_cost_key(estimated_total_cost, normalized_total_cost, federal_dfaa_payme
                  ogd_costs, ngo_payments):
 
     if estimated_total_cost == '0' and normalized_total_cost == '0':
-        federal_dfaa_payments = '0'
-        provincial_dfaa_payments = '0'
-        provincial_payments = '0'
-        municipal_cost = '0'
-        insurance_payments = '0'
-        ogd_costs = '0'
-        ngo_payments = '0'
+        federal_dfaa_payments = None
+        provincial_dfaa_payments = None
+        provincial_payments = None
+        municipal_cost = None
+        insurance_payments = None
+        ogd_costs = None
+        ngo_payments = None
 
     else:
         if not estimated_total_cost:
-            estimated_total_cost = 'unknown'
+            estimated_total_cost = None
         if not normalized_total_cost:
-            normalized_total_cost = 'unknown'
+            normalized_total_cost = None
         if not federal_dfaa_payments:
-            federal_dfaa_payments = 'unknown'
+            federal_dfaa_payments = None
         if not provincial_dfaa_payments:
-            provincial_dfaa_payments = 'unknown'
+            provincial_dfaa_payments = None
         if not provincial_payments:
-            provincial_payments = 'unknown'
+            provincial_payments = None
         if not municipal_cost:
-            municipal_cost = 'unknown'
+            municipal_cost = None
         if not insurance_payments:
-            insurance_payments = 'unknown'
+            insurance_payments = None
         if not ogd_costs:
-            ogd_costs = 'unknown'
+            ogd_costs = None
         if not ngo_payments:
-            ngo_payments = 'unknown'
+            ngo_payments = None
 
     f = open(filename)
     reader = csv.DictReader(f)

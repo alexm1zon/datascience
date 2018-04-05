@@ -1,0 +1,32 @@
+"disaster_type","average_population_affected_in_thousands","average_evacuted"
+"Epidemic",25276,0
+"Cold Event",17361,0
+"Winter Storm",5452,1496
+"Drought",3982,0
+"Tsunami",2524,0
+"Storm - Unspecified / Other",1514,0
+"Flood",813,444
+"Transportation",812,0
+"Bomb Attacks",712,0
+"Earthquake",685,3080
+"Storms and Severe Thunderstorms",671,0
+"Storm Surge",374,0
+"Marine",370,0
+"Residential",268,138
+"Leak / Spill Release",186,833
+"Non-Residential",152,126
+"Landslide",115,50
+"Rail",29,0
+"Derailment Release",25,610
+"Tornado",24,0
+"Fire",22,375
+"Disturbance / Demonstrations",18,203
+"Air",7,0
+"Vehicle Release",5,12270
+"Avalanche",4,8
+"Marine Release",1,0
+"Rioting",0,0
+"Geomagnetic Storm",0,""
+"Space Debris",0,0
+"Wildfire",0,500
+"Manufacturing / Industry",0,0

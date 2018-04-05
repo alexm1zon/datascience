@@ -8,7 +8,7 @@ filename = "csv/dateTable.csv"
 surrogateKeyID = 1
 
 
-def get_key_id(day, month, year, weekend, season_canada, season_international):
+def get_key_id(day, month, year, weekend, season_canada):
     f = open(filename)
     reader = csv.DictReader(f)
     global surrogateKeyID
@@ -16,14 +16,13 @@ def get_key_id(day, month, year, weekend, season_canada, season_international):
     for row in reader:
         if (row["day"] == day) & (row["month"] == month) & (row["year"] == year) & \
                 (row["weekend"] == weekend) & (row["season_canada"] == season_canada):
-                # (row["season_international"] == season_international)
             return row["date_key"]
 
     f.close()
 
     with open(filename, 'ab') as ff:
         writer = csv.writer(ff)
-        writer.writerow([surrogateKeyID, day, month, year, weekend, season_canada, season_international])
+        writer.writerow([surrogateKeyID, day, month, year, weekend, season_canada])
     key = surrogateKeyID
     surrogateKeyID = surrogateKeyID + 1
 
@@ -32,22 +31,18 @@ def get_key_id(day, month, year, weekend, season_canada, season_international):
 
 def get_date_key(start_date):
     if (start_date == '') | (not isinstance(start_date, basestring)) | (start_date == '0'):
-        day = '-1'
-        month = '-1'
-        year = '-1'
-        weekend = 'unknown'
-        season_canada = 'unknown'
-        season_international = 'unknown'
+        day = None
+        month = None
+        year = None
+        weekend = None
+        season_canada = None
 
     else:
-        month, day, year = start_date.split("/")
+        year, new_month, new_day = start_date.split("-")
+        month = int(new_month)
+        day = int(new_day)
 
-        if 59 <= int(year) <= 99:
-            new_year = '19' + year
-        else:
-            new_year = '20' + year
-
-        my_date = date(int(new_year), int(month), int(day))
+        my_date = date(int(year), int(month), int(day))
 
         if (my_date.weekday() == 5) | (my_date.weekday() == 6):
             weekend = 'yes'
@@ -64,10 +59,8 @@ def get_date_key(start_date):
         else:
             season_canada = 'winter'
 
-        season_international = season_canada
 
-
-    return get_key_id(day, month, year, weekend, season_canada, season_international)
+    return get_key_id(day, month, year, weekend, season_canada)
 
 
 

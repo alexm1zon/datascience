@@ -9,17 +9,17 @@ surrogateKeyID = 1
 
 def get_disaster_key(event_type, subgroup, group, category, magnitude, people_affected):
     if not event_type:
-        event_type = 'unknown'
+        event_type = None
     if not subgroup:
-        subgroup = 'unknown'
+        subgroup = None
     if not group:
-        group = 'unknown'
+        group = None
     if not category:
-        category = 'unknown'
+        category = None
     if not magnitude:
-        magnitude = 'unknown'
+        magnitude = None
     if not people_affected:
-        people_affected = 'unknown'
+        people_affected = None
 
     f = open(filename)
     reader = csv.DictReader(f)

@@ -96,7 +96,7 @@ class Location:
                     areas[index] = areas[index] + ' ' + province_code;
                 index = index + 1;
             areas.reverse()
-        keys = [None] #* len(areas)
+        keys = [] #* len(areas)
         index = 0 ;
         while index < len(areas):
             pop_loc = Location.getLocationKey(areas[index])
@@ -109,7 +109,7 @@ class Location:
 
     @staticmethod
     def getLocationKey(location_string):
-        location_keys = [None]
+        location_keys = []
         population = 0 ;
         if location_string == '':
             return -1

@@ -1,151 +1,217 @@
-1,Non-Residential,Fire,Technology,Incident,,0
-2,Non-Residential,Explosion,Technology,Incident,,0
-3,Manufacturing / Industry,Infrastructure failure,Technology,Incident,,0
-4,Flood,Meteorological - Hydrological,Natural,Disaster,,0
-5,Landslide,Geological,Natural,Disaster,,0
-6,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,0
-7,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,0
-8,Marine,Transportation accident,Technology,Incident,,0
-9,Transportation,Infrastructure failure,Technology,Incident,,0
-10,Residential,Fire,Technology,Incident,,0
-11,Drought,Meteorological - Hydrological,Natural,Disaster,,0
-12,Rail,Transportation accident,Technology,Incident,,0
-13,Avalanche,Meteorological - Hydrological,Natural,Disaster,,0
-14,Wildfire,Meteorological - Hydrological,Natural,Disaster,,0
-15,Tornado,Meteorological - Hydrological,Natural,Disaster,,0
-16,Heat Event,Meteorological - Hydrological,Natural,Disaster,,0
-17,Flood,Meteorological - Hydrological,Natural,Disaster,,
-18,Storm Surge,Meteorological - Hydrological,Natural,Disaster,,0
-19,Epidemic,Biological,Natural,Disaster,,0
-20,Fire,Hazardous Chemicals,Technology,Incident,,0
-21,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,18270270
-22,Derailment Release,Hazardous Chemicals,Technology,Incident,,0
-23,Marine Release,Hazardous Chemicals,Technology,Incident,,0
-24,Leak / Spill Release,Hazardous Chemicals,Technology,Incident,,0
-25,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,,0
-26,Heat Event,Meteorological - Hydrological,Natural,Disaster,,128169014
+1,Non-Residential,Fire,Technology,Incident,N/A,0
+2,Non-Residential,Explosion,Technology,Incident,N/A,0
+3,Manufacturing / Industry,Infrastructure failure,Technology,Incident,N/A,0
+4,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,0
+5,Landslide,Geological,Natural,Disaster,N/A,0
+6,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,0
+7,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,0
+8,Marine,Transportation accident,Technology,Incident,N/A,0
+9,Transportation,Infrastructure failure,Technology,Incident,N/A,0
+10,Residential,Fire,Technology,Incident,N/A,0
+11,Drought,Meteorological - Hydrological,Natural,Disaster,N/A,0
+12,Rail,Transportation accident,Technology,Incident,N/A,0
+13,Avalanche,Meteorological - Hydrological,Natural,Disaster,N/A,0
+14,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,0
+15,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,0
+16,Heat Event,Meteorological - Hydrological,Natural,Disaster,N/A,0
+17,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+18,Storm Surge,Meteorological - Hydrological,Natural,Disaster,N/A,0
+19,Epidemic,Biological,Natural,Disaster,N/A,0
+20,Fire,Hazardous Chemicals,Technology,Incident,N/A,0
+21,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,18270270
+22,Derailment Release,Hazardous Chemicals,Technology,Incident,N/A,0
+23,Marine Release,Hazardous Chemicals,Technology,Incident,N/A,0
+24,Leak / Spill Release,Hazardous Chemicals,Technology,Incident,N/A,0
+25,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,N/A,0
+26,Heat Event,Meteorological - Hydrological,Natural,Disaster,N/A,128169014
 27,Earthquake,Geological,Natural,Disaster,6,0
-28,Cold Event,Meteorological - Hydrological,Natural,Disaster,,0
-29,Air,Transportation accident,Technology,Incident,,0
-30,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,,0
-31,Vehicle Release,Hazardous Chemicals,Technology,Incident,,0
-32,Non-Residential,Arson,Conflict,Incident,,0
-33,Tornado,Meteorological - Hydrological,Natural,Disaster,,1560000
-34,Bomb Attacks,Terrorist,Conflict,Incident,,0
-35,Disturbance / Demonstrations,Civil Incident,Conflict,Incident,,0
-36,Flood,Meteorological - Hydrological,Natural,Disaster,,412941
-37,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,3189873
-38,Leak / Spill Release,Hazardous Chemicals,Technology,Incident,,
-39,Tornado,Meteorological - Hydrological,Natural,Disaster,,2895455
-40,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,240000
-41,Vehicle,Transportation accident,Technology,Incident,,0
-42,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,4828750
-43,Communications,Infrastructure failure,Technology,Incident,,0
-44,Infestation,Biological,Natural,Disaster,,0
-45,Air,Hijacking,Conflict,Incident,,0
-46,Water,Infrastructure failure,Technology,Incident,,0
-47,Flood,Meteorological - Hydrological,Natural,Disaster,,6000
-48,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,,300000
-49,Tsunami,Geological,Natural,Disaster,,0
-50,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,150000
-51,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,570000
-52,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,46500
-53,Wildfire,Meteorological - Hydrological,Natural,Disaster,,3000
-54,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,200000
-55,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,60000
-56,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,6000
-57,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,299793
-58,Tornado,Meteorological - Hydrological,Natural,Disaster,,45000
-59,Tornado,Meteorological - Hydrological,Natural,Disaster,,15000
-60,Residential,Explosion,Technology,Incident,,0
-61,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,15000
-62,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,75000
-63,Pandemic,Biological,Natural,Disaster,,0
-64,Volcano,Geological,Natural,Disaster,,0
-65,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,300000
-66,Tornado,Meteorological - Hydrological,Natural,Disaster,,207000
-67,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,10000
-68,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,,70000
+28,Cold Event,Meteorological - Hydrological,Natural,Disaster,N/A,0
+29,Air,Transportation accident,Technology,Incident,N/A,0
+30,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,N/A,0
+31,Vehicle Release,Hazardous Chemicals,Technology,Incident,N/A,0
+32,Non-Residential,Arson,Conflict,Incident,N/A,0
+33,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,1560000
+34,Bomb Attacks,Terrorist,Conflict,Incident,N/A,0
+35,Disturbance / Demonstrations,Civil Incident,Conflict,Incident,N/A,0
+36,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,412941
+37,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,3189873
+38,Leak / Spill Release,Hazardous Chemicals,Technology,Incident,N/A,
+39,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,2895455
+40,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,240000
+41,Vehicle,Transportation accident,Technology,Incident,N/A,0
+42,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,4828750
+43,Communications,Infrastructure failure,Technology,Incident,N/A,0
+44,Infestation,Biological,Natural,Disaster,N/A,0
+45,Air,Hijacking,Conflict,Incident,N/A,0
+46,Water,Infrastructure failure,Technology,Incident,N/A,0
+47,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,6000
+48,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,N/A,300000
+49,Tsunami,Geological,Natural,Disaster,N/A,0
+50,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,150000
+51,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,570000
+52,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,46500
+53,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,3000
+54,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,200000
+55,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,60000
+56,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,6000
+57,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,299793
+58,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,45000
+59,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,15000
+60,Residential,Explosion,Technology,Incident,N/A,0
+61,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,15000
+62,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,75000
+63,Pandemic,Biological,Natural,Disaster,N/A,0
+64,Volcano,Geological,Natural,Disaster,N/A,0
+65,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,300000
+66,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,207000
+67,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,10000
+68,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,N/A,70000
 69,Earthquake,Geological,Natural,Disaster,5,900
-70,Tornado,Meteorological - Hydrological,Natural,Disaster,,12000
-71,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,12000
-72,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,,40000
-73,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,24000
-74,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,,190000
-75,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,50000
-76,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,,120000
-77,Flood,Meteorological - Hydrological,Natural,Disaster,,240000
-78,Tornado,Meteorological - Hydrological,Natural,Disaster,,13500
+70,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,12000
+71,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,12000
+72,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,N/A,40000
+73,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,24000
+74,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,N/A,190000
+75,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,50000
+76,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,N/A,120000
+77,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,240000
+78,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,13500
 79,Earthquake,Geological,Natural,Disaster,7,0
-80,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,249000
-81,Wildfire,Meteorological - Hydrological,Natural,Disaster,,2000
-82,Wildfire,Meteorological - Hydrological,Natural,Disaster,,1896
+80,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,249000
+81,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,2000
+82,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,1896
 83,Tsunami,Geological,Natural,Disaster,7,0
-84,Rioting,Civil Incident,Conflict,Incident,,0
-85,Residential,Arson,Conflict,Incident,,0
+84,Rioting,Civil Incident,Conflict,Incident,N/A,0
+85,Residential,Arson,Conflict,Incident,N/A,0
 86,Earthquake,Geological,Natural,Disaster,8,0
-87,Vehicle,Fire,Technology,Incident,,0
+87,Vehicle,Fire,Technology,Incident,N/A,0
 88,Tsunami,Geological,Natural,Disaster,9,0
-89,Flood,Meteorological - Hydrological,Natural,Disaster,,584656
+89,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,584656
 90,Tsunami,Geological,Natural,Disaster,8,0
-91,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,1027473
-92,Kidnapping / Murder,Terrorist,Conflict,Incident,,0
-93,Wildfire,Meteorological - Hydrological,Natural,Disaster,,
-94,Flood,Meteorological - Hydrological,Natural,Disaster,,119127
-95,Flood,Meteorological - Hydrological,Natural,Disaster,,115994
-96,Space Debris,Space Event,Technology,Incident,,0
-97,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,7615063
-98,Shootings,Terrorist,Conflict,Incident,,0
-99,Tornado,Meteorological - Hydrological,Natural,Disaster,,3684211
-100,Flood,Meteorological - Hydrological,Natural,Disaster,,4150761
-101,Heat Event,Meteorological - Hydrological,Natural,Disaster,,
-102,Disturbance / Demonstrations,Civil Incident,Conflict,Incident,,
-103,Rioting,Civil Incident,Conflict,Incident,,
-104,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,,600000
-105,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,189000
-106,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,127283
-107,Flood,Meteorological - Hydrological,Natural,Disaster,,700
-108,Air,Transportation accident,Technology,Incident,,
-109,Tornado,Meteorological - Hydrological,Natural,Disaster,,8000
-110,Flood,Meteorological - Hydrological,Natural,Disaster,,236364
-111,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,,1169000
-112,Tornado,Meteorological - Hydrological,Natural,Disaster,2,
-113,Geomagnetic Storm,Meteorological - Hydrological,Natural,Disaster,,6925128
-114,Earthquake,Geological,Natural,Disaster,9,
-115,Flood,Meteorological - Hydrological,Natural,Disaster,,1500
-116,Epidemic,Biological,Natural,Disaster,,
-117,Flood,Meteorological - Hydrological,Natural,Disaster,,300000
-118,Rail,Transportation accident,Technology,Incident,,
-119,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,,
-120,Energy,Infrastructure failure,Technology,Incident,,0
-121,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,
-122,Manufacturing / Industry,Infrastructure failure,Technology,Incident,,300
-123,Shootings,Terrorist,Conflict,Incident,,
-124,Residential,Fire,Technology,Incident,,
-125,Kidnapping / Murder,Terrorist,Conflict,Incident,,
-126,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,153000
-127,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,
-128,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,,939000
-129,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,317000
-130,Tornado,Meteorological - Hydrological,Natural,Disaster,,150000
-131,Earthquake,Geological,Natural,Disaster,7.8,860000
-132,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,12000
-133,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,25000
-134,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,5000
-135,Wildfire,Meteorological - Hydrological,Natural,Disaster,,300
-136,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,,1500000
-137,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,9000
-138,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,105000
-139,Flood,Meteorological - Hydrological,Natural,Disaster,,20000
-140,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,69000
-141,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,,10038
-142,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,750000
-143,Winter Storm,Meteorological - Hydrological,Natural,Disaster,,300000
-144,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,117000
-145,Landslide,Geological,Natural,Disaster,,
-146,Flood,Meteorological - Hydrological,Natural,Disaster,,390600
-147,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,,33000
-148,Tornado,Meteorological - Hydrological,Natural,Disaster,,54000
-149,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,,225000
-150,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,,300000
-151,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,,480000
+91,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,1027473
+92,Kidnapping / Murder,Terrorist,Conflict,Incident,N/A,0
+93,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+94,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,119127
+95,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+96,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,115994
+97,Space Debris,Space Event,Technology,Incident,N/A,0
+98,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+99,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,7615063
+100,Shootings,Terrorist,Conflict,Incident,N/A,0
+101,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,3684211
+102,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,4150761
+103,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+104,Heat Event,Meteorological - Hydrological,Natural,Disaster,N/A,
+105,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+106,Disturbance / Demonstrations,Civil Incident,Conflict,Incident,N/A,
+107,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+108,Rioting,Civil Incident,Conflict,Incident,N/A,
+109,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+110,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+111,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+112,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+113,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+114,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+115,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+116,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+117,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,N/A,600000
+118,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,189000
+119,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,127283
+120,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+121,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,700
+122,Air,Transportation accident,Technology,Incident,N/A,
+123,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,8000
+124,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+125,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,236364
+126,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,N/A,1169000
+127,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+128,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+129,Tornado,Meteorological - Hydrological,Natural,Disaster,2,
+130,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+131,Geomagnetic Storm,Meteorological - Hydrological,Natural,Disaster,N/A,6925128
+132,Earthquake,Geological,Natural,Disaster,9,
+133,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+134,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+135,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+136,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+137,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+138,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,1500
+139,Epidemic,Biological,Natural,Disaster,N/A,
+140,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,300000
+141,Rail,Transportation accident,Technology,Incident,N/A,
+142,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+143,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+144,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+145,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,N/A,
+146,Rail,Transportation accident,Technology,Incident,N/A,
+147,Energy,Infrastructure failure,Technology,Incident,N/A,0
+148,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+149,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+150,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+151,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+152,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+153,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,
+154,Rail,Transportation accident,Technology,Incident,N/A,
+155,Manufacturing / Industry,Infrastructure failure,Technology,Incident,N/A,300
+156,Shootings,Terrorist,Conflict,Incident,N/A,
+157,Residential,Fire,Technology,Incident,N/A,
+158,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+159,Kidnapping / Murder,Terrorist,Conflict,Incident,N/A,
+160,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,153000
+161,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,
+162,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+163,Hurricane / Typhoon / Tropical Storm,Meteorological - Hydrological,Natural,Disaster,N/A,939000
+164,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,317000
+165,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+166,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+167,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+168,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+169,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,150000
+170,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+171,Rail,Transportation accident,Technology,Incident,N/A,
+172,Air,Transportation accident,Technology,Incident,N/A,
+173,Earthquake,Geological,Natural,Disaster,7.8,860000
+174,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,12000
+175,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,25000
+176,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+177,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,5000
+178,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,300
+179,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,N/A,1500000
+180,Leak / Spill Release,Hazardous Chemicals,Technology,Incident,N/A,
+181,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,9000
+182,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,
+183,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,105000
+184,Leak / Spill Release,Hazardous Chemicals,Technology,Incident,N/A,
+185,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,20000
+186,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+187,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,69000
+188,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,N/A,10038
+189,Epidemic,Biological,Natural,Disaster,N/A,
+190,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+191,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,750000
+192,Winter Storm,Meteorological - Hydrological,Natural,Disaster,N/A,300000
+193,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,117000
+194,Residential,Fire,Technology,Incident,N/A,
+195,Landslide,Geological,Natural,Disaster,N/A,
+196,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+197,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+198,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,390600
+199,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,33000
+200,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+201,Tornado,Meteorological - Hydrological,Natural,Disaster,N/A,54000
+202,Leak / Spill Release,Hazardous Chemicals,Technology,Incident,N/A,
+203,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+204,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+205,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,N/A,225000
+206,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,N/A,300000
+207,Storm - Unspecified / Other,Meteorological - Hydrological,Natural,Disaster,N/A,480000
+208,Leak / Spill Release,Hazardous Chemicals,Technology,Incident,N/A,
+209,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+210,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,
+211,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,
+212,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,
+213,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,
+214,Storms and Severe Thunderstorms,Meteorological - Hydrological,Natural,Disaster,N/A,
+215,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,
+216,Flood,Meteorological - Hydrological,Natural,Disaster,N/A,
+217,Wildfire,Meteorological - Hydrological,Natural,Disaster,N/A,

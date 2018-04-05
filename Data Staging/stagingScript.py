@@ -72,27 +72,9 @@ for row in reader:
             index = index + 1
             population = population
 
-        # testModeCount = testModeCount+1
-        # if (testMode==True and testModeCount==50):
-        #     break;
-
             with open(filenameFACT, 'ab') as ff:
                 writer = csv.writer(ff)
                 writer.writerow([startDateKey,endDateKey,locationKey,disasterKey,descriptionKey,
                                  costKey,fatalities,injured,evacuated,population])
         row_count+=1
-# df.insert(loc=0, column='startDateKey', value=pd.Series(startDateKey))
-# df.insert(loc=1, column='endDateKey', value=pd.Series(startDateKey))
-# df.insert(loc=2, column='locationKey', value=pd.Series(locationKey))
-# df.insert(loc=3, column='disasterKey', value=pd.Series(disasterKey))
-# df.insert(loc=4, column='descriptionKey', value=pd.Series(descriptionKey))
-# df.insert(loc=5, column='costKey', value=pd.Series(costKey))
-# df.insert(loc=6, column='fatalities', value=pd.Series(fatalities))
-# df.insert(loc=7, column='injured', value=pd.Series(injured))
-# df.insert(loc=8, column='evacuated', value=pd.Series(evacuated))
-# 
-# df.to_csv(filenameFACT, encoding='utf-8', index=False)
-# print(Location.get_success_count() + '=success')
-# print(Location.get_problems_count() + '=problems')
-# print(Location.get_total_count() + '=total')
 
